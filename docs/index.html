@@ -133,6 +133,40 @@
       margin-top: 48px;
     }
 
+    .deals-section {
+      background: #fff;
+      border-bottom: 1px solid #e0e0e0;
+      padding: 20px 24px;
+    }
+
+    .deals-section h2 {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: #0057b7;
+      margin-bottom: 12px;
+    }
+
+    .deals-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      list-style: none;
+    }
+
+    .deal-item {
+      background: #f0f5ff;
+      border: 1px solid #c8d8f5;
+      border-radius: 6px;
+      padding: 6px 12px;
+      font-size: 0.88rem;
+      color: #1a1a1a;
+    }
+
+    .deal-item .deal-sub {
+      color: #666;
+      font-size: 0.8rem;
+    }
+
     @media (max-width: 480px) {
       header h1 { font-size: 1.5rem; }
       .grid { grid-template-columns: 1fr; }
@@ -143,13 +177,18 @@
 
 <header>
   <div class="header-top">
-    <h1>חבר טעמים 🍽️</h1>
+    <h1>חבר טעמים</h1>
   </div>
   <div class="header-meta" id="header-meta">טוען נתונים...</div>
   <div class="search-wrap">
     <input type="search" id="search" placeholder="חיפוש לפי שם, סוג, כתובת..." autocomplete="off">
   </div>
 </header>
+
+<div class="deals-section" id="deals-section" style="display:none;">
+  <h2>📦 מבצעי השבוע</h2>
+  <ul class="deals-list" id="deals-list"></ul>
+</div>
 
 <main>
   <div id="result-count"></div>
@@ -220,15 +259,29 @@
     renderCards(filterRestaurants(this.value));
   });
 
+  function renderDeals(deals) {
+    if (!deals || deals.length === 0) return;
+    const section = document.getElementById('deals-section');
+    const list = document.getElementById('deals-list');
+    list.innerHTML = deals.map(d => {
+      const label = escapeHtml(d.label || '');
+      const sub = d.subtitle ? `<span class="deal-sub"> — ${escapeHtml(d.subtitle)}</span>` : '';
+      return `<li class="deal-item">${label}${sub}</li>`;
+    }).join('');
+    section.style.display = 'block';
+  }
+
   async function loadData() {
     try {
-      const [restRes, metaRes] = await Promise.all([
+      const [restRes, metaRes, dealsRes] = await Promise.all([
         fetch('restaurants.json'),
-        fetch('last_updated.json')
+        fetch('last_updated.json'),
+        fetch('deals.json')
       ]);
 
       allRestaurants = await restRes.json();
       const meta = await metaRes.json();
+      const deals = await dealsRes.json();
 
       const metaEl = document.getElementById('header-meta');
       if (meta.date) {
@@ -237,6 +290,7 @@
         metaEl.textContent = `${allRestaurants.length} מסעדות`;
       }
 
+      renderDeals(deals);
       renderCards(allRestaurants);
     } catch (err) {
       document.getElementById('header-meta').textContent = 'שגיאה בטעינת הנתונים';
