@@ -9,7 +9,7 @@
 
     body {
       font-family: 'Segoe UI', Arial, sans-serif;
-      background: #f5f5f5;
+      background: #f0f2f5;
       color: #1a1a1a;
       direction: rtl;
     }
@@ -17,160 +17,186 @@
     header {
       background: #fff;
       border-bottom: 3px solid #0057b7;
-      padding: 20px 24px 16px;
+      padding: 20px 28px 16px;
     }
 
     header h1 {
-      font-size: 1.9rem;
+      font-size: 1.8rem;
       font-weight: 700;
       color: #0057b7;
     }
 
     .header-meta {
       font-size: 0.85rem;
-      color: #666;
-      margin-top: 6px;
+      color: #777;
+      margin-top: 5px;
     }
 
     .deals-section {
       background: #fff;
       border-bottom: 1px solid #e0e0e0;
-      padding: 20px 24px;
+      padding: 18px 28px;
     }
 
-    .deals-section h2 {
-      font-size: 1.1rem;
+    .section-title {
+      font-size: 0.75rem;
       font-weight: 700;
-      color: #1a1a1a;
-      margin-bottom: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #999;
+      margin-bottom: 10px;
     }
 
     .deals-list {
       display: flex;
       flex-wrap: wrap;
-      gap: 8px;
+      gap: 7px;
       list-style: none;
     }
 
     .deal-item {
-      background: #f0f5ff;
-      border: 1px solid #c8d8f5;
-      border-radius: 6px;
-      padding: 6px 12px;
-      font-size: 0.88rem;
-      color: #1a1a1a;
+      background: #f5f8ff;
+      border: 1px solid #d0ddf7;
+      border-radius: 4px;
+      padding: 5px 11px;
+      font-size: 0.85rem;
+      color: #222;
+      line-height: 1.4;
     }
 
-    .deal-item .deal-sub {
-      color: #666;
-      font-size: 0.8rem;
+    .deal-sub {
+      color: #777;
     }
 
-    .restaurants-section {
+    .search-bar {
       background: #fff;
       border-bottom: 1px solid #e0e0e0;
-      padding: 20px 24px 16px;
+      padding: 16px 28px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      flex-wrap: wrap;
     }
 
-    .restaurants-section h2 {
-      font-size: 1.1rem;
+    .search-bar h2 {
+      font-size: 1rem;
       font-weight: 700;
       color: #1a1a1a;
-      margin-bottom: 12px;
+      white-space: nowrap;
     }
 
     #search {
-      width: 100%;
-      max-width: 560px;
-      padding: 10px 14px;
-      font-size: 1rem;
-      border: 2px solid #ccc;
+      flex: 1;
+      min-width: 220px;
+      max-width: 500px;
+      padding: 9px 14px;
+      font-size: 0.95rem;
+      border: 1.5px solid #ccc;
       border-radius: 6px;
       outline: none;
       font-family: inherit;
       direction: rtl;
+      background: #fafafa;
     }
 
     #search:focus {
       border-color: #0057b7;
+      background: #fff;
     }
 
     main {
-      max-width: 1200px;
+      max-width: 1280px;
       margin: 0 auto;
-      padding: 20px 16px 40px;
+      padding: 20px 20px 48px;
     }
 
     #result-count {
-      font-size: 0.9rem;
-      color: #555;
-      margin-bottom: 16px;
+      font-size: 0.82rem;
+      color: #888;
+      margin-bottom: 14px;
     }
 
     .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-      gap: 14px;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 12px;
     }
 
     .card {
       background: #fff;
-      border: 1px solid #e0e0e0;
+      border: 1px solid #e2e5ea;
       border-radius: 8px;
-      padding: 16px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .card-header {
+      padding: 14px 16px 10px;
+      border-bottom: 1px solid #f0f0f0;
     }
 
     .card-name {
-      font-size: 1.05rem;
+      font-size: 1rem;
       font-weight: 700;
-      color: #1a1a1a;
-      margin-bottom: 4px;
+      color: #0d1a2e;
+      line-height: 1.3;
     }
 
     .card-type {
-      font-size: 0.82rem;
-      color: #888;
-      margin-bottom: 10px;
+      font-size: 0.78rem;
+      color: #0057b7;
+      margin-top: 3px;
+      font-weight: 500;
     }
 
-    .card-details {
-      font-size: 0.88rem;
-      color: #444;
+    .card-body {
+      padding: 10px 16px 14px;
       display: flex;
       flex-direction: column;
-      gap: 5px;
-    }
-
-    .card-details a {
-      color: #0057b7;
-      text-decoration: none;
-    }
-
-    .card-details a:hover {
-      text-decoration: underline;
+      gap: 6px;
+      flex: 1;
     }
 
     .detail-row {
       display: flex;
-      gap: 6px;
+      gap: 8px;
+      font-size: 0.83rem;
       align-items: flex-start;
+      line-height: 1.4;
     }
 
     .detail-label {
-      color: #999;
-      min-width: 52px;
+      color: #aaa;
+      min-width: 44px;
       flex-shrink: 0;
+      padding-top: 1px;
+    }
+
+    .detail-value {
+      color: #333;
+    }
+
+    .detail-value a {
+      color: #0057b7;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .detail-value a:hover {
+      text-decoration: underline;
     }
 
     .no-results {
       text-align: center;
-      color: #888;
+      color: #aaa;
       font-size: 1rem;
-      margin-top: 48px;
+      margin-top: 60px;
     }
 
-    @media (max-width: 480px) {
-      header h1 { font-size: 1.5rem; }
+    @media (max-width: 520px) {
+      header h1 { font-size: 1.4rem; }
+      .search-bar { flex-direction: column; align-items: stretch; }
       .grid { grid-template-columns: 1fr; }
     }
   </style>
@@ -183,13 +209,13 @@
 </header>
 
 <div class="deals-section" id="deals-section" style="display:none;">
-  <h2>מבצעי השבוע</h2>
+  <div class="section-title">מבצעי השבוע</div>
   <ul class="deals-list" id="deals-list"></ul>
 </div>
 
-<div class="restaurants-section">
-  <h2>חבר טעמים - מסעדות</h2>
-  <input type="search" id="search" placeholder="חיפוש לפי שם, סוג, כתובת..." autocomplete="off">
+<div class="search-bar">
+  <h2>חבר טעמים</h2>
+  <input type="search" id="search" placeholder="חיפוש מסעדה, סוג, עיר..." autocomplete="off">
 </div>
 
 <main>
@@ -200,51 +226,54 @@
 
 <script>
   let allRestaurants = [];
+  let searchIndex = [];
 
-  // Hebrew letter → English sound(s)
-  const HE_TO_EN = {
-    'א':'a','ב':'b','ג':'g','ד':'d','ה':'h','ו':'v','ז':'z','ח':'ch',
-    'ט':'t','י':'y','כ':'k','ך':'k','ל':'l','מ':'m','ם':'m','נ':'n',
-    'ן':'n','ס':'s','ע':'a','פ':'p','ף':'f','צ':'tz','ץ':'tz','ק':'k',
-    'ר':'r','ש':'sh','ת':'t'
+  const HE_MAP = {
+    'א':'a','ב':'b','ג':'g','ד':'d','ה':'h','ו':'v','ז':'z',
+    'ח':'h','ט':'t','י':'i','כ':'k','ך':'k','ל':'l','מ':'m',
+    'ם':'m','נ':'n','ן':'n','ס':'s','ע':'','פ':'p','ף':'f',
+    'צ':'ts','ץ':'ts','ק':'k','ר':'r','ש':'sh','ת':'t'
   };
 
-  // English phoneme → Hebrew options (for reverse lookup)
-  const EN_TO_HE = {
-    'black':'בלאק','burger':'בורגר','pizza':'פיצה','cafe':'קפה',
-    'coffee':'קפה','grill':'גריל','bar':'בר','rest':'רסט',
-    'market':'מרקט','kitchen':'קיצ׳ן','bistro':'ביסטרו',
-    'sushi':'סושי','pasta':'פסטה','steak':'סטייק',
-    'shawarma':'שווארמה','hummus':'חומוס','falafel':'פלאפל',
-    'bakery':'בייקרי','ice':'אייס','cream':'קרים','wok':'וק',
-    'republic':'ריפבליק','house':'האוס','garden':'גארדן',
-    'street':'סטריט','club':'קלאב','fresh':'פרש','green':'גרין',
-    'red':'רד','blue':'בלו','gold':'גולד','royal':'רויאל',
-    'urban':'אורבן','express':'אקספרס','chef':'שף','art':'ארט',
-    'king':'קינג','queen':'קווין','max':'מקס','happy':'האפי',
-    'spicy':'ספייסי','sweet':'סוויט','fire':'פייר','north':'נורת',
-    'south':'סאות','east':'איסט','west':'ווסט'
-  };
+  const ALIASES = [
+    ['black','בלאק'],['burger','בורגר'],['burgers','בורגרס'],
+    ['pizza','פיצה'],['cafe','קפה'],['coffee','קפה'],
+    ['grill','גריל'],['bar','בר'],['sushi','סושי'],
+    ['pasta','פסטה'],['steak','סטייק'],['steakhouse','סטייקהאוס'],
+    ['shawarma','שווארמה'],['hummus','חומוס'],['falafel','פלאפל'],
+    ['bakery','בייקרי'],['wok','וק'],['house','האוס'],
+    ['garden','גארדן'],['street','סטריט'],['club','קלאב'],
+    ['fresh','פרש'],['green','גרין'],['red','רד'],['blue','בלו'],
+    ['gold','גולד'],['royal','רויאל'],['urban','אורבן'],
+    ['express','אקספרס'],['chef','שף'],['art','ארט'],
+    ['king','קינג'],['sweet','סוויט'],['spicy','ספייסי'],
+    ['market','מרקט'],['kitchen','קיצ׳ן'],['bistro','ביסטרו'],
+    ['republic','ריפבליק'],['max','מקס'],['fish','פיש'],
+    ['meat','מיט'],['wings','וינגס'],['pita','פיתה'],
+    ['noodles','נודלס'],['taco','טאקו'],['toast','טוסט'],
+    ['ice','אייס'],['cream','קרים'],['gelato','ג׳לאטו'],
+  ];
 
-  function transliterateHe(str) {
-    // Convert Hebrew string to approximate English phonetics
-    return str.split('').map(c => HE_TO_EN[c] || c).join('');
+  function heToLatin(str) {
+    return str.split('').map(c => HE_MAP[c] !== undefined ? HE_MAP[c] : c).join('');
   }
 
-  function buildSearchIndex(r) {
-    const fields = [r.name, r.type, r.address].filter(Boolean).join(' ').toLowerCase();
-    const transliterated = transliterateHe(fields);
-    // Also add EN→HE reverse: if field contains Hebrew word with known English equivalent
-    let extra = '';
-    for (const [en, he] of Object.entries(EN_TO_HE)) {
-      if (fields.includes(he)) extra += ' ' + en;
-    }
-    return fields + ' ' + transliterated + extra;
+  function buildIndex(restaurants) {
+    return restaurants.map(r => {
+      const raw = [r.name, r.type, r.address].filter(Boolean).join(' ').toLowerCase();
+      const latin = heToLatin(raw);
+      let extra = '';
+      for (const [en, he] of ALIASES) {
+        if (raw.includes(he)) extra += ' ' + en;
+        if (raw.includes(en)) extra += ' ' + heToLatin(he);
+      }
+      return raw + ' ' + latin + extra;
+    });
   }
 
   function escapeHtml(str) {
     if (!str) return '';
-    return str.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+    return str.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
   }
 
   function renderCards(list) {
@@ -260,38 +289,38 @@
     }
 
     noResults.style.display = 'none';
-    countEl.textContent = `מציג ${list.length} מסעדות`;
+    countEl.textContent = `${list.length} מסעדות`;
 
     grid.innerHTML = list.map(r => {
-      const name = escapeHtml(r.name);
-      const type = escapeHtml(r.type);
+      const name    = escapeHtml(r.name);
+      const type    = escapeHtml(r.type);
       const address = escapeHtml(r.address);
-      const phone = escapeHtml(r.phone);
-      const hours = escapeHtml(r.hours);
+      const phone   = escapeHtml(r.phone);
+      const hours   = escapeHtml(r.hours ? r.hours.replace(/\n/g, ' | ') : '');
 
-      let details = '';
-      if (address) {
-        details += `<div class="detail-row"><span class="detail-label">כתובת:</span><span>${address}</span></div>`;
-      }
-      if (phone) {
-        details += `<div class="detail-row"><span class="detail-label">טלפון:</span><span><a href="tel:${phone}">${phone}</a></span></div>`;
-      }
-      if (hours) {
-        details += `<div class="detail-row"><span class="detail-label">שעות:</span><span>${hours}</span></div>`;
-      }
+      let body = '';
+      if (address) body += `<div class="detail-row"><span class="detail-label">כתובת</span><span class="detail-value">${address}</span></div>`;
+      if (phone)   body += `<div class="detail-row"><span class="detail-label">טלפון</span><span class="detail-value"><a href="tel:${phone}">${phone}</a></span></div>`;
+      if (hours)   body += `<div class="detail-row"><span class="detail-label">שעות</span><span class="detail-value">${hours}</span></div>`;
 
       return `<div class="card">
-        <div class="card-name">${name}</div>
-        ${type ? `<div class="card-type">${type}</div>` : ''}
-        <div class="card-details">${details}</div>
+        <div class="card-header">
+          <div class="card-name">${name}</div>
+          ${type ? `<div class="card-type">${type}</div>` : ''}
+        </div>
+        <div class="card-body">${body}</div>
       </div>`;
     }).join('');
   }
 
   function filterRestaurants(query) {
-    if (!query.trim()) return allRestaurants;
-    const q = transliterateHe(query.trim().toLowerCase());
-    return allRestaurants.filter(r => buildSearchIndex(r).includes(q));
+    const q = query.trim().toLowerCase();
+    if (!q) return allRestaurants;
+    const qLatin = heToLatin(q);
+    return allRestaurants.filter((_, i) => {
+      const idx = searchIndex[i];
+      return idx.includes(q) || (qLatin !== q && idx.includes(qLatin));
+    });
   }
 
   document.getElementById('search').addEventListener('input', function () {
@@ -319,12 +348,14 @@
       ]);
 
       allRestaurants = await restRes.json();
-      const meta = await metaRes.json();
+      searchIndex = buildIndex(allRestaurants);
+
+      const meta  = await metaRes.json();
       const deals = await dealsRes.json();
 
       const metaEl = document.getElementById('header-meta');
       if (meta.date) {
-        metaEl.textContent = `עודכן לאחרונה: ${meta.date} | ${meta.restaurant_count} מסעדות`;
+        metaEl.textContent = `עודכן: ${meta.date} | ${meta.restaurant_count} מסעדות`;
       } else {
         metaEl.textContent = `${allRestaurants.length} מסעדות`;
       }
