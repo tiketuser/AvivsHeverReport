@@ -31,7 +31,8 @@ def send_telegram(text):
 
 def scrape_deals(page):
     """Scrape current weekly deals from the homepage."""
-    page.goto("https://www.hvr.co.il/site/pg/hvr_home", wait_until="networkidle")
+    page.goto("https://www.hvr.co.il/site/pg/hvr_home", wait_until="domcontentloaded")
+    page.wait_for_selector("#carouselMainIndicators", timeout=20000)
 
     deals = []
 
@@ -61,7 +62,7 @@ def scrape_deals(page):
 
 def scrape_restaurants(page):
     """Scrape restaurant list from חבר טעמים page — click 'הצג עוד' until all loaded."""
-    page.goto("https://www.hvr.co.il/site/pg/teamim_card_store", wait_until="networkidle")
+    page.goto("https://www.hvr.co.il/site/pg/teamim_card_store", wait_until="domcontentloaded")
     page.wait_for_selector("div.col-12.bg-light.px-0.py-3.my-1", timeout=15000)
 
     # Click "הצג עוד" repeatedly until it's gone
@@ -149,7 +150,8 @@ def main():
         page = context.new_page()
 
         print("Logging in...")
-        page.goto("https://www.hvr.co.il/", wait_until="networkidle")
+        page.goto("https://www.hvr.co.il/", wait_until="domcontentloaded")
+        page.wait_for_selector('input[name="tz"]', timeout=30000)
         page.fill('input[name="tz"]', HVR_ID)
         page.fill('input[name="password"]', HVR_PASSWORD)
         page.click('button.btn-hvr')
