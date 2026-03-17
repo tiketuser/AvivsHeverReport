@@ -194,10 +194,74 @@
       margin-top: 60px;
     }
 
+    .section-header {
+      background: #fff;
+      border-bottom: 1px solid #e0e0e0;
+      padding: 14px 28px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      cursor: pointer;
+      user-select: none;
+    }
+
+    .section-header:hover { background: #fafafa; }
+
+    .section-header-title {
+      font-size: 1rem;
+      font-weight: 700;
+      color: #1a1a1a;
+    }
+
+    .section-toggle {
+      font-size: 0.8rem;
+      color: #888;
+      background: none;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      padding: 4px 10px;
+      cursor: pointer;
+      font-family: inherit;
+    }
+
+    .section-toggle:hover { border-color: #aaa; color: #555; }
+
+    .section-body { display: block; }
+    .section-body.collapsed { display: none; }
+
+    .shop-card {
+      background: #fff;
+      border: 1px solid #e2e5ea;
+      border-radius: 8px;
+      padding: 12px 14px;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .shop-name {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: #0d1a2e;
+    }
+
+    .shop-category {
+      font-size: 0.78rem;
+      color: #0057b7;
+      font-weight: 500;
+    }
+
+    .shop-online {
+      font-size: 0.72rem;
+      color: #2a9d2a;
+      font-weight: 500;
+    }
+
     @media (max-width: 520px) {
       header h1 { font-size: 1.4rem; }
       .search-bar { flex-direction: column; align-items: stretch; }
       .grid { grid-template-columns: 1fr; }
+      .section-header { padding: 12px 16px; }
     }
   </style>
 </head>
@@ -208,25 +272,67 @@
   <div class="header-meta" id="header-meta">טוען נתונים...</div>
 </header>
 
-<div class="deals-section" id="deals-section" style="display:none;">
-  <div class="section-title">מבצעי השבוע</div>
-  <ul class="deals-list" id="deals-list"></ul>
+<!-- Deals section -->
+<div id="deals-section" style="display:none;">
+  <div class="section-header" onclick="toggleSection('deals')">
+    <span class="section-header-title">מבצעי השבוע</span>
+    <button class="section-toggle" id="toggle-deals">הסתר</button>
+  </div>
+  <div class="section-body" id="body-deals">
+    <div class="deals-section">
+      <ul class="deals-list" id="deals-list"></ul>
+    </div>
+  </div>
 </div>
 
-<div class="search-bar">
-  <h2>חבר טעמים</h2>
-  <input type="search" id="search" placeholder="חיפוש מסעדה, סוג, עיר..." autocomplete="off">
+<!-- Restaurants section -->
+<div id="restaurants-section">
+  <div class="section-header" onclick="toggleSection('restaurants')">
+    <span class="section-header-title">חבר טעמים</span>
+    <button class="section-toggle" id="toggle-restaurants">הסתר</button>
+  </div>
+  <div class="section-body" id="body-restaurants">
+    <div class="search-bar">
+      <input type="search" id="search" placeholder="חיפוש מסעדה, סוג, עיר..." autocomplete="off">
+    </div>
+    <main>
+      <div id="result-count"></div>
+      <div class="grid" id="grid"></div>
+      <div class="no-results" id="no-results" style="display:none;">לא נמצאו תוצאות</div>
+    </main>
+  </div>
 </div>
 
-<main>
-  <div id="result-count"></div>
-  <div class="grid" id="grid"></div>
-  <div class="no-results" id="no-results" style="display:none;">לא נמצאו תוצאות</div>
-</main>
+<!-- Shops section -->
+<div id="shops-section">
+  <div class="section-header" onclick="toggleSection('shops')">
+    <span class="section-header-title">כרטיס צהוב</span>
+    <button class="section-toggle" id="toggle-shops">הסתר</button>
+  </div>
+  <div class="section-body" id="body-shops">
+    <div class="search-bar">
+      <input type="search" id="search-shops" placeholder="חיפוש חנות, קטגוריה..." autocomplete="off">
+    </div>
+    <main>
+      <div id="shop-count"></div>
+      <div class="grid" id="shop-grid"></div>
+      <div class="no-results" id="no-results-shops" style="display:none;">לא נמצאו תוצאות</div>
+    </main>
+  </div>
+</div>
 
 <script>
   let allRestaurants = [];
   let searchIndex = [];
+  let allCompanies = [];
+  let shopIndex = [];
+
+  function toggleSection(id) {
+    const body = document.getElementById(`body-${id}`);
+    const btn = document.getElementById(`toggle-${id}`);
+    const collapsed = body.classList.toggle('collapsed');
+    btn.textContent = collapsed ? 'הצג' : 'הסתר';
+  }
 
   // Hebrew → consonant skeleton (drop vowel letters, normalize sounds)
   const HE_MAP = {
@@ -258,9 +364,14 @@
   function buildIndex(restaurants) {
     return restaurants.map(r => {
       const raw = [r.name, r.type, r.address].filter(Boolean).join(' ').toLowerCase();
-      const heSkel = heSkeleton(raw);
-      // Also keep the raw for exact Hebrew/English matches
-      return { raw, skel: heSkel };
+      return { raw, skel: heSkeleton(raw) };
+    });
+  }
+
+  function buildShopIndex(companies) {
+    return companies.map(c => {
+      const raw = [c.name, c.category].filter(Boolean).join(' ').toLowerCase();
+      return { raw, skel: heSkeleton(raw) };
     });
   }
 
@@ -306,60 +417,90 @@
     }).join('');
   }
 
-  function filterRestaurants(query) {
+  function filterList(query, list, index) {
     const q = query.trim().toLowerCase();
-    if (!q) return allRestaurants;
-
-    // Exact match on raw text (Hebrew or English as-is)
-    const exactMatches = allRestaurants.filter((_, i) => searchIndex[i].raw.includes(q));
+    if (!q) return list;
+    const exactMatches = list.filter((_, i) => index[i].raw.includes(q));
     if (exactMatches.length > 0) return exactMatches;
-
-    // Skeleton match: strip vowels from query, compare to consonant skeleton of names
     const qSkel = latinSkeleton(q);
     if (qSkel.length < 2) return exactMatches;
+    return list.filter((_, i) => index[i].skel.includes(qSkel));
+  }
 
-    return allRestaurants.filter((_, i) => searchIndex[i].skel.includes(qSkel));
+  function renderShops(list) {
+    const grid = document.getElementById('shop-grid');
+    const noResults = document.getElementById('no-results-shops');
+    const countEl = document.getElementById('shop-count');
+
+    if (list.length === 0) {
+      grid.innerHTML = '';
+      noResults.style.display = 'block';
+      countEl.textContent = '';
+      return;
+    }
+
+    noResults.style.display = 'none';
+    countEl.textContent = `${list.length} חנויות`;
+
+    grid.innerHTML = list.map(c => {
+      const name = escapeHtml(c.name);
+      const category = escapeHtml(c.category);
+      const onlineTag = c.online ? `<div class="shop-online">מכובד באונליין</div>` : '';
+      return `<div class="shop-card">
+        <div class="shop-name">${name}</div>
+        ${category ? `<div class="shop-category">${category}</div>` : ''}
+        ${onlineTag}
+      </div>`;
+    }).join('');
   }
 
   document.getElementById('search').addEventListener('input', function () {
-    renderCards(filterRestaurants(this.value));
+    renderCards(filterList(this.value, allRestaurants, searchIndex));
+  });
+
+  document.getElementById('search-shops').addEventListener('input', function () {
+    renderShops(filterList(this.value, allCompanies, shopIndex));
   });
 
   function renderDeals(deals) {
     if (!deals || deals.length === 0) return;
-    const section = document.getElementById('deals-section');
-    const list = document.getElementById('deals-list');
-    list.innerHTML = deals.map(d => {
+    document.getElementById('deals-section').style.display = 'block';
+    document.getElementById('deals-list').innerHTML = deals.map(d => {
       const label = escapeHtml((d.label || '').replace(/^[\p{Emoji}\s]+/u, '').trim());
       const sub = d.subtitle ? `<span class="deal-sub"> — ${escapeHtml(d.subtitle)}</span>` : '';
       return `<li class="deal-item">${label}${sub}</li>`;
     }).join('');
-    section.style.display = 'block';
   }
 
   async function loadData() {
     try {
-      const [restRes, metaRes, dealsRes] = await Promise.all([
+      const [restRes, metaRes, dealsRes, gcRes] = await Promise.all([
         fetch('restaurants.json'),
         fetch('last_updated.json'),
-        fetch('deals.json')
+        fetch('deals.json'),
+        fetch('giftcard.json')
       ]);
 
       allRestaurants = await restRes.json();
       searchIndex = buildIndex(allRestaurants);
+
+      allCompanies = await gcRes.json();
+      shopIndex = buildShopIndex(allCompanies);
 
       const meta  = await metaRes.json();
       const deals = await dealsRes.json();
 
       const metaEl = document.getElementById('header-meta');
       if (meta.date) {
-        metaEl.textContent = `עודכן: ${meta.date} | ${meta.restaurant_count} מסעדות`;
+        const compCount = meta.company_count ? ` | ${meta.company_count} חנויות` : '';
+        metaEl.textContent = `עודכן: ${meta.date} | ${meta.restaurant_count} מסעדות${compCount}`;
       } else {
         metaEl.textContent = `${allRestaurants.length} מסעדות`;
       }
 
       renderDeals(deals);
       renderCards(allRestaurants);
+      renderShops(allCompanies);
     } catch (err) {
       document.getElementById('header-meta').textContent = 'שגיאה בטעינת הנתונים';
       document.getElementById('no-results').style.display = 'block';

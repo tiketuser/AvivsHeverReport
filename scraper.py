@@ -60,6 +60,38 @@ def scrape_deals(page):
     return deals
 
 
+def scrape_giftcard_companies(page):
+    """Scrape gift card (yellow card) supported companies."""
+    page.goto("https://www.hvr.co.il/site/pg/gift_card_company", wait_until="domcontentloaded")
+    page.wait_for_selector("#company-list", timeout=15000)
+
+    companies = []
+    cards = page.query_selector_all("#company-list .rounded-lg")
+
+    for card in cards:
+        try:
+            name_el = card.query_selector("p.h6")
+            name = name_el.inner_text().strip() if name_el else ""
+
+            # Use mobile category text (d-xl-none) — single line with | separators
+            cat_el = card.query_selector("p.d-xl-none")
+            category = cat_el.inner_text().strip() if cat_el else ""
+
+            badge_el = card.query_selector("span.online-badge")
+            online = badge_el is not None and "hide" not in (badge_el.get_attribute("class") or "")
+
+            if name:
+                companies.append({
+                    "name": name,
+                    "category": category,
+                    "online": online,
+                })
+        except Exception:
+            continue
+
+    return companies
+
+
 def scrape_restaurants(page):
     """Scrape restaurant list from חבר טעמים page — click 'הצג עוד' until all loaded."""
     page.goto("https://www.hvr.co.il/site/pg/teamim_card_store", wait_until="domcontentloaded")
@@ -166,6 +198,10 @@ def main():
         restaurants = scrape_restaurants(page)
         print(f"Found {len(restaurants)} restaurants")
 
+        print("Scraping gift card companies...")
+        companies = scrape_giftcard_companies(page)
+        print(f"Found {len(companies)} gift card companies")
+
         browser.close()
 
     # Save deals to docs/deals.json
@@ -178,10 +214,15 @@ def main():
     save_json(restaurants_path, restaurants)
     print(f"Saved {len(restaurants)} restaurants to {restaurants_path}")
 
+    # Save gift card companies to docs/giftcard.json
+    giftcard_path = os.path.join(DOCS_DIR, "giftcard.json")
+    save_json(giftcard_path, companies)
+    print(f"Saved {len(companies)} companies to {giftcard_path}")
+
     # Save last_updated.json
     today_str = datetime.now().strftime("%d/%m/%Y")
     last_updated_path = os.path.join(DOCS_DIR, "last_updated.json")
-    save_json(last_updated_path, {"date": today_str, "restaurant_count": len(restaurants)})
+    save_json(last_updated_path, {"date": today_str, "restaurant_count": len(restaurants), "company_count": len(companies)})
     print(f"Saved last_updated.json: {today_str}, {len(restaurants)} restaurants")
 
     # Send weekly Telegram message with deals + website link

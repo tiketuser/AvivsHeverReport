@@ -1,0 +1,1782 @@
+[
+  {
+    "name": "SHASHA GIFTS",
+    "category": "מתנות ופנאי",
+    "online": true
+  },
+  {
+    "name": "4chef",
+    "category": "אביזרי מטבח",
+    "online": false
+  },
+  {
+    "name": "99 דרכים",
+    "category": "מתנות ופנאי",
+    "online": true
+  },
+  {
+    "name": "Absolute Teamsport",
+    "category": "ביגוד והנעלה | ספורט",
+    "online": true
+  },
+  {
+    "name": "ACE",
+    "category": "לבית ולחצר",
+    "online": false
+  },
+  {
+    "name": "aerie",
+    "category": "ביגוד והנעלה | ספורט | הלבשה תחתונה",
+    "online": false
+  },
+  {
+    "name": "ALDO",
+    "category": "ביגוד והנעלה | תכשיטים ואקססוריז",
+    "online": true
+  },
+  {
+    "name": "allsaints",
+    "category": "ביגוד והנעלה",
+    "online": false
+  },
+  {
+    "name": "American Comfort",
+    "category": "שינה וטקסטיל",
+    "online": false
+  },
+  {
+    "name": "AMOR",
+    "category": "ביגוד והנעלה",
+    "online": false
+  },
+  {
+    "name": "ASUS",
+    "category": "לימודים וספרים | חשמל ואלקטרוניקה",
+    "online": false
+  },
+  {
+    "name": "ATIA",
+    "category": "לבית ולחצר | מתנות ופנאי",
+    "online": false
+  },
+  {
+    "name": "AYUCHKA",
+    "category": "ביגוד והנעלה",
+    "online": true
+  },
+  {
+    "name": "Baby Jogger",
+    "category": "ילדים ותינוקות | מתנות ופנאי",
+    "online": true
+  },
+  {
+    "name": "babybeep",
+    "category": "ילדים ותינוקות",
+    "online": true
+  },
+  {
+    "name": "BabyBrezza",
+    "category": "ילדים ותינוקות",
+    "online": true
+  },
+  {
+    "name": "BagStore",
+    "category": "נסיעות ומחנאות",
+    "online": true
+  },
+  {
+    "name": "BALR",
+    "category": "ביגוד והנעלה",
+    "online": false
+  },
+  {
+    "name": "Bconnect",
+    "category": "חשמל ואלקטרוניקה",
+    "online": true
+  },
+  {
+    "name": "B-CURE LASER",
+    "category": "ספורט",
+    "online": true
+  },
+  {
+    "name": "BEAUTY CLINIC",
+    "category": "טיפוח וקוסמטיקה",
+    "online": false
+  },
+  {
+    "name": "Beeny",
+    "category": "ילדים ותינוקות | מתנות ופנאי",
+    "online": true
+  },
+  {
+    "name": "BETONI",
+    "category": "לבית ולחצר",
+    "online": true
+  },
+  {
+    "name": "biamba",
+    "category": "ילדים ותינוקות",
+    "online": true
+  },
+  {
+    "name": "BIMB Y LOLA",
+    "category": "ביגוד והנעלה | תכשיטים ואקססוריז",
+    "online": true
+  },
+  {
+    "name": "BODY SHOP",
+    "category": "טיפוח וקוסמטיקה",
+    "online": false
+  },
+  {
+    "name": "BOGART",
+    "category": "ביגוד והנעלה",
+    "online": false
+  },
+  {
+    "name": "BOOSA&CO",
+    "category": "חיות מחמד",
+    "online": false
+  },
+  {
+    "name": "BOSS",
+    "category": "ביגוד והנעלה",
+    "online": false
+  },
+  {
+    "name": "BOTTA",
+    "category": "לבית ולחצר",
+    "online": true
+  },
+  {
+    "name": "BPOWER",
+    "category": "לבית ולחצר | חשמל ואלקטרוניקה",
+    "online": true
+  },
+  {
+    "name": "BROOKS",
+    "category": "ספורט",
+    "online": false
+  },
+  {
+    "name": "BROWNIE",
+    "category": "ביגוד והנעלה",
+    "online": true
+  },
+  {
+    "name": "Buycarpet.co.il",
+    "category": "לבית ולחצר",
+    "online": true
+  },
+  {
+    "name": "caravan club",
+    "category": "נסיעות ומחנאות",
+    "online": false
+  },
+  {
+    "name": "CARELINE",
+    "category": "טיפוח וקוסמטיקה",
+    "online": false
+  },
+  {
+    "name": "carter's",
+    "category": "ביגוד והנעלה | ילדים ותינוקות",
+    "online": false
+  },
+  {
+    "name": "Casa Bella",
+    "category": "לבית ולחצר",
+    "online": true
+  },
+  {
+    "name": "Chicco",
+    "category": "ילדים ותינוקות | מתנות ופנאי",
+    "online": true
+  },
+  {
+    "name": "Chill shop",
+    "category": "לבית ולחצר",
+    "online": true
+  },
+  {
+    "name": "CHOZEN",
+    "category": "תכשיטים ואקססוריז",
+    "online": true
+  },
+  {
+    "name": "CONVERSE",
+    "category": "ביגוד והנעלה",
+    "online": false
+  },
+  {
+    "name": "cubica",
+    "category": "ביגוד והנעלה",
+    "online": true
+  },
+  {
+    "name": "DAFNI",
+    "category": "טיפוח וקוסמטיקה",
+    "online": true
+  },
+  {
+    "name": "DESIGUAL",
+    "category": "תכשיטים ואקססוריז",
+    "online": true
+  },
+  {
+    "name": "DKNY",
+    "category": "ביגוד והנעלה | תכשיטים ואקססוריז",
+    "online": false
+  },
+  {
+    "name": "dolls",
+    "category": "ביגוד והנעלה | ילדים ותינוקות | מתנות ופנאי",
+    "online": true
+  },
+  {
+    "name": "dollybox",
+    "category": "לבית ולחצר | אביזרי מטבח | מתנות ופנאי",
+    "online": true
+  },
+  {
+    "name": "ECOSALL",
+    "category": "מתנות ופנאי",
+    "online": true
+  },
+  {
+    "name": "EGO",
+    "category": "לבית ולחצר",
+    "online": true
+  },
+  {
+    "name": "EKO",
+    "category": "לבית ולחצר | אביזרי מטבח",
+    "online": true
+  },
+  {
+    "name": "Ellesse",
+    "category": "ביגוד והנעלה",
+    "online": false
+  },
+  {
+    "name": "EMPORIUM",
+    "category": "ביגוד והנעלה",
+    "online": true
+  },
+  {
+    "name": "ERGOTOP",
+    "category": "לבית ולחצר",
+    "online": true
+  },
+  {
+    "name": "ERROCA",
+    "category": "אופטיקה",
+    "online": false
+  },
+  {
+    "name": "EVA METAL",
+    "category": "לבית ולחצר | מתנות ופנאי",
+    "online": true
+  },
+  {
+    "name": "fit step pro",
+    "category": "ביגוד והנעלה | ספורט",
+    "online": false
+  },
+  {
+    "name": "FIVE POINT FOUR",
+    "category": "ביגוד והנעלה",
+    "online": false
+  },
+  {
+    "name": "Fizzio",
+    "category": "לבית ולחצר",
+    "online": true
+  },
+  {
+    "name": "fly מאווררים",
+    "category": "לבית ולחצר | חשמל ואלקטרוניקה",
+    "online": true
+  },
+  {
+    "name": "flying tiger",
+    "category": "מתנות ופנאי",
+    "online": false
+  },
+  {
+    "name": "Food appeal",
+    "category": "לבית ולחצר | אביזרי מטבח",
+    "online": true
+  },
+  {
+    "name": "FOOT LOCKER",
+    "category": "ביגוד והנעלה",
+    "online": true
+  },
+  {
+    "name": "FOX - פוקס",
+    "category": "ביגוד והנעלה",
+    "online": true
+  },
+  {
+    "name": "FOX home",
+    "category": "שינה וטקסטיל | אביזרי מטבח",
+    "online": true
+  },
+  {
+    "name": "G - CONCEPT",
+    "category": "ביגוד והנעלה | טיפוח וקוסמטיקה | תכשיטים ואקססוריז",
+    "online": false
+  },
+  {
+    "name": "Get Pro",
+    "category": "ביגוד והנעלה | ספורט",
+    "online": false
+  },
+  {
+    "name": "GETHA",
+    "category": "שינה וטקסטיל",
+    "online": false
+  },
+  {
+    "name": "GONATURE",
+    "category": "נסיעות ומחנאות",
+    "online": true
+  },
+  {
+    "name": "GUESS",
+    "category": "ביגוד והנעלה | טיפוח וקוסמטיקה | תכשיטים ואקססוריז",
+    "online": false
+  },
+  {
+    "name": "HAGARA",
+    "category": "ביגוד והנעלה",
+    "online": false
+  },
+  {
+    "name": "HAPPY HEMPY",
+    "category": "תכשיטים ואקססוריז",
+    "online": true
+  },
+  {
+    "name": "Havaianas",
+    "category": "ביגוד והנעלה",
+    "online": true
+  },
+  {
+    "name": "HOME DECOR",
+    "category": "לבית ולחצר",
+    "online": false
+  },
+  {
+    "name": "HONEY CAN DO",
+    "category": "לבית ולחצר",
+    "online": true
+  },
+  {
+    "name": "HUBLOT",
+    "category": "תכשיטים ואקססוריז",
+    "online": false
+  },
+  {
+    "name": "ICE CUBE",
+    "category": "ביגוד והנעלה",
+    "online": false
+  },
+  {
+    "name": "IL MAKIAGE",
+    "category": "טיפוח וקוסמטיקה",
+    "online": false
+  },
+  {
+    "name": "IMAHOT",
+    "category": "ביגוד והנעלה",
+    "online": true
+  },
+  {
+    "name": "INTIMA",
+    "category": "הלבשה תחתונה",
+    "online": false
+  },
+  {
+    "name": "JD SPORTS",
+    "category": "ביגוד והנעלה | ספורט",
+    "online": false
+  },
+  {
+    "name": "JUMP & ONOT",
+    "category": "ביגוד והנעלה | הלבשה תחתונה",
+    "online": false
+  },
+  {
+    "name": "kare",
+    "category": "לבית ולחצר | אביזרי מטבח",
+    "online": true
+  },
+  {
+    "name": "Kikkaboo",
+    "category": "ביגוד והנעלה | ילדים ותינוקות",
+    "online": true
+  },
+  {
+    "name": "KUKA",
+    "category": "שינה וטקסטיל | לבית ולחצר",
+    "online": false
+  },
+  {
+    "name": "LACOSTE",
+    "category": "ביגוד והנעלה",
+    "online": false
+  },
+  {
+    "name": "LAMER",
+    "category": "ילדים ותינוקות",
+    "online": true
+  },
+  {
+    "name": "Lavido",
+    "category": "טיפוח וקוסמטיקה",
+    "online": true
+  },
+  {
+    "name": "Lee",
+    "category": "ביגוד והנעלה",
+    "online": true
+  },
+  {
+    "name": "leifheit",
+    "category": "לבית ולחצר",
+    "online": true
+  },
+  {
+    "name": "Lenovo",
+    "category": "חשמל ואלקטרוניקה",
+    "online": true
+  },
+  {
+    "name": "LivinGreen",
+    "category": "לבית ולחצר",
+    "online": true
+  },
+  {
+    "name": "LONGCHAMP",
+    "category": "תכשיטים ואקססוריז",
+    "online": true
+  },
+  {
+    "name": "Loopi",
+    "category": "נסיעות ומחנאות",
+    "online": true
+  },
+  {
+    "name": "Loopump",
+    "category": "ילדים ותינוקות",
+    "online": true
+  },
+  {
+    "name": "lorens",
+    "category": "ביגוד והנעלה | ילדים ותינוקות",
+    "online": true
+  },
+  {
+    "name": "LOVE",
+    "category": "ביגוד והנעלה | טיפוח וקוסמטיקה | מתנות ופנאי",
+    "online": false
+  },
+  {
+    "name": "MALU WILZ",
+    "category": "טיפוח וקוסמטיקה",
+    "online": true
+  },
+  {
+    "name": "MANGO",
+    "category": "ביגוד והנעלה",
+    "online": false
+  },
+  {
+    "name": "MARLEY",
+    "category": "חשמל ואלקטרוניקה",
+    "online": false
+  },
+  {
+    "name": "MAX MORETTI",
+    "category": "ביגוד והנעלה",
+    "online": false
+  },
+  {
+    "name": "MD מנדלבוים",
+    "category": "שינה וטקסטיל",
+    "online": false
+  },
+  {
+    "name": "Medics Care",
+    "category": "לבית ולחצר | טיפוח וקוסמטיקה | חשמל ואלקטרוניקה",
+    "online": true
+  },
+  {
+    "name": "MiyoScent",
+    "category": "לבית ולחצר | שונה",
+    "online": true
+  },
+  {
+    "name": "MOY",
+    "category": "ביגוד והנעלה | ילדים ותינוקות | מתנות ופנאי",
+    "online": true
+  },
+  {
+    "name": "MY FLY",
+    "category": "אטרקציות",
+    "online": false
+  },
+  {
+    "name": "my grill",
+    "category": "לבית ולחצר | אביזרי מטבח",
+    "online": true
+  },
+  {
+    "name": "NAPO",
+    "category": "לבית ולחצר",
+    "online": true
+  },
+  {
+    "name": "NAUTICA",
+    "category": "ביגוד והנעלה",
+    "online": true
+  },
+  {
+    "name": "NEO SMILE",
+    "category": "טיפוח וקוסמטיקה | שונה",
+    "online": false
+  },
+  {
+    "name": "Neoja",
+    "category": "ספורט | אטרקציות",
+    "online": false
+  },
+  {
+    "name": "New Era",
+    "category": "ביגוד והנעלה",
+    "online": false
+  },
+  {
+    "name": "NEXT HEAT",
+    "category": "לבית ולחצר | שונה",
+    "online": true
+  },
+  {
+    "name": "NIKE",
+    "category": "ביגוד והנעלה | ספורט",
+    "online": false
+  },
+  {
+    "name": "Noam Living",
+    "category": "שינה וטקסטיל",
+    "online": true
+  },
+  {
+    "name": "NYOU אינטר ג'ינס",
+    "category": "ביגוד והנעלה",
+    "online": false
+  },
+  {
+    "name": "ONE PROJECT",
+    "category": "ביגוד והנעלה",
+    "online": true
+  },
+  {
+    "name": "ONLY’S",
+    "category": "ביגוד והנעלה | טיפוח וקוסמטיקה",
+    "online": true
+  },
+  {
+    "name": "ONYX",
+    "category": "טיפוח וקוסמטיקה",
+    "online": true
+  },
+  {
+    "name": "Outsiders מחנאות",
+    "category": "ביגוד והנעלה | נסיעות ומחנאות",
+    "online": false
+  },
+  {
+    "name": "pelle",
+    "category": "טיפוח וקוסמטיקה",
+    "online": true
+  },
+  {
+    "name": "PET EAT",
+    "category": "חיות מחמד",
+    "online": true
+  },
+  {
+    "name": "PETIT BATEAU",
+    "category": "ילדים ותינוקות",
+    "online": false
+  },
+  {
+    "name": "PLANETA",
+    "category": "לבית ולחצר",
+    "online": true
+  },
+  {
+    "name": "PLATIN",
+    "category": "ביגוד והנעלה",
+    "online": false
+  },
+  {
+    "name": "Play Game",
+    "category": "אטרקציות",
+    "online": false
+  },
+  {
+    "name": "PLAY GAME PANDA",
+    "category": "אטרקציות",
+    "online": false
+  },
+  {
+    "name": "PRINT GLASS",
+    "category": "לבית ולחצר",
+    "online": true
+  },
+  {
+    "name": "pulliez",
+    "category": "ביגוד והנעלה | הלבשה תחתונה",
+    "online": true
+  },
+  {
+    "name": "PUMA",
+    "category": "ביגוד והנעלה",
+    "online": false
+  },
+  {
+    "name": "Puremagics",
+    "category": "טיפוח וקוסמטיקה",
+    "online": true
+  },
+  {
+    "name": "REMEDY",
+    "category": "טיפוח וקוסמטיקה",
+    "online": true
+  },
+  {
+    "name": "RIP CURL",
+    "category": "ביגוד והנעלה | ספורט",
+    "online": false
+  },
+  {
+    "name": "ROYAL CARE",
+    "category": "טיפוח וקוסמטיקה",
+    "online": true
+  },
+  {
+    "name": "RUBY BAY",
+    "category": "ביגוד והנעלה",
+    "online": false
+  },
+  {
+    "name": "RUZILIA",
+    "category": "לבית ולחצר",
+    "online": true
+  },
+  {
+    "name": "S2h",
+    "category": "לבית ולחצר | שונה",
+    "online": true
+  },
+  {
+    "name": "SAM EDELMAN",
+    "category": "ביגוד והנעלה",
+    "online": false
+  },
+  {
+    "name": "Sand Israel",
+    "category": "ביגוד והנעלה | ילדים ותינוקות",
+    "online": true
+  },
+  {
+    "name": "SATARA קוסמטיקה",
+    "category": "טיפוח וקוסמטיקה",
+    "online": true
+  },
+  {
+    "name": "Scotch & Soda",
+    "category": "ביגוד והנעלה",
+    "online": true
+  },
+  {
+    "name": "selmor",
+    "category": "חשמל ואלקטרוניקה",
+    "online": true
+  },
+  {
+    "name": "SHANI PALATCHI",
+    "category": "ביגוד והנעלה",
+    "online": true
+  },
+  {
+    "name": "sim2fly",
+    "category": "נסיעות ומחנאות | שונה",
+    "online": true
+  },
+  {
+    "name": "SIMMONS",
+    "category": "שינה וטקסטיל",
+    "online": true
+  },
+  {
+    "name": "Six play",
+    "category": "ילדים ותינוקות | אטרקציות",
+    "online": false
+  },
+  {
+    "name": "SKECHERS",
+    "category": "ביגוד והנעלה",
+    "online": false
+  },
+  {
+    "name": "SKIL ISRAEL",
+    "category": "לבית ולחצר",
+    "online": true
+  },
+  {
+    "name": "star shop",
+    "category": "לבית ולחצר",
+    "online": true
+  },
+  {
+    "name": "Step In",
+    "category": "ביגוד והנעלה",
+    "online": true
+  },
+  {
+    "name": "STEVE MADDEN",
+    "category": "ביגוד והנעלה",
+    "online": false
+  },
+  {
+    "name": "STORY",
+    "category": "ביגוד והנעלה",
+    "online": true
+  },
+  {
+    "name": "sunglass hut",
+    "category": "אופטיקה",
+    "online": false
+  },
+  {
+    "name": "SUNSHINE",
+    "category": "מתנות ופנאי",
+    "online": true
+  },
+  {
+    "name": "SUPERDRY",
+    "category": "ביגוד והנעלה",
+    "online": true
+  },
+  {
+    "name": "SWAGG",
+    "category": "חשמל ואלקטרוניקה | נסיעות ומחנאות | מתנות ופנאי",
+    "online": true
+  },
+  {
+    "name": "sweetgirlshop",
+    "category": "ביגוד והנעלה | ילדים ותינוקות",
+    "online": true
+  },
+  {
+    "name": "Swiss Trends",
+    "category": "ביגוד והנעלה | לבית ולחצר | נסיעות ומחנאות",
+    "online": true
+  },
+  {
+    "name": "Talking",
+    "category": "לימודים וספרים",
+    "online": true
+  },
+  {
+    "name": "TDI Arms",
+    "category": "שונה",
+    "online": true
+  },
+  {
+    "name": "TERMINAL X",
+    "category": "ביגוד והנעלה",
+    "online": true
+  },
+  {
+    "name": "THE NORTH FACE",
+    "category": "ביגוד והנעלה | ספורט",
+    "online": false
+  },
+  {
+    "name": "TIMBERLAND",
+    "category": "ביגוד והנעלה",
+    "online": true
+  },
+  {
+    "name": "TOUS",
+    "category": "תכשיטים ואקססוריז",
+    "online": true
+  },
+  {
+    "name": "TOY STORE",
+    "category": "לימודים וספרים | ילדים ותינוקות | מתנות ופנאי",
+    "online": true
+  },
+  {
+    "name": "Trek Market",
+    "category": "נסיעות ומחנאות | מתנות ופנאי",
+    "online": false
+  },
+  {
+    "name": "TRUE MOTION",
+    "category": "ביגוד והנעלה | ספורט",
+    "online": false
+  },
+  {
+    "name": "True Story",
+    "category": "טיפוח וקוסמטיקה",
+    "online": false
+  },
+  {
+    "name": "Twigy",
+    "category": "ילדים ותינוקות",
+    "online": true
+  },
+  {
+    "name": "Under Armour",
+    "category": "ביגוד והנעלה | ספורט",
+    "online": false
+  },
+  {
+    "name": "URBAN",
+    "category": "לבית ולחצר",
+    "online": false
+  },
+  {
+    "name": "VANS",
+    "category": "ביגוד והנעלה",
+    "online": false
+  },
+  {
+    "name": "VENTA",
+    "category": "לבית ולחצר | חשמל ואלקטרוניקה",
+    "online": true
+  },
+  {
+    "name": "VILEBREQUIN",
+    "category": "ביגוד והנעלה",
+    "online": false
+  },
+  {
+    "name": "We Shoes",
+    "category": "ביגוד והנעלה",
+    "online": false
+  },
+  {
+    "name": "White Space",
+    "category": "מתנות ופנאי",
+    "online": true
+  },
+  {
+    "name": "WORD",
+    "category": "ביגוד והנעלה",
+    "online": false
+  },
+  {
+    "name": "Wrangler",
+    "category": "ביגוד והנעלה",
+    "online": true
+  },
+  {
+    "name": "XRAY",
+    "category": "אופטיקה",
+    "online": true
+  },
+  {
+    "name": "YOLO",
+    "category": "לימודים וספרים | ילדים ותינוקות | מתנות ופנאי",
+    "online": true
+  },
+  {
+    "name": "zappy-pro",
+    "category": "שונה",
+    "online": true
+  },
+  {
+    "name": "Zeero מוצרי אנרגיה",
+    "category": "חשמל ואלקטרוניקה",
+    "online": true
+  },
+  {
+    "name": "ZEN ENERGY",
+    "category": "שונה",
+    "online": false
+  },
+  {
+    "name": "Ziegler&Brown",
+    "category": "לבית ולחצר",
+    "online": true
+  },
+  {
+    "name": "ZIP TOP",
+    "category": "אביזרי מטבח",
+    "online": true
+  },
+  {
+    "name": "א.א אורטופדיה",
+    "category": "ביגוד והנעלה",
+    "online": false
+  },
+  {
+    "name": "א.ל.מ",
+    "category": "חשמל ואלקטרוניקה",
+    "online": false
+  },
+  {
+    "name": "אבא חטוב",
+    "category": "ספורט",
+    "online": true
+  },
+  {
+    "name": "אביר הספורט",
+    "category": "ספורט",
+    "online": true
+  },
+  {
+    "name": "אדידס",
+    "category": "ספורט",
+    "online": false
+  },
+  {
+    "name": "אדידס ילדים",
+    "category": "ספורט",
+    "online": false
+  },
+  {
+    "name": "אדיר א",
+    "category": "לבית ולחצר",
+    "online": true
+  },
+  {
+    "name": "אהבה קטנה",
+    "category": "אביזרי מטבח | מתנות ופנאי",
+    "online": true
+  },
+  {
+    "name": "אודיו מדיק",
+    "category": "שונה",
+    "online": true
+  },
+  {
+    "name": "אופטיקה הלפרין",
+    "category": "אופטיקה",
+    "online": false
+  },
+  {
+    "name": "אופטיקל סנטר",
+    "category": "אופטיקה",
+    "online": false
+  },
+  {
+    "name": "אופטיקנה",
+    "category": "אופטיקה",
+    "online": false
+  },
+  {
+    "name": "אוריג'ינלס",
+    "category": "ביגוד והנעלה",
+    "online": false
+  },
+  {
+    "name": "אורלי סוהר",
+    "category": "ספורט",
+    "online": true
+  },
+  {
+    "name": "אטנדינג",
+    "category": "מתנות ופנאי | שונה",
+    "online": true
+  },
+  {
+    "name": "איטלסופה",
+    "category": "לבית ולחצר",
+    "online": false
+  },
+  {
+    "name": "אייץ אנד או",
+    "category": "ביגוד והנעלה | שינה וטקסטיל",
+    "online": false
+  },
+  {
+    "name": "אילן גורי",
+    "category": "טיפוח וקוסמטיקה",
+    "online": true
+  },
+  {
+    "name": "איתי ברנדס",
+    "category": "ביגוד והנעלה",
+    "online": true
+  },
+  {
+    "name": "אלוף ספורט",
+    "category": "ביגוד והנעלה",
+    "online": true
+  },
+  {
+    "name": "אם סי לאנדפון",
+    "category": "חשמל ואלקטרוניקה",
+    "online": true
+  },
+  {
+    "name": "אמפוריו ארמני",
+    "category": "ביגוד והנעלה",
+    "online": false
+  },
+  {
+    "name": "אמריקן איגל",
+    "category": "ביגוד והנעלה",
+    "online": false
+  },
+  {
+    "name": "אסיקס",
+    "category": "ספורט",
+    "online": false
+  },
+  {
+    "name": "אפל מדיקל",
+    "category": "טיפוח וקוסמטיקה",
+    "online": true
+  },
+  {
+    "name": "אפרודיטה",
+    "category": "ביגוד והנעלה | הלבשה תחתונה",
+    "online": false
+  },
+  {
+    "name": "אקסטרים",
+    "category": "ספורט",
+    "online": true
+  },
+  {
+    "name": "ארמני אקסצ'יינג'",
+    "category": "ביגוד והנעלה",
+    "online": false
+  },
+  {
+    "name": "ארנקי עמנואל",
+    "category": "תכשיטים ואקססוריז",
+    "online": true
+  },
+  {
+    "name": "ארקוסטיל קיטצ'ן",
+    "category": "לבית ולחצר | אביזרי מטבח",
+    "online": false
+  },
+  {
+    "name": "באבלס",
+    "category": "אטרקציות | מתנות ופנאי",
+    "online": true
+  },
+  {
+    "name": "באהבה",
+    "category": "לימודים וספרים | מתנות ופנאי",
+    "online": true
+  },
+  {
+    "name": "בבילון",
+    "category": "אטרקציות",
+    "online": false
+  },
+  {
+    "name": "בוניטה דה מאס",
+    "category": "ביגוד והנעלה | הלבשה תחתונה",
+    "online": false
+  },
+  {
+    "name": "ביג אלקטריק",
+    "category": "חשמל ואלקטרוניקה",
+    "online": false
+  },
+  {
+    "name": "ביג גרף",
+    "category": "מתנות ופנאי",
+    "online": true
+  },
+  {
+    "name": "בייבי סטאר",
+    "category": "ילדים ותינוקות | מתנות ופנאי",
+    "online": false
+  },
+  {
+    "name": "בילבונג",
+    "category": "ביגוד והנעלה",
+    "online": false
+  },
+  {
+    "name": "בירקנשטוק",
+    "category": "ביגוד והנעלה",
+    "online": false
+  },
+  {
+    "name": "ביתילי",
+    "category": "לבית ולחצר",
+    "online": false
+  },
+  {
+    "name": "ברקום",
+    "category": "חשמל ואלקטרוניקה",
+    "online": true
+  },
+  {
+    "name": "גוד נייט",
+    "category": "שינה וטקסטיל",
+    "online": false
+  },
+  {
+    "name": "גולף",
+    "category": "ביגוד והנעלה",
+    "online": false
+  },
+  {
+    "name": "גולף קו",
+    "category": "לבית ולחצר",
+    "online": false
+  },
+  {
+    "name": "גולף-קידס",
+    "category": "ילדים ותינוקות",
+    "online": false
+  },
+  {
+    "name": "ג'וסי קוטור",
+    "category": "ביגוד והנעלה",
+    "online": false
+  },
+  {
+    "name": "גלי",
+    "category": "ביגוד והנעלה",
+    "online": true
+  },
+  {
+    "name": "ג'מבו",
+    "category": "לבית ולחצר | ילדים ותינוקות | מתנות ופנאי",
+    "online": false
+  },
+  {
+    "name": "גן סטודיו",
+    "category": "מתנות ופנאי",
+    "online": true
+  },
+  {
+    "name": "ד\"ר גב",
+    "category": "שינה וטקסטיל",
+    "online": false
+  },
+  {
+    "name": "דארלן",
+    "category": "שינה וטקסטיל",
+    "online": true
+  },
+  {
+    "name": "דיזל",
+    "category": "ביגוד והנעלה",
+    "online": false
+  },
+  {
+    "name": "דיל תאורה",
+    "category": "חשמל ואלקטרוניקה",
+    "online": true
+  },
+  {
+    "name": "דני נויפלד",
+    "category": "תכשיטים ואקססוריז",
+    "online": true
+  },
+  {
+    "name": "דפנה לוינסון",
+    "category": "ביגוד והנעלה",
+    "online": false
+  },
+  {
+    "name": "דפני סקין",
+    "category": "טיפוח וקוסמטיקה",
+    "online": true
+  },
+  {
+    "name": "דקורדו",
+    "category": "לבית ולחצר | מתנות ופנאי",
+    "online": true
+  },
+  {
+    "name": "הוגה שטיחים",
+    "category": "לבית ולחצר",
+    "online": true
+  },
+  {
+    "name": "הוגו",
+    "category": "ביגוד והנעלה",
+    "online": false
+  },
+  {
+    "name": "הום סטייל",
+    "category": "שינה וטקסטיל",
+    "online": false
+  },
+  {
+    "name": "הום סנטר",
+    "category": "לבית ולחצר",
+    "online": false
+  },
+  {
+    "name": "המטבח",
+    "category": "לבית ולחצר",
+    "online": true
+  },
+  {
+    "name": "המשביר לצרכן",
+    "category": "ביגוד והנעלה",
+    "online": false
+  },
+  {
+    "name": "השטיח האדום",
+    "category": "שינה וטקסטיל | לבית ולחצר",
+    "online": true
+  },
+  {
+    "name": "ואהבת",
+    "category": "מתנות ופנאי | יודאיקה",
+    "online": false
+  },
+  {
+    "name": "ורדינון",
+    "category": "שינה וטקסטיל",
+    "online": true
+  },
+  {
+    "name": "זר פו יו",
+    "category": "לבית ולחצר | מתנות ופנאי",
+    "online": false
+  },
+  {
+    "name": "חגור",
+    "category": "נסיעות ומחנאות",
+    "online": true
+  },
+  {
+    "name": "חוף חנניה",
+    "category": "ספורט | אטרקציות",
+    "online": true
+  },
+  {
+    "name": "חניון שרונה",
+    "category": "שונה",
+    "online": false
+  },
+  {
+    "name": "טאצ'",
+    "category": "לבית ולחצר",
+    "online": true
+  },
+  {
+    "name": "טומי הילפיגר",
+    "category": "ביגוד והנעלה",
+    "online": false
+  },
+  {
+    "name": "טופ ספיד",
+    "category": "ספורט | אטרקציות | מתנות ופנאי",
+    "online": true
+  },
+  {
+    "name": "טיים מאשין",
+    "category": "אטרקציות",
+    "online": false
+  },
+  {
+    "name": "טכנו גן",
+    "category": "לבית ולחצר",
+    "online": false
+  },
+  {
+    "name": "טכנולייט",
+    "category": "לבית ולחצר",
+    "online": false
+  },
+  {
+    "name": "טכנוקט",
+    "category": "ילדים ותינוקות",
+    "online": true
+  },
+  {
+    "name": "יאנגה",
+    "category": "ביגוד והנעלה",
+    "online": false
+  },
+  {
+    "name": "יונידרס",
+    "category": "ביגוד והנעלה",
+    "online": false
+  },
+  {
+    "name": "יעקבי",
+    "category": "לבית ולחצר",
+    "online": true
+  },
+  {
+    "name": "ישראלי עיצוב הבית",
+    "category": "לבית ולחצר",
+    "online": true
+  },
+  {
+    "name": "כיתן",
+    "category": "שינה וטקסטיל",
+    "online": false
+  },
+  {
+    "name": "כרית לי",
+    "category": "שינה וטקסטיל",
+    "online": true
+  },
+  {
+    "name": "לאסטר",
+    "category": "תכשיטים ואקססוריז",
+    "online": true
+  },
+  {
+    "name": "לבנדר",
+    "category": "טיפוח וקוסמטיקה",
+    "online": true
+  },
+  {
+    "name": "לד מרקט",
+    "category": "חשמל ואלקטרוניקה",
+    "online": true
+  },
+  {
+    "name": "לדיקו BOCSH",
+    "category": "לבית ולחצר | חשמל ואלקטרוניקה",
+    "online": true
+  },
+  {
+    "name": "לוגודביק",
+    "category": "לימודים וספרים | שונה",
+    "online": true
+  },
+  {
+    "name": "לי קופר",
+    "category": "ביגוד והנעלה",
+    "online": true
+  },
+  {
+    "name": "לי קופר קידס",
+    "category": "ילדים ותינוקות",
+    "online": true
+  },
+  {
+    "name": "ליוויס",
+    "category": "ביגוד והנעלה",
+    "online": false
+  },
+  {
+    "name": "לייזר סטריט רעננה",
+    "category": "אטרקציות",
+    "online": true
+  },
+  {
+    "name": "ליליה",
+    "category": "לבית ולחצר | מתנות ופנאי",
+    "online": true
+  },
+  {
+    "name": "לילית קוסמטיקה",
+    "category": "טיפוח וקוסמטיקה",
+    "online": true
+  },
+  {
+    "name": "ללין",
+    "category": "טיפוח וקוסמטיקה",
+    "online": true
+  },
+  {
+    "name": "מאמאלה",
+    "category": "ילדים ותינוקות | מתנות ופנאי",
+    "online": true
+  },
+  {
+    "name": "מגה ספורט",
+    "category": "ספורט",
+    "online": true
+  },
+  {
+    "name": "מדען נולד",
+    "category": "ילדים ותינוקות | מתנות ופנאי",
+    "online": true
+  },
+  {
+    "name": "מועדון הכותנה",
+    "category": "שינה וטקסטיל",
+    "online": true
+  },
+  {
+    "name": "מיטל אלקיים",
+    "category": "תכשיטים ואקססוריז",
+    "online": true
+  },
+  {
+    "name": "מייקל קורס",
+    "category": "ביגוד והנעלה",
+    "online": false
+  },
+  {
+    "name": "מינוס 417",
+    "category": "טיפוח וקוסמטיקה",
+    "online": true
+  },
+  {
+    "name": "מיננה",
+    "category": "ביגוד והנעלה | ילדים ותינוקות",
+    "online": true
+  },
+  {
+    "name": "מכלול",
+    "category": "לימודים וספרים",
+    "online": true
+  },
+  {
+    "name": "מלך האריות",
+    "category": "חיות מחמד",
+    "online": false
+  },
+  {
+    "name": "מצמן את מרוץ",
+    "category": "ספורט",
+    "online": true
+  },
+  {
+    "name": "נאוטיקה הום",
+    "category": "שינה וטקסטיל",
+    "online": true
+  },
+  {
+    "name": "נאטורפיל",
+    "category": "טיפוח וקוסמטיקה",
+    "online": false
+  },
+  {
+    "name": "נטוצ'י",
+    "category": "לבית ולחצר",
+    "online": false
+  },
+  {
+    "name": "ניין ווסט",
+    "category": "ביגוד והנעלה",
+    "online": true
+  },
+  {
+    "name": "נינג'ה מיני ישראל",
+    "category": "ספורט | אטרקציות",
+    "online": false
+  },
+  {
+    "name": "נעלי נמרוד",
+    "category": "ביגוד והנעלה",
+    "online": true
+  },
+  {
+    "name": "נעמן פורצלן",
+    "category": "אביזרי מטבח",
+    "online": true
+  },
+  {
+    "name": "סאטו",
+    "category": "לבית ולחצר",
+    "online": false
+  },
+  {
+    "name": "סאקוני",
+    "category": "ספורט",
+    "online": false
+  },
+  {
+    "name": "סבון של פעם",
+    "category": "טיפוח וקוסמטיקה",
+    "online": false
+  },
+  {
+    "name": "סוהו",
+    "category": "מתנות ופנאי",
+    "online": false
+  },
+  {
+    "name": "סולתם רדד",
+    "category": "לבית ולחצר | אביזרי מטבח",
+    "online": false
+  },
+  {
+    "name": "סטודיו AYO",
+    "category": "לבית ולחצר",
+    "online": true
+  },
+  {
+    "name": "סטודיו נורמן",
+    "category": "מתנות ופנאי",
+    "online": true
+  },
+  {
+    "name": "סטימצקי",
+    "category": "לימודים וספרים",
+    "online": false
+  },
+  {
+    "name": "סנו",
+    "category": "לבית ולחצר",
+    "online": true
+  },
+  {
+    "name": "ספידו",
+    "category": "ספורט",
+    "online": false
+  },
+  {
+    "name": "סקאב ישראל",
+    "category": "לבית ולחצר",
+    "online": true
+  },
+  {
+    "name": "עגליס",
+    "category": "ביגוד והנעלה | ילדים ותינוקות",
+    "online": true
+  },
+  {
+    "name": "עדה לזורגן",
+    "category": "טיפוח וקוסמטיקה",
+    "online": true
+  },
+  {
+    "name": "עוז קרמיקה",
+    "category": "לבית ולחצר",
+    "online": false
+  },
+  {
+    "name": "עמינח",
+    "category": "שינה וטקסטיל",
+    "online": false
+  },
+  {
+    "name": "ערד טקסטיל",
+    "category": "שינה וטקסטיל",
+    "online": true
+  },
+  {
+    "name": "פול אנד שארק",
+    "category": "ביגוד והנעלה",
+    "online": false
+  },
+  {
+    "name": "פולגת",
+    "category": "ביגוד והנעלה",
+    "online": false
+  },
+  {
+    "name": "פולו ראלף לורן",
+    "category": "ביגוד והנעלה",
+    "online": false
+  },
+  {
+    "name": "פיוז'ן",
+    "category": "ביגוד והנעלה",
+    "online": false
+  },
+  {
+    "name": "פיטנגו אקדמי",
+    "category": "לימודים וספרים",
+    "online": true
+  },
+  {
+    "name": "פלורה בלום",
+    "category": "מתנות ופנאי",
+    "online": true
+  },
+  {
+    "name": "פמינה",
+    "category": "ביגוד והנעלה | הלבשה תחתונה",
+    "online": true
+  },
+  {
+    "name": "פנינה רוזנבלום",
+    "category": "טיפוח וקוסמטיקה",
+    "online": true
+  },
+  {
+    "name": "פקטורי 54",
+    "category": "ביגוד והנעלה",
+    "online": true
+  },
+  {
+    "name": "פרד פרי",
+    "category": "ביגוד והנעלה",
+    "online": false
+  },
+  {
+    "name": "פריחת הסחלב",
+    "category": "מתנות ופנאי",
+    "online": true
+  },
+  {
+    "name": "פרימייר ים המלח",
+    "category": "טיפוח וקוסמטיקה",
+    "online": false
+  },
+  {
+    "name": "פריקרס",
+    "category": "ביגוד והנעלה",
+    "online": false
+  },
+  {
+    "name": "פרסונל טריינרס",
+    "category": "ספורט",
+    "online": true
+  },
+  {
+    "name": "צ׳ילדרנס פלייס",
+    "category": "ילדים ותינוקות",
+    "online": false
+  },
+  {
+    "name": "צומת ספרים",
+    "category": "לימודים וספרים",
+    "online": true
+  },
+  {
+    "name": "צ'ימיגג",
+    "category": "נסיעות ומחנאות",
+    "online": true
+  },
+  {
+    "name": "צמר שטיחים יפים",
+    "category": "לבית ולחצר",
+    "online": true
+  },
+  {
+    "name": "צ'ק אפ - צמיגים",
+    "category": "שונה",
+    "online": false
+  },
+  {
+    "name": "קוביס",
+    "category": "חשמל ואלקטרוניקה",
+    "online": false
+  },
+  {
+    "name": "קולומביה",
+    "category": "ביגוד והנעלה | נסיעות ומחנאות",
+    "online": false
+  },
+  {
+    "name": "קלאסיקה",
+    "category": "לבית ולחצר | אביזרי מטבח",
+    "online": false
+  },
+  {
+    "name": "קלווין קליין",
+    "category": "ביגוד והנעלה",
+    "online": false
+  },
+  {
+    "name": "קרביץ",
+    "category": "לימודים וספרים | מתנות ופנאי",
+    "online": false
+  },
+  {
+    "name": "קרן וולף",
+    "category": "תכשיטים ואקססוריז",
+    "online": true
+  },
+  {
+    "name": "רד צ'ילי",
+    "category": "שינה וטקסטיל",
+    "online": true
+  },
+  {
+    "name": "רהיטי קיסר",
+    "category": "לבית ולחצר",
+    "online": true
+  },
+  {
+    "name": "רהיטי שורש",
+    "category": "לבית ולחצר",
+    "online": true
+  },
+  {
+    "name": "רוברטו",
+    "category": "ביגוד והנעלה",
+    "online": false
+  },
+  {
+    "name": "רוזן ומינץ",
+    "category": "ספורט",
+    "online": false
+  },
+  {
+    "name": "ריבוק",
+    "category": "ספורט",
+    "online": false
+  },
+  {
+    "name": "ריפליי",
+    "category": "ביגוד והנעלה",
+    "online": false
+  },
+  {
+    "name": "ריקושט",
+    "category": "חשמל ואלקטרוניקה | נסיעות ומחנאות",
+    "online": false
+  },
+  {
+    "name": "שבילים ציוד טיולים",
+    "category": "נסיעות ומחנאות",
+    "online": false
+  },
+  {
+    "name": "שגריר",
+    "category": "נסיעות ומחנאות | שונה",
+    "online": false
+  },
+  {
+    "name": "שילב",
+    "category": "ילדים ותינוקות | מתנות ופנאי",
+    "online": true
+  },
+  {
+    "name": "שקם אלקטריק",
+    "category": "חשמל ואלקטרוניקה",
+    "online": false
+  },
+  {
+    "name": "תג וומן",
+    "category": "ביגוד והנעלה",
+    "online": false
+  },
+  {
+    "name": "תהילות",
+    "category": "מתנות ופנאי | יודאיקה",
+    "online": true
+  },
+  {
+    "name": "תכשיטי צבאן",
+    "category": "תכשיטים ואקססוריז",
+    "online": false
+  },
+  {
+    "name": "תמי4 ברי מים",
+    "category": "חשמל ואלקטרוניקה | אביזרי מטבח",
+    "online": false
+  },
+  {
+    "name": "תפילין חברון",
+    "category": "יודאיקה",
+    "online": true
+  }
+]
