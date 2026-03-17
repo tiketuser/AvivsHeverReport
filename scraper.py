@@ -126,7 +126,7 @@ def build_deals_message(deals):
         lines.append("לא נמצאו מבצעים")
     lines.append("")
     lines.append("🌐 רשימת מסעדות מעודכנת:")
-    lines.append("https://tiketuser.github.io/AvivsHeverReport")
+    lines.append("https://aviNearr.github.io/AvivsHeverReport")
     return "\n".join(lines)
 
 
@@ -151,10 +151,6 @@ def main():
 
         print("Logging in...")
         page.goto("https://www.hvr.co.il/", wait_until="domcontentloaded")
-        page.wait_for_timeout(3000)
-        page.screenshot(path="docs/debug_login.png")
-        print("Page URL after load:", page.url)
-        print("Page title:", page.title())
         page.wait_for_selector('input[name="tz"]', timeout=30000)
         page.fill('input[name="tz"]', HVR_ID)
         page.fill('input[name="password"]', HVR_PASSWORD)
