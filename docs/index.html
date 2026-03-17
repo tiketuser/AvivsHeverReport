@@ -2,7 +2,7 @@
 <html lang="he" dir="rtl">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <title> חבר - דוח שבועי</title>
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -35,37 +35,51 @@
     .deals-section {
       background: #fff;
       border-bottom: 1px solid #e0e0e0;
-      padding: 18px 28px;
-    }
-
-    .section-title {
-      font-size: 0.75rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      color: #999;
-      margin-bottom: 10px;
+      padding: 16px 28px 20px;
     }
 
     .deals-list {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 7px;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 8px;
       list-style: none;
     }
 
     .deal-item {
-      background: #f5f8ff;
-      border: 1px solid #d0ddf7;
-      border-radius: 4px;
-      padding: 5px 11px;
-      font-size: 0.85rem;
-      color: #222;
-      line-height: 1.4;
+      background: #f8f9ff;
+      border: 1px solid #dde4f5;
+      border-radius: 7px;
+      padding: 10px 14px;
+      font-size: 0.875rem;
+      color: #1a1a1a;
+      line-height: 1.45;
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+    }
+
+    .deal-item a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .deal-item a:hover .deal-label {
+      color: #0057b7;
+    }
+
+    .deal-label {
+      font-weight: 600;
     }
 
     .deal-sub {
-      color: #777;
+      font-size: 0.8rem;
+      color: #888;
+    }
+
+    .deal-link {
+      font-size: 0.75rem;
+      color: #0057b7;
+      margin-top: 2px;
     }
 
     .search-bar {
@@ -467,8 +481,10 @@
     document.getElementById('deals-section').style.display = 'block';
     document.getElementById('deals-list').innerHTML = deals.map(d => {
       const label = escapeHtml((d.label || '').replace(/^[\p{Emoji}\s]+/u, '').trim());
-      const sub = d.subtitle ? `<span class="deal-sub"> — ${escapeHtml(d.subtitle)}</span>` : '';
-      return `<li class="deal-item">${label}${sub}</li>`;
+      const sub = d.subtitle ? `<div class="deal-sub">${escapeHtml(d.subtitle)}</div>` : '';
+      const linkTag = d.url ? `<div class="deal-link"><a href="${escapeHtml(d.url)}" target="_blank" rel="noopener">לפרטים נוספים</a></div>` : '';
+      const inner = `<span class="deal-label">${label}</span>${sub}${linkTag}`;
+      return `<li class="deal-item">${inner}</li>`;
     }).join('');
   }
 

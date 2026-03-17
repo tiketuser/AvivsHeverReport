@@ -54,8 +54,19 @@ def scrape_deals(page):
         text = text_el.inner_text().strip() if text_el else ""
         label = title if title else text
         subtitle = text if (title and text and title != text) else None
+
+        # Try to find a link on the card (anchor wrapping or inside)
+        link_el = card.query_selector("a[href]")
+        href = link_el.get_attribute("href") if link_el else None
+        # Only keep external or meaningful links (skip javascript: and empty)
+        if href and (href.startswith("http") or href.startswith("/")):
+            if href.startswith("/"):
+                href = "https://www.hvr.co.il" + href
+        else:
+            href = None
+
         if label and len(label) > 2:
-            deals.append({"label": "🛒 " + label, "subtitle": subtitle})
+            deals.append({"label": "🛒 " + label, "subtitle": subtitle, "url": href})
 
     return deals
 
