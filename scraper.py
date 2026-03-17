@@ -126,7 +126,7 @@ def build_deals_message(deals):
         lines.append("לא נמצאו מבצעים")
     lines.append("")
     lines.append("🌐 רשימת מסעדות מעודכנת:")
-    lines.append("https://aviNearr.github.io/AvivsHeverReport")
+    lines.append("https://tiketuser.github.io/AvivsHeverReport")
     return "\n".join(lines)
 
 
