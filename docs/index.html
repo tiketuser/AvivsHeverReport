@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>חבר טעמים</title>
+  <title>כרטיס חבר - דוח שבועי</title>
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -20,13 +20,6 @@
       padding: 20px 24px 16px;
     }
 
-    .header-top {
-      display: flex;
-      align-items: baseline;
-      gap: 16px;
-      flex-wrap: wrap;
-    }
-
     header h1 {
       font-size: 1.9rem;
       font-weight: 700;
@@ -39,8 +32,51 @@
       margin-top: 6px;
     }
 
-    .search-wrap {
-      margin-top: 14px;
+    .deals-section {
+      background: #fff;
+      border-bottom: 1px solid #e0e0e0;
+      padding: 20px 24px;
+    }
+
+    .deals-section h2 {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: #1a1a1a;
+      margin-bottom: 12px;
+    }
+
+    .deals-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      list-style: none;
+    }
+
+    .deal-item {
+      background: #f0f5ff;
+      border: 1px solid #c8d8f5;
+      border-radius: 6px;
+      padding: 6px 12px;
+      font-size: 0.88rem;
+      color: #1a1a1a;
+    }
+
+    .deal-item .deal-sub {
+      color: #666;
+      font-size: 0.8rem;
+    }
+
+    .restaurants-section {
+      background: #fff;
+      border-bottom: 1px solid #e0e0e0;
+      padding: 20px 24px 16px;
+    }
+
+    .restaurants-section h2 {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: #1a1a1a;
+      margin-bottom: 12px;
     }
 
     #search {
@@ -133,40 +169,6 @@
       margin-top: 48px;
     }
 
-    .deals-section {
-      background: #fff;
-      border-bottom: 1px solid #e0e0e0;
-      padding: 20px 24px;
-    }
-
-    .deals-section h2 {
-      font-size: 1.1rem;
-      font-weight: 700;
-      color: #0057b7;
-      margin-bottom: 12px;
-    }
-
-    .deals-list {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      list-style: none;
-    }
-
-    .deal-item {
-      background: #f0f5ff;
-      border: 1px solid #c8d8f5;
-      border-radius: 6px;
-      padding: 6px 12px;
-      font-size: 0.88rem;
-      color: #1a1a1a;
-    }
-
-    .deal-item .deal-sub {
-      color: #666;
-      font-size: 0.8rem;
-    }
-
     @media (max-width: 480px) {
       header h1 { font-size: 1.5rem; }
       .grid { grid-template-columns: 1fr; }
@@ -176,18 +178,18 @@
 <body>
 
 <header>
-  <div class="header-top">
-    <h1>חבר טעמים</h1>
-  </div>
+  <h1>כרטיס חבר - דוח שבועי</h1>
   <div class="header-meta" id="header-meta">טוען נתונים...</div>
-  <div class="search-wrap">
-    <input type="search" id="search" placeholder="חיפוש לפי שם, סוג, כתובת..." autocomplete="off">
-  </div>
 </header>
 
 <div class="deals-section" id="deals-section" style="display:none;">
-  <h2>📦 מבצעי השבוע</h2>
+  <h2>מבצעי השבוע</h2>
   <ul class="deals-list" id="deals-list"></ul>
+</div>
+
+<div class="restaurants-section">
+  <h2>חבר טעמים - מסעדות</h2>
+  <input type="search" id="search" placeholder="חיפוש לפי שם, סוג, כתובת..." autocomplete="off">
 </div>
 
 <main>
@@ -198,6 +200,47 @@
 
 <script>
   let allRestaurants = [];
+
+  // Hebrew letter → English sound(s)
+  const HE_TO_EN = {
+    'א':'a','ב':'b','ג':'g','ד':'d','ה':'h','ו':'v','ז':'z','ח':'ch',
+    'ט':'t','י':'y','כ':'k','ך':'k','ל':'l','מ':'m','ם':'m','נ':'n',
+    'ן':'n','ס':'s','ע':'a','פ':'p','ף':'f','צ':'tz','ץ':'tz','ק':'k',
+    'ר':'r','ש':'sh','ת':'t'
+  };
+
+  // English phoneme → Hebrew options (for reverse lookup)
+  const EN_TO_HE = {
+    'black':'בלאק','burger':'בורגר','pizza':'פיצה','cafe':'קפה',
+    'coffee':'קפה','grill':'גריל','bar':'בר','rest':'רסט',
+    'market':'מרקט','kitchen':'קיצ׳ן','bistro':'ביסטרו',
+    'sushi':'סושי','pasta':'פסטה','steak':'סטייק',
+    'shawarma':'שווארמה','hummus':'חומוס','falafel':'פלאפל',
+    'bakery':'בייקרי','ice':'אייס','cream':'קרים','wok':'וק',
+    'republic':'ריפבליק','house':'האוס','garden':'גארדן',
+    'street':'סטריט','club':'קלאב','fresh':'פרש','green':'גרין',
+    'red':'רד','blue':'בלו','gold':'גולד','royal':'רויאל',
+    'urban':'אורבן','express':'אקספרס','chef':'שף','art':'ארט',
+    'king':'קינג','queen':'קווין','max':'מקס','happy':'האפי',
+    'spicy':'ספייסי','sweet':'סוויט','fire':'פייר','north':'נורת',
+    'south':'סאות','east':'איסט','west':'ווסט'
+  };
+
+  function transliterateHe(str) {
+    // Convert Hebrew string to approximate English phonetics
+    return str.split('').map(c => HE_TO_EN[c] || c).join('');
+  }
+
+  function buildSearchIndex(r) {
+    const fields = [r.name, r.type, r.address].filter(Boolean).join(' ').toLowerCase();
+    const transliterated = transliterateHe(fields);
+    // Also add EN→HE reverse: if field contains Hebrew word with known English equivalent
+    let extra = '';
+    for (const [en, he] of Object.entries(EN_TO_HE)) {
+      if (fields.includes(he)) extra += ' ' + en;
+    }
+    return fields + ' ' + transliterated + extra;
+  }
 
   function escapeHtml(str) {
     if (!str) return '';
@@ -247,12 +290,8 @@
 
   function filterRestaurants(query) {
     if (!query.trim()) return allRestaurants;
-    const q = query.trim().toLowerCase();
-    return allRestaurants.filter(r =>
-      (r.name && r.name.toLowerCase().includes(q)) ||
-      (r.type && r.type.toLowerCase().includes(q)) ||
-      (r.address && r.address.toLowerCase().includes(q))
-    );
+    const q = transliterateHe(query.trim().toLowerCase());
+    return allRestaurants.filter(r => buildSearchIndex(r).includes(q));
   }
 
   document.getElementById('search').addEventListener('input', function () {
@@ -264,7 +303,7 @@
     const section = document.getElementById('deals-section');
     const list = document.getElementById('deals-list');
     list.innerHTML = deals.map(d => {
-      const label = escapeHtml(d.label || '');
+      const label = escapeHtml((d.label || '').replace(/^[\p{Emoji}\s]+/u, '').trim());
       const sub = d.subtitle ? `<span class="deal-sub"> — ${escapeHtml(d.subtitle)}</span>` : '';
       return `<li class="deal-item">${label}${sub}</li>`;
     }).join('');
