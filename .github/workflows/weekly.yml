@@ -34,6 +34,13 @@ jobs:
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: python scraper.py
 
+      - name: Upload debug screenshot
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: debug-screenshot
+          path: docs/debug_login.png
+
       - name: Commit and push data
         run: |
           git config user.name "github-actions[bot]"
