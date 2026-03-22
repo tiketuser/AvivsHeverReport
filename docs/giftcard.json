@@ -145,11 +145,6 @@
     "online": false
   },
   {
-    "name": "BOTTA",
-    "category": "לבית ולחצר",
-    "online": true
-  },
-  {
     "name": "BPOWER",
     "category": "לבית ולחצר | חשמל ואלקטרוניקה",
     "online": true
@@ -167,6 +162,11 @@
   {
     "name": "Buycarpet.co.il",
     "category": "לבית ולחצר",
+    "online": true
+  },
+  {
+    "name": "CAPRICE",
+    "category": "תכשיטים ואקססוריז",
     "online": true
   },
   {
