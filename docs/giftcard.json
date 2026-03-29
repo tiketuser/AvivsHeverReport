@@ -1025,11 +1025,6 @@
     "online": true
   },
   {
-    "name": "אם סי לאנדפון",
-    "category": "חשמל ואלקטרוניקה",
-    "online": true
-  },
-  {
     "name": "אמפוריו ארמני",
     "category": "ביגוד והנעלה",
     "online": false
@@ -1417,6 +1412,11 @@
   {
     "name": "מועדון הכותנה",
     "category": "שינה וטקסטיל",
+    "online": true
+  },
+  {
+    "name": "מוצצים",
+    "category": "ילדים ותינוקות",
     "online": true
   },
   {
