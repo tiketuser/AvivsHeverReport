@@ -331,9 +331,11 @@ def main():
     print(f"Saved {len(markers)} markers to {markers_path}")
 
     # Save last_updated.json
-    today_str = datetime.now().strftime("%d/%m/%Y")
+    now = datetime.now()
+    today_str = now.strftime("%d/%m/%Y")
+    time_str = now.strftime("%H:%M")
     last_updated_path = os.path.join(DOCS_DIR, "last_updated.json")
-    save_json(last_updated_path, {"date": today_str, "restaurant_count": len(restaurants), "company_count": len(companies)})
+    save_json(last_updated_path, {"date": today_str, "time": time_str, "restaurant_count": len(restaurants), "company_count": len(companies)})
     print(f"Saved last_updated.json: {today_str}, {len(restaurants)} restaurants")
 
     # Send weekly Telegram message with deals + website link

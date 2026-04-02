@@ -110,6 +110,14 @@
       letter-spacing: .04em;
       white-space: nowrap;
     }
+    #title-updated {
+      font-family: 'Rubik', sans-serif;
+      font-size: 0.72rem;
+      font-weight: 300;
+      color: var(--text-mute);
+      letter-spacing: 0;
+      margin-right: 0.55em;
+    }
 
     .header-meta {
       font-size: 0.78rem;
@@ -617,110 +625,6 @@
     }
 
     /* ─── MAP ─── */
-    .map-controls {
-      padding: 14px 24px;
-      display: flex;
-      align-items: center;
-      flex-wrap: wrap;
-      gap: 12px;
-      background: var(--surface);
-      border-bottom: 1px solid var(--border);
-    }
-
-    #search-map {
-      flex: 1;
-      min-width: 180px;
-      max-width: 340px;
-      padding: 8px 14px;
-      font-size: 0.9rem;
-      border: 1.5px solid var(--border);
-      border-radius: var(--radius);
-      background: var(--surface2);
-      color: var(--text);
-      font-family: inherit;
-      direction: rtl;
-      outline: none;
-      transition: border-color .2s;
-    }
-
-    #search-map:focus { border-color: var(--accent); }
-    #search-map::placeholder { color: var(--text-mute); }
-
-    .map-card-filters {
-      display: flex;
-      gap: 8px;
-      flex-wrap: wrap;
-    }
-
-    .map-card-btn {
-      display: flex;
-      align-items: center;
-      gap: 6px;
-      padding: 5px 10px 5px 8px;
-      border: 1.5px solid var(--border);
-      border-radius: var(--radius);
-      background: var(--surface2);
-      cursor: pointer;
-      transition: border-color .2s, background .2s, opacity .2s;
-      opacity: .55;
-      user-select: none;
-    }
-
-    .map-card-btn img {
-      height: 28px;
-      width: auto;
-      display: block;
-    }
-
-    .map-card-btn.active {
-      border-color: var(--accent);
-      background: var(--accent-dim);
-      opacity: 1;
-    }
-
-    .map-count {
-      font-size: 0.72rem;
-      color: var(--text-dim);
-      padding: 0 4px;
-      white-space: nowrap;
-      align-self: center;
-      margin-right: auto;
-    }
-
-    #map {
-      width: 100%;
-      height: 440px;
-      display: block;
-      border-top: 1px solid var(--border);
-      position: relative;
-    }
-
-    #map-spinner {
-      position: absolute;
-      inset: 0;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: var(--surface);
-      z-index: 1000;
-      pointer-events: none;
-    }
-
-    #map-spinner.hidden { display: none; }
-
-    .spinner-ring {
-      width: 44px;
-      height: 44px;
-      border: 4px solid var(--border);
-      border-top-color: var(--accent);
-      border-radius: 50%;
-      animation: spin 0.7s linear infinite;
-    }
-
-    @keyframes spin {
-      to { transform: rotate(360deg); }
-    }
-
     .map-cta {
       padding: 18px 32px;
       display: flex;
@@ -786,16 +690,7 @@
     ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
     ::-webkit-scrollbar-thumb:hover { background: var(--text-mute); }
 
-    /* ─── LEAFLET OVERRIDES ─── */
-    .leaflet-popup-content-wrapper {
-      background: var(--surface) !important;
-      color: var(--text) !important;
-      border: 1px solid var(--border) !important;
-      box-shadow: 0 6px 20px rgba(0,0,0,.12) !important;
-      border-radius: 8px !important;
-    }
-    .leaflet-popup-tip { background: var(--surface) !important; }
-    .leaflet-popup-content { font-family: 'Rubik', sans-serif; font-size: 0.82rem; }
+
 
     /* ─── RESPONSIVE ─── */
     @media (max-width: 600px) {
@@ -841,18 +736,6 @@
       .deals-grid { grid-template-columns: repeat(2, 1fr); gap: 10px; }
       .deal-label { font-size: 0.8rem; }
 
-      /* Map: taller so it's actually usable on phone */
-      #map { height: 420px; }
-      .map-cta { padding: 14px; flex-direction: column; align-items: stretch; gap: 10px; }
-      .map-cta p { font-size: 0.82rem; }
-      .map-cta-btn { text-align: center; justify-content: center; padding: 13px 20px; font-size: 0.92rem; }
-
-      /* Map controls */
-      .map-controls { padding: 10px 14px; gap: 8px; flex-wrap: wrap; }
-      #search-map { max-width: 100%; min-width: 0; width: 100%; }
-      .map-card-filters { gap: 6px; }
-      .map-card-btn { padding: 8px 10px; }
-      .map-card-btn img { height: 24px; }
 
       /* Kill hover transforms on touch devices */
       .card:hover, .shop-card:hover, .deal-item:hover { transform: none; }
@@ -869,7 +752,7 @@
 <header>
   <div class="header-brand">
     <div class="header-emblem">ח</div>
-    <h1>כרטיס חבר</h1>
+    <h1>כרטיס חבר<span id="title-updated"></span></h1>
   </div>
   <div class="header-meta" id="header-meta">טוען נתונים...</div>
 </header>
@@ -1205,6 +1088,9 @@
       if (meta.date) {
         const compCount = meta.company_count ? ` · ${meta.company_count} חנויות` : '';
         metaEl.textContent = `עודכן: ${meta.date} · ${meta.restaurant_count} מסעדות${compCount}`;
+        document.title = `חבר - דוח שבועי אביב ניר | עודכן: ${meta.date}${meta.time ? ' ' + meta.time : ''}`;
+        const titleUpdated = document.getElementById('title-updated');
+        if (titleUpdated) titleUpdated.textContent = `עודכן ${meta.date}${meta.time ? ' ' + meta.time : ''}`;
       } else {
         metaEl.textContent = `${allRestaurants.length} מסעדות`;
       }
@@ -1223,154 +1109,6 @@
   loadData();
 </script>
 
-<script>
-
-  // pin colours per card type
-  const PIN_COLORS = {
-    food:    '#3b82f6',  // blue  — חבר טעמים
-    gift:    '#f59e0b',  // yellow — כרטיס קבע (shops)
-    credit:  '#6b7280',  // dark grey — כרטיס אשראי חבר
-    culture: '#a855f7',  // purple — תרבות ופנאי
-  };
-
-  function typeToCard(type) {
-    for (const [card, types] of Object.entries(CARD_TYPES)) {
-      if (types.includes(type)) return card;
-    }
-    return null;
-  }
-
-  function makeIcon(card) {
-    const color = PIN_COLORS[card] || '#c9a84c';
-    return L.divIcon({
-      className: '',
-      html: `<div style="width:9px;height:9px;border-radius:50%;background:${color};border:1.5px solid #fff;box-shadow:0 1px 4px rgba(0,0,0,.25)"></div>`,
-      iconSize: [9, 9],
-      iconAnchor: [4, 4],
-      popupAnchor: [0, -7]
-    });
-  }
-
-  function getActiveCards() {
-    return [...document.querySelectorAll('.map-card-btn.active')].map(b => b.dataset.card);
-  }
-
-  function getMapSearchQuery() {
-    return (document.getElementById('search-map').value || '').trim().toLowerCase();
-  }
-
-  function applyMapFilters() {
-    if (!leafletMap) return;
-    const activeCards = getActiveCards();
-    const q = getMapSearchQuery();
-
-    leafletLayers.forEach(({ layer, card, searchText }) => {
-      const visible = activeCards.includes(card) && (!q || searchText.includes(q));
-      if (visible) {
-        if (!leafletMap.hasLayer(layer)) layer.addTo(leafletMap);
-      } else {
-        if (leafletMap.hasLayer(layer)) leafletMap.removeLayer(layer);
-      }
-    });
-
-    const visibleCount = leafletLayers.filter(({ card, searchText }) =>
-      activeCards.includes(card) && (!q || searchText.includes(q))
-    ).length;
-    document.getElementById('map-count').textContent = `${visibleCount.toLocaleString()} בתי עסק`;
-  }
-
-  function initMap() {
-    if (leafletMap) { leafletMap.remove(); leafletMap = null; }
-
-    const mapEl = document.getElementById('map');
-    leafletMap = L.map(mapEl, { zoomControl: true }).setView([31.5, 34.9], 8);
-
-    L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
-      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/attributions">CARTO</a>',
-      subdomains: 'abcd',
-      maxZoom: 19
-    }).addTo(leafletMap);
-
-    leafletLayers = [];
-
-    allMarkers.forEach(m => {
-      if (!m.latitude || !m.longitude) return;
-      const card = typeToCard(m.type);
-      if (!card) return;
-
-      const name = m.title || '';
-      const city = m.city || '';
-      const addr = m.address || '';
-      const cat  = m.category || '';
-      const disc = m.discount ? `<br><span style="color:#f59e0b">${m.discount}</span>` : '';
-      const searchText = [name, city, addr, cat].join(' ').toLowerCase();
-
-      const layer = L.marker([m.latitude, m.longitude], { icon: makeIcon(card) })
-        .bindPopup(
-          `<strong style="color:#0f1724">${name}</strong>` +
-          (cat ? `<br><span style="color:#1a5fd4;font-size:0.8em">${cat}</span>` : '') +
-          `<br><span style="color:#4a5568">${city}${addr ? ', ' + addr : ''}</span>` +
-          disc
-        );
-
-      leafletLayers.push({ layer, card, searchText });
-    });
-
-    applyMapFilters();
-    setTimeout(() => leafletMap.invalidateSize(), 50);
-    setTimeout(() => {
-      leafletMap.invalidateSize();
-      const spinner = document.getElementById('map-spinner');
-      if (spinner) spinner.classList.add('hidden');
-    }, 400);
-  }
-
-  // wire up filter buttons
-  document.querySelectorAll('.map-card-btn').forEach(btn => {
-    btn.addEventListener('click', () => {
-      btn.classList.toggle('active');
-      applyMapFilters();
-    });
-  });
-
-  document.getElementById('search-map').addEventListener('input', debounce(applyMapFilters, 250));
-
-  // load markers.json and init map when tab is opened
-  async function loadAndInitMap() {
-    if (allMarkers.length === 0) {
-      try {
-        const res = await fetch('markers.json');
-        if (!res.ok) throw new Error('HTTP ' + res.status);
-        allMarkers = await res.json();
-      } catch (e) {
-        console.error('Failed to load markers.json', e);
-        const spinner = document.getElementById('map-spinner');
-        if (spinner) spinner.classList.add('hidden');
-        document.getElementById('map').innerHTML =
-          '<div style="display:flex;align-items:center;justify-content:center;height:100%;color:var(--text-dim);font-size:0.9rem;flex-direction:column;gap:8px">' +
-          '<span>לא ניתן לטעון את נתוני המפה</span>' +
-          '<span style="font-size:0.78rem;color:var(--text-mute)">נסה לפתוח את הדף דרך שרת מקומי או GitHub Pages</span>' +
-          '</div>';
-        return;
-      }
-    }
-    initMap();
-  }
-
-  // hook into tab switcher
-  const _origSwitchTab = window.switchTab;
-  window.switchTab = function(id, btn) {
-    _origSwitchTab(id, btn);
-    if (id === 'map') {
-      if (!leafletMap) {
-        loadAndInitMap();
-      } else {
-        // panel was hidden — force Leaflet to recalculate size
-        setTimeout(() => leafletMap.invalidateSize(), 50);
-      }
-    }
-  };
-</script>
 
 </body>
 </html>
