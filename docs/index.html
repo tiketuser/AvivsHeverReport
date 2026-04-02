@@ -3,56 +3,216 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <title> חבר - דוח שבועי</title>
+  <title>חבר - דוח שבועי אביב ניר</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Rubik:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-    body {
-      font-family: 'Segoe UI', Arial, sans-serif;
-      background: #f0f2f5;
-      color: #1a1a1a;
-      direction: rtl;
+    :root {
+      --bg:        #0a0d14;
+      --surface:   #111520;
+      --surface2:  #161b28;
+      --surface3:  #1c2235;
+      --border:    #1e2640;
+      --gold:      #c9a84c;
+      --gold-dim:  #7d6425;
+      --gold-glow: rgba(201,168,76,.18);
+      --blue:      #3b82f6;
+      --blue-dim:  rgba(59,130,246,.12);
+      --green:     #22c55e;
+      --green-dim: rgba(34,197,94,.12);
+      --text:      #e8ecf4;
+      --text-dim:  #7a8399;
+      --text-mute: #3f4a62;
+      --radius:    10px;
+      --radius-lg: 16px;
     }
 
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Rubik', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      direction: rtl;
+      min-height: 100vh;
+      line-height: 1.5;
+    }
+
+    /* ─── NOISE TEXTURE ─── */
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    /* ─── HEADER ─── */
     header {
-      background: #fff;
-      border-bottom: 3px solid #0057b7;
-      padding: 20px 28px 16px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(10,13,20,.82);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border-bottom: 1px solid var(--border);
+      padding: 0 32px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      height: 68px;
+    }
+
+    header::after {
+      content: '';
+      position: absolute;
+      bottom: -1px;
+      right: 0;
+      left: 0;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, var(--gold-dim), transparent);
+    }
+
+    .header-brand {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .header-emblem {
+      width: 38px;
+      height: 38px;
+      border-radius: 8px;
+      background: linear-gradient(135deg, var(--gold) 0%, #8b6920 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Cinzel', serif;
+      font-size: 1rem;
+      font-weight: 700;
+      color: #0a0d14;
+      flex-shrink: 0;
+      box-shadow: 0 0 20px var(--gold-glow);
     }
 
     header h1 {
-      font-size: 1.8rem;
-      font-weight: 700;
-      color: #0057b7;
+      font-family: 'Cinzel', serif;
+      font-size: 1.15rem;
+      font-weight: 600;
+      color: var(--gold);
+      letter-spacing: .04em;
+      white-space: nowrap;
     }
 
     .header-meta {
+      font-size: 0.78rem;
+      color: var(--text-dim);
+      font-weight: 300;
+      white-space: nowrap;
+    }
+
+    /* ─── NAV TABS ─── */
+    .nav-tabs {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      padding: 12px 32px 0;
+      border-bottom: 1px solid var(--border);
+      background: var(--surface);
+      position: sticky;
+      top: 68px;
+      z-index: 90;
+      overflow-x: auto;
+      scrollbar-width: none;
+    }
+    .nav-tabs::-webkit-scrollbar { display: none; }
+
+    .nav-tab {
+      padding: 10px 18px 12px;
+      font-family: 'Rubik', sans-serif;
       font-size: 0.85rem;
-      color: #777;
-      margin-top: 5px;
+      font-weight: 500;
+      color: var(--text-dim);
+      cursor: pointer;
+      border: none;
+      background: none;
+      white-space: nowrap;
+      border-bottom: 2px solid transparent;
+      margin-bottom: -1px;
+      transition: color .2s, border-color .2s;
+      position: relative;
     }
 
-    .deals-section {
-      background: #fff;
-      border-bottom: 1px solid #e0e0e0;
-      padding: 16px 28px 20px;
+    .nav-tab:hover { color: var(--text); }
+
+    .nav-tab.active {
+      color: var(--gold);
+      border-bottom-color: var(--gold);
     }
 
-    .deals-list {
+    .nav-tab-count {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--surface3);
+      color: var(--text-dim);
+      font-size: 0.7rem;
+      font-weight: 600;
+      min-width: 20px;
+      height: 18px;
+      border-radius: 9px;
+      padding: 0 6px;
+      margin-right: 7px;
+    }
+    .nav-tab.active .nav-tab-count {
+      background: var(--gold-glow);
+      color: var(--gold);
+    }
+
+    /* ─── SECTION PANELS ─── */
+    .panel { display: none; }
+    .panel.active { display: block; }
+
+    /* ─── DEALS ─── */
+    .deals-panel {
+      padding: 28px 32px 36px;
+    }
+
+    .panel-title {
+      font-family: 'Cinzel', serif;
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: .14em;
+      color: var(--gold-dim);
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+
+    .deals-grid {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-      gap: 10px;
+      gap: 12px;
       list-style: none;
     }
 
     .deal-item {
-      background: #fff;
-      border: 1px solid #e2e5ea;
-      border-radius: 8px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
       overflow: hidden;
-      display: flex;
-      flex-direction: column;
+      transition: border-color .2s, transform .2s, box-shadow .2s;
+    }
+
+    .deal-item:hover {
+      border-color: var(--gold-dim);
+      transform: translateY(-3px);
+      box-shadow: 0 12px 28px rgba(0,0,0,.4), 0 0 0 1px var(--gold-dim);
     }
 
     .deal-item a {
@@ -61,10 +221,6 @@
       display: flex;
       flex-direction: column;
       height: 100%;
-    }
-
-    .deal-item a:hover .deal-label {
-      color: #0057b7;
     }
 
     .deal-img {
@@ -77,14 +233,14 @@
     .deal-img-placeholder {
       width: 100%;
       aspect-ratio: 4/3;
-      background: #f0f2f5;
+      background: var(--surface2);
     }
 
     .deal-footer {
-      padding: 8px 10px 10px;
+      padding: 10px 12px 12px;
       display: flex;
       flex-direction: column;
-      gap: 2px;
+      gap: 3px;
       flex: 1;
     }
 
@@ -92,89 +248,200 @@
       font-size: 0.82rem;
       font-weight: 600;
       line-height: 1.35;
-      color: #1a1a1a;
+      color: var(--text);
     }
+
+    .deal-item:hover .deal-label { color: var(--gold); }
 
     .deal-sub {
-      font-size: 0.75rem;
-      color: #888;
+      font-size: 0.74rem;
+      color: var(--text-dim);
+      font-weight: 300;
     }
 
-    .deal-link {
-      font-size: 0.72rem;
-      color: #0057b7;
-      margin-top: 3px;
-    }
-
-    .search-bar {
-      background: #fff;
-      border-bottom: 1px solid #e0e0e0;
-      padding: 16px 28px;
+    /* ─── SEARCH BAR ─── */
+    .search-toolbar {
+      padding: 16px 32px;
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
       display: flex;
       align-items: center;
-      gap: 16px;
+      gap: 14px;
       flex-wrap: wrap;
     }
 
-    .search-bar h2 {
-      font-size: 1rem;
-      font-weight: 700;
-      color: #1a1a1a;
-      white-space: nowrap;
-    }
-
-    #search, #search-shops {
+    .search-input-wrap {
+      position: relative;
       flex: 1;
       min-width: 220px;
-      max-width: 500px;
-      padding: 9px 14px;
-      font-size: 0.95rem;
-      border: 1.5px solid #ccc;
-      border-radius: 6px;
+      max-width: 460px;
+    }
+
+    .search-icon {
+      position: absolute;
+      right: 12px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--text-mute);
+      pointer-events: none;
+      font-size: 0.85rem;
+    }
+
+    .search-input {
+      width: 100%;
+      padding: 9px 36px 9px 14px;
+      font-size: 0.92rem;
+      font-family: 'Rubik', sans-serif;
+      font-weight: 400;
+      background: var(--surface2);
+      border: 1.5px solid var(--border);
+      border-radius: var(--radius);
+      color: var(--text);
       outline: none;
-      font-family: inherit;
       direction: rtl;
-      background: #fafafa;
+      transition: border-color .2s, background .2s;
     }
 
-    #search:focus, #search-shops:focus {
-      border-color: #0057b7;
-      background: #fff;
+    .search-input::placeholder { color: var(--text-mute); }
+
+    .search-input:focus {
+      border-color: var(--gold-dim);
+      background: var(--surface3);
     }
 
-    main {
-      max-width: 1280px;
+    .delivery-toggle {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.83rem;
+      font-weight: 500;
+      color: var(--text-dim);
+      cursor: pointer;
+      padding: 8px 14px;
+      border-radius: var(--radius);
+      border: 1.5px solid var(--border);
+      background: var(--surface2);
+      transition: all .2s;
+      white-space: nowrap;
+      user-select: none;
+    }
+
+    .delivery-toggle input { display: none; }
+
+    .delivery-toggle-dot {
+      width: 32px;
+      height: 18px;
+      border-radius: 9px;
+      background: var(--surface3);
+      border: 1.5px solid var(--border);
+      position: relative;
+      transition: background .2s, border-color .2s;
+      flex-shrink: 0;
+    }
+
+    .delivery-toggle-dot::after {
+      content: '';
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: var(--text-mute);
+      top: 2px;
+      right: 2px;
+      transition: transform .2s, background .2s;
+    }
+
+    .delivery-toggle.checked {
+      color: var(--green);
+      border-color: rgba(34,197,94,.3);
+      background: var(--green-dim);
+    }
+
+    .delivery-toggle.checked .delivery-toggle-dot {
+      background: rgba(34,197,94,.2);
+      border-color: var(--green);
+    }
+
+    .delivery-toggle.checked .delivery-toggle-dot::after {
+      background: var(--green);
+      transform: translateX(-14px);
+    }
+
+    /* ─── MAIN CONTENT ─── */
+    .panel-content {
+      max-width: 1360px;
       margin: 0 auto;
-      padding: 20px 20px 48px;
+      padding: 24px 32px 56px;
     }
 
-    #result-count {
-      font-size: 0.82rem;
-      color: #888;
-      margin-bottom: 14px;
+    .result-count {
+      font-size: 0.78rem;
+      color: var(--text-dim);
+      font-weight: 300;
+      margin-bottom: 16px;
+      letter-spacing: .02em;
     }
 
+    /* ─── RESTAURANT GRID ─── */
     .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-      gap: 12px;
+      grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+      gap: 14px;
     }
 
+    /* ─── CARDS ─── */
     .card {
-      background: #fff;
-      border: 1px solid #e2e5ea;
-      border-radius: 8px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
       overflow: hidden;
       display: flex;
       flex-direction: column;
+      transition: border-color .25s, box-shadow .25s, transform .25s;
+      position: relative;
+    }
+
+    .card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      height: 2px;
+      background: linear-gradient(90deg, transparent, var(--border), transparent);
+      transition: opacity .25s;
+    }
+
+    .card:hover {
+      border-color: rgba(201,168,76,.35);
+      box-shadow: 0 16px 40px rgba(0,0,0,.5), 0 0 0 1px rgba(201,168,76,.15);
+      transform: translateY(-2px);
+    }
+
+    .card:hover::before {
+      background: linear-gradient(90deg, transparent, var(--gold-dim), transparent);
+      opacity: 1;
+    }
+
+    .card.has-delivery {
+      border-color: rgba(34,197,94,.2);
+    }
+
+    .card.has-delivery::before {
+      background: linear-gradient(90deg, transparent, rgba(34,197,94,.3), transparent);
+    }
+
+    .card.has-delivery:hover {
+      border-color: rgba(34,197,94,.5);
+      box-shadow: 0 16px 40px rgba(0,0,0,.5), 0 0 0 1px rgba(34,197,94,.2);
     }
 
     .card-header {
-      padding: 14px 16px 10px;
-      border-bottom: 1px solid #f0f0f0;
+      padding: 14px 16px 12px;
+      border-bottom: 1px solid var(--border);
       display: flex;
       align-items: center;
-      gap: 10px;
+      gap: 12px;
     }
 
     .card-header-text {
@@ -183,147 +450,123 @@
     }
 
     .card-logo {
-      width: 48px;
-      height: 48px;
+      width: 46px;
+      height: 46px;
       object-fit: contain;
-      border-radius: 6px;
-      border: 1px solid #e2e5ea;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      background: var(--surface2);
       flex-shrink: 0;
     }
 
     .card-name {
-      font-size: 1rem;
-      font-weight: 700;
-      color: #0d1a2e;
+      font-size: 0.97rem;
+      font-weight: 600;
+      color: var(--text);
       line-height: 1.3;
     }
 
     .card-type {
-      font-size: 0.78rem;
-      color: #0057b7;
+      font-size: 0.76rem;
+      color: var(--gold-dim);
       margin-top: 3px;
       font-weight: 500;
     }
 
+    .delivery-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 0.69rem;
+      font-weight: 600;
+      padding: 3px 9px;
+      border-radius: 20px;
+      margin-top: 6px;
+      letter-spacing: .01em;
+    }
+
+    .delivery-badge.has-delivery {
+      background: var(--green-dim);
+      color: var(--green);
+      border: 1px solid rgba(34,197,94,.25);
+    }
+
+    .delivery-badge.seating-only {
+      background: var(--surface2);
+      color: var(--text-mute);
+      border: 1px solid var(--border);
+    }
+
+    .delivery-badge::before {
+      content: '';
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background: currentColor;
+      flex-shrink: 0;
+    }
+
     .card-body {
-      padding: 10px 16px 14px;
+      padding: 12px 16px 16px;
       display: flex;
       flex-direction: column;
-      gap: 6px;
+      gap: 7px;
       flex: 1;
     }
 
     .detail-row {
       display: flex;
-      gap: 8px;
-      font-size: 0.83rem;
+      gap: 10px;
+      font-size: 0.81rem;
       align-items: flex-start;
-      line-height: 1.4;
+      line-height: 1.45;
     }
 
     .detail-label {
-      color: #aaa;
-      min-width: 44px;
+      color: var(--text-mute);
+      min-width: 42px;
       flex-shrink: 0;
+      font-weight: 400;
       padding-top: 1px;
+      font-size: 0.76rem;
     }
 
     .detail-value {
-      color: #333;
+      color: var(--text-dim);
+      font-weight: 300;
     }
 
     .detail-value a {
-      color: #0057b7;
+      color: var(--blue);
       text-decoration: none;
       font-weight: 500;
+      transition: color .15s;
     }
 
-    .detail-value a:hover {
-      text-decoration: underline;
-    }
+    .detail-value a:hover { color: #60a5fa; }
 
-    .delivery-badge {
-      display: inline-block;
-      font-size: 0.7rem;
-      font-weight: 600;
-      padding: 2px 8px;
-      border-radius: 10px;
-      margin-top: 5px;
-    }
-
-    .delivery-badge.has-delivery {
-      background: #e6f7ec;
-      color: #1a7a3a;
-      border: 1px solid #a3d9b5;
-    }
-
-    .delivery-badge.seating-only {
-      background: #f0f0f0;
-      color: #777;
-      border: 1px solid #ddd;
-    }
-
-    .card.has-delivery {
-      border-color: #a3d9b5;
-      border-width: 1.5px;
-    }
-
-    .no-results {
-      text-align: center;
-      color: #aaa;
-      font-size: 1rem;
-      margin-top: 60px;
-    }
-
-    .section-header {
-      background: #fff;
-      border-bottom: 1px solid #e0e0e0;
-      padding: 14px 28px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      cursor: pointer;
-      user-select: none;
-    }
-
-    .section-header:hover { background: #fafafa; }
-
-    .section-header-title {
-      font-size: 1rem;
-      font-weight: 700;
-      color: #1a1a1a;
-    }
-
-    .section-toggle {
-      font-size: 0.8rem;
-      color: #888;
-      background: none;
-      border: 1px solid #ddd;
-      border-radius: 4px;
-      padding: 4px 10px;
-      cursor: pointer;
-      font-family: inherit;
-    }
-
-    .section-toggle:hover { border-color: #aaa; color: #555; }
-
-    .section-body { display: block; }
-    .section-body.collapsed { display: none; }
-
+    /* ─── SHOPS ─── */
     .shop-card {
-      background: #fff;
-      border: 1px solid #e2e5ea;
-      border-radius: 8px;
-      padding: 12px 14px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 14px 16px;
       display: flex;
       flex-direction: column;
-      gap: 4px;
+      gap: 6px;
+      transition: border-color .2s, transform .2s, box-shadow .2s;
+    }
+
+    .shop-card:hover {
+      border-color: rgba(201,168,76,.3);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(0,0,0,.35);
     }
 
     .shop-card-header {
       display: flex;
       align-items: center;
-      gap: 10px;
+      gap: 12px;
     }
 
     .shop-card-text {
@@ -332,144 +575,351 @@
     }
 
     .shop-name {
-      font-size: 0.95rem;
-      font-weight: 700;
-      color: #0d1a2e;
+      font-size: 0.93rem;
+      font-weight: 600;
+      color: var(--text);
     }
 
     .shop-category {
-      font-size: 0.78rem;
-      color: #0057b7;
+      font-size: 0.75rem;
+      color: var(--gold-dim);
       font-weight: 500;
+      margin-top: 2px;
     }
 
     .shop-online {
-      font-size: 0.72rem;
-      color: #2a9d2a;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 0.69rem;
       font-weight: 500;
+      color: var(--blue);
     }
 
-    .map-section {
-      background: #fff;
-      border-top: 1px solid #e0e0e0;
+    .shop-online::before {
+      content: '';
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background: var(--blue);
+    }
+
+    /* ─── MAP ─── */
+    .map-controls {
+      padding: 14px 24px;
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+    }
+
+    #search-map {
+      flex: 1;
+      min-width: 180px;
+      max-width: 340px;
+      padding: 8px 14px;
+      font-size: 0.9rem;
+      border: 1.5px solid var(--border);
+      border-radius: var(--radius);
+      background: var(--surface2);
+      color: var(--text);
+      font-family: inherit;
+      direction: rtl;
+      outline: none;
+      transition: border-color .2s;
+    }
+
+    #search-map:focus { border-color: var(--gold); }
+    #search-map::placeholder { color: var(--text-mute); }
+
+    .map-card-filters {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .map-card-btn {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      padding: 5px 10px 5px 8px;
+      border: 1.5px solid var(--border);
+      border-radius: var(--radius);
+      background: var(--surface2);
+      cursor: pointer;
+      transition: border-color .2s, background .2s, opacity .2s;
+      opacity: .55;
+      user-select: none;
+    }
+
+    .map-card-btn img {
+      height: 28px;
+      width: auto;
+      display: block;
+    }
+
+    .map-card-btn.active {
+      border-color: var(--gold);
+      background: var(--gold-glow);
+      opacity: 1;
+    }
+
+    .map-count {
+      font-size: 0.72rem;
+      color: var(--text-dim);
+      padding: 0 4px;
+      white-space: nowrap;
+      align-self: center;
+      margin-right: auto;
     }
 
     #map {
       width: 100%;
-      height: 420px;
+      height: 440px;
       display: block;
+      border-top: 1px solid var(--border);
     }
 
     .map-cta {
-      padding: 16px 28px;
+      padding: 18px 32px;
       display: flex;
       align-items: center;
       justify-content: space-between;
       flex-wrap: wrap;
-      gap: 12px;
-      border-top: 1px solid #f0f0f0;
+      gap: 14px;
+      border-top: 1px solid var(--border);
+      background: var(--surface);
     }
 
     .map-cta p {
-      font-size: 0.88rem;
-      color: #555;
+      font-size: 0.84rem;
+      color: var(--text-dim);
+      font-weight: 300;
     }
 
-    .map-cta a {
-      display: inline-block;
-      background: #0057b7;
-      color: #fff;
+    .map-cta-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: linear-gradient(135deg, var(--gold) 0%, #8b6920 100%);
+      color: #0a0d14;
       text-decoration: none;
-      padding: 10px 20px;
-      border-radius: 6px;
-      font-size: 0.9rem;
-      font-weight: 600;
+      padding: 10px 22px;
+      border-radius: 8px;
+      font-size: 0.88rem;
+      font-weight: 700;
       white-space: nowrap;
+      transition: opacity .2s, transform .15s, box-shadow .2s;
+      box-shadow: 0 4px 14px rgba(201,168,76,.3);
     }
 
-    .map-cta a:hover { background: #004299; }
+    .map-cta-btn:hover {
+      opacity: .9;
+      transform: translateY(-1px);
+      box-shadow: 0 8px 22px rgba(201,168,76,.4);
+    }
 
-    @media (max-width: 520px) {
-      header h1 { font-size: 1.4rem; }
-      .search-bar { flex-direction: column; align-items: stretch; }
-      .grid { grid-template-columns: 1fr; }
-      .section-header { padding: 12px 16px; }
-      #map { height: 280px; }
+    /* ─── NO RESULTS ─── */
+    .no-results {
+      text-align: center;
+      color: var(--text-mute);
+      font-size: 0.95rem;
+      font-weight: 300;
+      margin-top: 64px;
+      padding-bottom: 40px;
+    }
+
+    /* ─── ANIMATIONS ─── */
+    @keyframes fadeSlideUp {
+      from { opacity: 0; transform: translateY(10px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    .card, .shop-card, .deal-item {
+      animation: fadeSlideUp .3s ease both;
+    }
+
+    /* ─── SCROLLBAR ─── */
+    ::-webkit-scrollbar { width: 6px; height: 6px; }
+    ::-webkit-scrollbar-track { background: var(--bg); }
+    ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+    ::-webkit-scrollbar-thumb:hover { background: var(--text-mute); }
+
+    /* ─── LEAFLET OVERRIDES ─── */
+    .leaflet-popup-content-wrapper {
+      background: var(--surface2) !important;
+      color: var(--text) !important;
+      border: 1px solid var(--border) !important;
+      box-shadow: 0 8px 24px rgba(0,0,0,.5) !important;
+      border-radius: 8px !important;
+    }
+    .leaflet-popup-tip { background: var(--surface2) !important; }
+    .leaflet-popup-content { font-family: 'Rubik', sans-serif; font-size: 0.82rem; }
+
+    /* ─── RESPONSIVE ─── */
+    @media (max-width: 600px) {
+      /* Header: compact, hide meta to avoid overflow */
+      header { padding: 0 14px; height: 56px; }
+      header h1 { font-size: 0.95rem; }
+      .header-meta { display: none; }
+      .header-emblem { width: 32px; height: 32px; font-size: 0.85rem; border-radius: 6px; }
+
+      /* Nav tabs: zero horizontal padding, taller tap targets */
+      .nav-tabs { padding: 0 14px; top: 56px; gap: 0; }
+      .nav-tab { padding: 14px 13px 15px; font-size: 0.82rem; }
+      .nav-tab-count { margin-right: 5px; font-size: 0.66rem; min-width: 18px; height: 16px; }
+
+      /* Search toolbar: stack vertically, full width */
+      .search-toolbar { padding: 12px 14px; flex-direction: column; align-items: stretch; gap: 10px; }
+      .search-input-wrap { max-width: 100%; }
+      .search-input { font-size: 1rem; padding: 12px 38px 12px 14px; }
+      .delivery-toggle { padding: 11px 14px; font-size: 0.88rem; justify-content: center; }
+
+      /* Panel content */
+      .panel-content { padding: 14px 14px 64px; }
+      .result-count { font-size: 0.75rem; margin-bottom: 12px; }
+      .deals-panel { padding: 18px 14px 28px; }
+
+      /* Cards: single column, readable touch-friendly sizes */
+      .grid { grid-template-columns: 1fr; gap: 10px; }
+      .card { border-radius: 12px; }
+      .card-header { padding: 14px 14px 12px; }
+      .card-name { font-size: 1rem; }
+      .card-type { font-size: 0.8rem; }
+      .card-logo { width: 44px; height: 44px; }
+      .card-body { padding: 12px 14px 16px; gap: 8px; }
+      .detail-row { font-size: 0.85rem; gap: 8px; }
+      .detail-label { min-width: 40px; font-size: 0.78rem; }
+      .detail-value a { display: inline-block; padding: 2px 0; }
+
+      /* Shops */
+      .shop-card { padding: 14px; }
+      .shop-name { font-size: 0.97rem; }
+
+      /* Deals: 2-column grid on mobile */
+      .deals-grid { grid-template-columns: repeat(2, 1fr); gap: 10px; }
+      .deal-label { font-size: 0.8rem; }
+
+      /* Map: taller so it's actually usable on phone */
+      #map { height: 420px; }
+      .map-cta { padding: 14px; flex-direction: column; align-items: stretch; gap: 10px; }
+      .map-cta p { font-size: 0.82rem; }
+      .map-cta-btn { text-align: center; justify-content: center; padding: 13px 20px; font-size: 0.92rem; }
+
+      /* Map controls */
+      .map-controls { padding: 10px 14px; gap: 8px; flex-wrap: wrap; }
+      #search-map { max-width: 100%; min-width: 0; width: 100%; }
+      .map-card-filters { gap: 6px; }
+      .map-card-btn { padding: 8px 10px; }
+      .map-card-btn img { height: 24px; }
+
+      /* Kill hover transforms on touch devices */
+      .card:hover, .shop-card:hover, .deal-item:hover { transform: none; }
+    }
+
+    @media (max-width: 380px) {
+      .nav-tab { padding: 12px 10px 13px; font-size: 0.78rem; }
+      .card-name { font-size: 0.95rem; }
     }
   </style>
 </head>
 <body>
 
 <header>
-  <h1>כרטיס חבר - דוח שבועי</h1>
+  <div class="header-brand">
+    <div class="header-emblem">ח</div>
+    <h1>כרטיס חבר</h1>
+  </div>
   <div class="header-meta" id="header-meta">טוען נתונים...</div>
 </header>
 
-<!-- Deals section -->
-<div id="deals-section" style="display:none;">
-  <div class="section-header" onclick="toggleSection('deals')">
-    <span class="section-header-title">מבצעי השבוע</span>
-    <button class="section-toggle" id="toggle-deals">הצג</button>
-  </div>
-  <div class="section-body collapsed" id="body-deals">
-    <div class="deals-section">
-      <ul class="deals-list" id="deals-list"></ul>
+<div class="nav-tabs" id="nav-tabs">
+  <button class="nav-tab active" data-panel="restaurants" onclick="switchTab('restaurants',this)">
+    חבר טעמים
+    <span class="nav-tab-count" id="tab-count-restaurants">–</span>
+  </button>
+  <button class="nav-tab" data-panel="shops" onclick="switchTab('shops',this)">
+    כרטיס צהוב
+    <span class="nav-tab-count" id="tab-count-shops">–</span>
+  </button>
+  <button class="nav-tab" id="tab-deals" data-panel="deals" onclick="switchTab('deals',this)" style="display:none;">
+    מבצעי השבוע
+    <span class="nav-tab-count" id="tab-count-deals">–</span>
+  </button>
+  <button class="nav-tab" data-panel="map" onclick="switchTab('map',this)">
+    מפה
+  </button>
+</div>
+
+<!-- RESTAURANTS PANEL -->
+<div class="panel active" id="panel-restaurants">
+  <div class="search-toolbar">
+    <div class="search-input-wrap">
+      <span class="search-icon">&#9906;</span>
+      <input type="search" class="search-input" id="search" placeholder="חיפוש מסעדה, סוג, עיר..." autocomplete="off">
     </div>
+    <label class="delivery-toggle" id="delivery-toggle-label">
+      <input type="checkbox" id="filter-delivery">
+      <div class="delivery-toggle-dot"></div>
+      מכובד במשלוחים
+    </label>
+  </div>
+  <div class="panel-content">
+    <div class="result-count" id="result-count"></div>
+    <div class="grid" id="grid"></div>
+    <div class="no-results" id="no-results" style="display:none;">לא נמצאו תוצאות</div>
   </div>
 </div>
 
-<!-- Restaurants section -->
-<div id="restaurants-section">
-  <div class="section-header" onclick="toggleSection('restaurants')">
-    <span class="section-header-title">חבר טעמים</span>
-    <button class="section-toggle" id="toggle-restaurants">הצג</button>
-  </div>
-  <div class="section-body collapsed" id="body-restaurants">
-    <div class="search-bar">
-      <input type="search" id="search" placeholder="חיפוש מסעדה, סוג, עיר..." autocomplete="off">
-      <label style="display:flex;align-items:center;gap:6px;font-size:0.88rem;color:#1a7a3a;font-weight:600;cursor:pointer;white-space:nowrap;">
-        <input type="checkbox" id="filter-delivery" style="cursor:pointer;width:16px;height:16px;accent-color:#1a7a3a;">
-        משלוחים בלבד
-      </label>
+<!-- SHOPS PANEL -->
+<div class="panel" id="panel-shops">
+  <div class="search-toolbar">
+    <div class="search-input-wrap">
+      <span class="search-icon">&#9906;</span>
+      <input type="search" class="search-input" id="search-shops" placeholder="חיפוש חנות, קטגוריה..." autocomplete="off">
     </div>
-    <main>
-      <div id="result-count"></div>
-      <div class="grid" id="grid"></div>
-      <div class="no-results" id="no-results" style="display:none;">לא נמצאו תוצאות</div>
-    </main>
+  </div>
+  <div class="panel-content">
+    <div class="result-count" id="shop-count"></div>
+    <div class="grid" id="shop-grid"></div>
+    <div class="no-results" id="no-results-shops" style="display:none;">לא נמצאו תוצאות</div>
   </div>
 </div>
 
-<!-- Shops section -->
-<div id="shops-section">
-  <div class="section-header" onclick="toggleSection('shops')">
-    <span class="section-header-title">כרטיס צהוב</span>
-    <button class="section-toggle" id="toggle-shops">הצג</button>
-  </div>
-  <div class="section-body collapsed" id="body-shops">
-    <div class="search-bar">
-      <input type="search" id="search-shops" placeholder="חיפוש חנות, קטגוריה..." autocomplete="off">
-    </div>
-    <main>
-      <div id="shop-count"></div>
-      <div class="grid" id="shop-grid"></div>
-      <div class="no-results" id="no-results-shops" style="display:none;">לא נמצאו תוצאות</div>
-    </main>
+<!-- DEALS PANEL -->
+<div class="panel" id="panel-deals">
+  <div class="deals-panel">
+    <div class="panel-title">מבצעי השבוע</div>
+    <ul class="deals-grid" id="deals-list"></ul>
   </div>
 </div>
 
-<!-- Map section -->
-<div class="map-section">
-  <div class="section-header" onclick="toggleSection('map')">
-    <span class="section-header-title">מפת בתי עסק</span>
-    <button class="section-toggle" id="toggle-map">הצג</button>
-  </div>
-  <div class="section-body collapsed" id="body-map">
-    <div id="map"></div>
-    <div class="map-cta">
-      <p>מציג בתי עסק עם כתובת מוכרת. למפה הרשמית עם כל בתי העסק:</p>
-      <a href="https://www.hvr.co.il/site/pg/maps_hvr" target="_blank" rel="noopener">פתח את מפת חבר ←</a>
+<!-- MAP PANEL -->
+<div class="panel" id="panel-map">
+  <div class="map-controls">
+    <input type="search" id="search-map" placeholder="חיפוש עסק, עיר, קטגוריה..." autocomplete="off">
+    <div class="map-card-filters">
+      <button class="map-card-btn active" data-card="food" title="חבר טעמים — מסעדות">
+        <img src="https://www.hvr.co.il/pics/site_home/teamimcard_img_170324.png" alt="חבר טעמים">
+      </button>
+      <button class="map-card-btn active" data-card="gift" title="כרטיס חבר — רשתות וחנויות">
+        <img src="https://www.hvr.co.il/pics/site_home/kevacard_img_170324.png" alt="כרטיס חבר">
+      </button>
+      <button class="map-card-btn active" data-card="credit" title="כרטיס אשראי חבר">
+        <img src="https://www.hvr.co.il/pics/site_home/creditcard_img_170324.png" alt="כרטיס אשראי">
+      </button>
+      <button class="map-card-btn active" data-card="culture" title="אתרי תרבות ופנאי">
+        <img src="https://www.hvr.co.il/pics/site_home/tarbut_img_170324.png" alt="תרבות ופנאי">
+      </button>
     </div>
+    <span class="map-count" id="map-count"></span>
+  </div>
+  <div id="map"></div>
+  <div class="map-cta">
+    <p>מציג את כל בתי העסק הרשומים במפת חבר. למפה הרשמית:</p>
+    <a class="map-cta-btn" href="https://www.hvr.co.il/site/pg/maps_hvr" target="_blank" rel="noopener">פתח את מפת חבר &larr;</a>
   </div>
 </div>
 
@@ -479,34 +929,29 @@
   let allCompanies = [];
   let shopIndex = [];
 
-  function toggleSection(id) {
-    const body = document.getElementById(`body-${id}`);
-    const btn = document.getElementById(`toggle-${id}`);
-    const collapsed = body.classList.toggle('collapsed');
-    btn.textContent = collapsed ? 'הצג' : 'הסתר';
+  // ── TAB SWITCHING ──────────────────────────────────────────────
+  function switchTab(id, btn) {
+    document.querySelectorAll('.panel').forEach(p => p.classList.remove('active'));
+    document.querySelectorAll('.nav-tab').forEach(t => t.classList.remove('active'));
+    document.getElementById('panel-' + id).classList.add('active');
+    btn.classList.add('active');
   }
 
-  // Hebrew → consonant skeleton (drop vowel letters, normalize sounds)
+  // ── DELIVERY TOGGLE ────────────────────────────────────────────
+  const deliveryCheckbox = document.getElementById('filter-delivery');
+  const deliveryLabel = document.getElementById('delivery-toggle-label');
+  deliveryCheckbox.addEventListener('change', function() {
+    deliveryLabel.classList.toggle('checked', this.checked);
+    applyRestaurantFilters();
+  });
+
+  // ── SEARCH LOGIC ───────────────────────────────────────────────
   const HE_MAP = {
     'א':'','ב':'b','ג':'g','ד':'d','ה':'','ו':'','ז':'z',
     'ח':'h','ט':'t','י':'','כ':'k','ך':'k','ל':'l','מ':'m',
     'ם':'m','נ':'n','ן':'n','ס':'s','ע':'','פ':'p','ף':'f',
     'צ':'ts','ץ':'ts','ק':'k','ר':'r','ש':'sh','ת':'t'
   };
-
-  // Latin → consonant skeleton (strip vowels, normalize)
-  function latinSkeleton(str) {
-    return str
-      .toLowerCase()
-      .replace(/sh/g,'§') // protect digraph
-      .replace(/ch/g,'h')
-      .replace(/ck/g,'k')
-      .replace(/ph/g,'f')
-      .replace(/§/g,'sh')
-      .replace(/[aeiou]/g,'')  // strip vowels
-      .replace(/(.)\1+/g,'$1') // collapse doubles: bb→b
-      .trim();
-  }
 
   function heSkeleton(str) {
     const latin = str.split('').map(c => HE_MAP[c] !== undefined ? HE_MAP[c] : c).join('');
@@ -536,57 +981,6 @@
     return str.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
   }
 
-  function renderCards(list) {
-    const grid = document.getElementById('grid');
-    const noResults = document.getElementById('no-results');
-    const countEl = document.getElementById('result-count');
-
-    if (list.length === 0) {
-      grid.innerHTML = '';
-      noResults.style.display = 'block';
-      countEl.textContent = '';
-      return;
-    }
-
-    noResults.style.display = 'none';
-    countEl.textContent = `${list.length} מסעדות`;
-
-    grid.innerHTML = list.map(r => {
-      const name    = escapeHtml(r.name);
-      const type    = escapeHtml(r.type);
-      const address = escapeHtml(r.address);
-      const phone   = escapeHtml(r.phone);
-      const hours   = escapeHtml(r.hours ? r.hours.replace(/\n/g, ' | ') : '');
-      const hasDelivery = (r.type || '').includes('מארזים במשלוח') ||
-        (r.services || '').includes('אפליקציה') ||
-        (r.services || '').includes('משלוח') ||
-        (r.hours || '').includes('אפליקציה') ||
-        (r.hours || '').includes('משלוח');
-
-      let body = '';
-      if (address) body += `<div class="detail-row"><span class="detail-label">כתובת</span><span class="detail-value">${address}</span></div>`;
-      if (phone)   body += `<div class="detail-row"><span class="detail-label">טלפון</span><span class="detail-value"><a href="tel:${phone}">${phone}</a></span></div>`;
-      if (hours)   body += `<div class="detail-row"><span class="detail-label">שעות</span><span class="detail-value">${hours}</span></div>`;
-
-      const logoHtml = r.logo ? `<img class="card-logo" src="${escapeHtml(r.logo)}" alt="${name}" loading="lazy">` : '';
-      const badge = hasDelivery
-        ? `<span class="delivery-badge has-delivery">גם במשלוח</span>`
-        : `<span class="delivery-badge seating-only">ישיבה בלבד</span>`;
-      return `<div class="card${hasDelivery ? ' has-delivery' : ''}">
-        <div class="card-header">
-          ${logoHtml}
-          <div class="card-header-text">
-            <div class="card-name">${name}</div>
-            ${type ? `<div class="card-type">${type}</div>` : ''}
-            ${badge}
-          </div>
-        </div>
-        <div class="card-body">${body}</div>
-      </div>`;
-    }).join('');
-  }
-
-  // Keyword synonyms: typing any of these terms expands to all listed variants
   const SYNONYMS = [
     ['המבורגר','המבורגרים','בורגר','burger','burgers'],
     ['פיצה','פיצריה','פיצות','pizza'],
@@ -617,7 +1011,6 @@
   }
 
   function tokenMatches(tokenVariants, entry) {
-    // A token matches if ANY of its variants appears in raw or skel
     return tokenVariants.some(v => {
       if (entry.raw.includes(v)) return true;
       const vSkel = heSkeleton(v);
@@ -628,17 +1021,66 @@
   function filterList(query, list, index) {
     const q = stripPunctuation(query.trim().toLowerCase());
     if (!q) return list;
-
-    // Split into tokens (space-separated), expand each with synonyms
     const rawTokens = q.split(/\s+/).filter(Boolean);
     const expandedTokens = expandTokens(rawTokens);
-
-    // Every token group must match (AND logic)
     return list.filter((_, i) =>
       expandedTokens.every(variants => tokenMatches(variants, index[i]))
     );
   }
 
+  // ── RENDER RESTAURANTS ─────────────────────────────────────────
+  function renderCards(list) {
+    const grid = document.getElementById('grid');
+    const noResults = document.getElementById('no-results');
+    const countEl = document.getElementById('result-count');
+
+    if (list.length === 0) {
+      grid.innerHTML = '';
+      noResults.style.display = 'block';
+      countEl.textContent = '';
+      return;
+    }
+
+    noResults.style.display = 'none';
+    countEl.textContent = `${list.length} מסעדות`;
+
+    grid.innerHTML = list.map((r, i) => {
+      const name    = escapeHtml(r.name);
+      const type    = escapeHtml(r.type);
+      const address = escapeHtml(r.address);
+      const phone   = escapeHtml(r.phone);
+      const hours   = escapeHtml(r.hours ? r.hours.replace(/\n/g, ' | ') : '');
+      const hasDelivery = (r.type || '').includes('מארזים במשלוח') ||
+        (r.services || '').includes('אפליקציה') ||
+        (r.services || '').includes('משלוח') ||
+        (r.hours || '').includes('אפליקציה') ||
+        (r.hours || '').includes('משלוח');
+
+      let body = '';
+      if (address) body += `<div class="detail-row"><span class="detail-label">כתובת</span><span class="detail-value">${address}</span></div>`;
+      if (phone)   body += `<div class="detail-row"><span class="detail-label">טלפון</span><span class="detail-value"><a href="tel:${phone}">${phone}</a></span></div>`;
+      if (hours)   body += `<div class="detail-row"><span class="detail-label">שעות</span><span class="detail-value">${hours}</span></div>`;
+
+      const logoHtml = r.logo ? `<img class="card-logo" src="${escapeHtml(r.logo)}" alt="${name}" loading="lazy">` : '';
+      const badge = hasDelivery
+        ? `<span class="delivery-badge has-delivery">גם במשלוח</span>`
+        : `<span class="delivery-badge seating-only">ישיבה בלבד</span>`;
+
+      return `<div class="card${hasDelivery ? ' has-delivery' : ''}" style="animation-delay:${Math.min(i,20)*18}ms">
+        <div class="card-header">
+          ${logoHtml}
+          <div class="card-header-text">
+            <div class="card-name">${name}</div>
+            ${type ? `<div class="card-type">${type}</div>` : ''}
+            ${badge}
+          </div>
+        </div>
+        <div class="card-body">${body}</div>
+      </div>`;
+    }).join('');
+  }
+
+  // ── RENDER SHOPS ───────────────────────────────────────────────
   function renderShops(list) {
     const grid = document.getElementById('shop-grid');
     const noResults = document.getElementById('no-results-shops');
@@ -654,12 +1096,12 @@
     noResults.style.display = 'none';
     countEl.textContent = `${list.length} חנויות`;
 
-    grid.innerHTML = list.map(c => {
+    grid.innerHTML = list.map((c, i) => {
       const name = escapeHtml(c.name);
       const category = escapeHtml(c.category);
       const onlineTag = c.online ? `<div class="shop-online">מכובד באונליין</div>` : '';
       const logoHtml = c.logo ? `<img class="card-logo" src="${escapeHtml(c.logo)}" alt="${name}" loading="lazy">` : '';
-      return `<div class="shop-card">
+      return `<div class="shop-card" style="animation-delay:${Math.min(i,20)*18}ms">
         <div class="shop-card-header">
           ${logoHtml}
           <div class="shop-card-text">
@@ -672,6 +1114,27 @@
     }).join('');
   }
 
+  // ── RENDER DEALS ───────────────────────────────────────────────
+  function renderDeals(deals) {
+    if (!deals || deals.length === 0) return;
+    document.getElementById('tab-deals').style.display = 'flex';
+    document.getElementById('tab-count-deals').textContent = deals.length;
+    document.getElementById('deals-list').innerHTML = deals.map((d, i) => {
+      const label = escapeHtml((d.label || '').replace(/^[\p{Emoji}\s]+/u, '').trim());
+      const sub = d.subtitle ? `<div class="deal-sub">${escapeHtml(d.subtitle)}</div>` : '';
+      const imgHtml = d.image
+        ? `<img class="deal-img" src="${escapeHtml(d.image)}" alt="${label}" loading="lazy">`
+        : `<div class="deal-img-placeholder"></div>`;
+      const footer = `<div class="deal-footer"><span class="deal-label">${label}</span>${sub}</div>`;
+      const inner = imgHtml + footer;
+      if (d.url) {
+        return `<li class="deal-item" style="animation-delay:${i*30}ms"><a href="${escapeHtml(d.url)}" target="_blank" rel="noopener">${inner}</a></li>`;
+      }
+      return `<li class="deal-item" style="animation-delay:${i*30}ms">${inner}</li>`;
+    }).join('');
+  }
+
+  // ── FILTER HANDLERS ────────────────────────────────────────────
   function applyRestaurantFilters() {
     const query = document.getElementById('search').value;
     const deliveryOnly = document.getElementById('filter-delivery').checked;
@@ -687,30 +1150,11 @@
   }
 
   document.getElementById('search').addEventListener('input', applyRestaurantFilters);
-  document.getElementById('filter-delivery').addEventListener('change', applyRestaurantFilters);
-
   document.getElementById('search-shops').addEventListener('input', function () {
     renderShops(filterList(this.value, allCompanies, shopIndex));
   });
 
-  function renderDeals(deals) {
-    if (!deals || deals.length === 0) return;
-    document.getElementById('deals-section').style.display = 'block';
-    document.getElementById('deals-list').innerHTML = deals.map(d => {
-      const label = escapeHtml((d.label || '').replace(/^[\p{Emoji}\s]+/u, '').trim());
-      const sub = d.subtitle ? `<div class="deal-sub">${escapeHtml(d.subtitle)}</div>` : '';
-      const imgHtml = d.image
-        ? `<img class="deal-img" src="${escapeHtml(d.image)}" alt="${label}" loading="lazy">`
-        : `<div class="deal-img-placeholder"></div>`;
-      const footer = `<div class="deal-footer"><span class="deal-label">${label}</span>${sub}</div>`;
-      const inner = imgHtml + footer;
-      if (d.url) {
-        return `<li class="deal-item"><a href="${escapeHtml(d.url)}" target="_blank" rel="noopener">${inner}</a></li>`;
-      }
-      return `<li class="deal-item">${inner}</li>`;
-    }).join('');
-  }
-
+  // ── DATA LOADING ───────────────────────────────────────────────
   async function loadData() {
     try {
       const [restRes, metaRes, dealsRes, gcRes] = await Promise.all([
@@ -729,10 +1173,13 @@
       const meta  = await metaRes.json();
       const deals = await dealsRes.json();
 
+      document.getElementById('tab-count-restaurants').textContent = allRestaurants.length;
+      document.getElementById('tab-count-shops').textContent = allCompanies.length;
+
       const metaEl = document.getElementById('header-meta');
       if (meta.date) {
-        const compCount = meta.company_count ? ` | ${meta.company_count} חנויות` : '';
-        metaEl.textContent = `עודכן: ${meta.date} | ${meta.restaurant_count} מסעדות${compCount}`;
+        const compCount = meta.company_count ? ` · ${meta.company_count} חנויות` : '';
+        metaEl.textContent = `עודכן: ${meta.date} · ${meta.restaurant_count} מסעדות${compCount}`;
       } else {
         metaEl.textContent = `${allRestaurants.length} מסעדות`;
       }
@@ -754,58 +1201,142 @@
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV/XN/sp38=" crossorigin=""></script>
 <script>
   let leafletMap = null;
+  let allMarkers = [];
+  let leafletLayers = [];
 
-  function initMap(restaurants) {
-    if (leafletMap) {
-      leafletMap.remove();
-      leafletMap = null;
+  // card type → filter key mapping
+  const CARD_TYPES = {
+    food:    ['F0', 'F1'],
+    gift:    ['G', 'G0', 'G1'],
+    credit:  ['C0', 'C1'],
+    culture: ['S'],
+  };
+
+  // pin colours per card type
+  const PIN_COLORS = {
+    food:    '#3b82f6',  // blue  — חבר טעמים
+    gift:    '#f59e0b',  // yellow — כרטיס קבע (shops)
+    credit:  '#6b7280',  // dark grey — כרטיס אשראי חבר
+    culture: '#a855f7',  // purple — תרבות ופנאי
+  };
+
+  function typeToCard(type) {
+    for (const [card, types] of Object.entries(CARD_TYPES)) {
+      if (types.includes(type)) return card;
     }
-
-    const mapEl = document.getElementById('map');
-    leafletMap = L.map(mapEl).setView([31.5, 34.9], 8);
-
-    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
-      maxZoom: 18
-    }).addTo(leafletMap);
-
-    const pinIcon = L.divIcon({
-      className: '',
-      html: '<div style="width:10px;height:10px;border-radius:50%;background:#0057b7;border:2px solid #fff;box-shadow:0 1px 3px rgba(0,0,0,.4)"></div>',
-      iconSize: [10, 10],
-      iconAnchor: [5, 5],
-      popupAnchor: [0, -8]
-    });
-
-    let count = 0;
-    restaurants.forEach(r => {
-      if (r.lat == null || r.lng == null) return;
-      const name = r.name || '';
-      const addr = r.address || '';
-      const type = r.type || '';
-      const phone = r.phone ? `<br><a href="tel:${r.phone}">${r.phone}</a>` : '';
-      L.marker([r.lat, r.lng], { icon: pinIcon })
-        .addTo(leafletMap)
-        .bindPopup(`<strong>${name}</strong>${type ? `<br><span style="color:#0057b7;font-size:0.85em">${type}</span>` : ''}<br>${addr}${phone}`);
-      count++;
-    });
-
-    // Force map to recalculate size after section expansion
-    setTimeout(() => leafletMap.invalidateSize(), 100);
-    return count;
+    return null;
   }
 
-  // Initialize map when its section is first expanded
-  const origToggle = window.toggleSection;
-  let mapInitialized = false;
-  window.toggleSection = function(id) {
-    origToggle(id);
-    if (id === 'map' && !mapInitialized && allRestaurants.length > 0) {
-      const body = document.getElementById('body-map');
-      if (!body.classList.contains('collapsed')) {
-        mapInitialized = true;
-        initMap(allRestaurants);
+  function makeIcon(card) {
+    const color = PIN_COLORS[card] || '#c9a84c';
+    return L.divIcon({
+      className: '',
+      html: `<div style="width:9px;height:9px;border-radius:50%;background:${color};border:1.5px solid #0a0d14;box-shadow:0 0 6px ${color}88"></div>`,
+      iconSize: [9, 9],
+      iconAnchor: [4, 4],
+      popupAnchor: [0, -7]
+    });
+  }
+
+  function getActiveCards() {
+    return [...document.querySelectorAll('.map-card-btn.active')].map(b => b.dataset.card);
+  }
+
+  function getMapSearchQuery() {
+    return (document.getElementById('search-map').value || '').trim().toLowerCase();
+  }
+
+  function applyMapFilters() {
+    if (!leafletMap) return;
+    const activeCards = getActiveCards();
+    const q = getMapSearchQuery();
+
+    leafletLayers.forEach(({ layer, card, searchText }) => {
+      const visible = activeCards.includes(card) && (!q || searchText.includes(q));
+      if (visible) {
+        if (!leafletMap.hasLayer(layer)) layer.addTo(leafletMap);
+      } else {
+        if (leafletMap.hasLayer(layer)) leafletMap.removeLayer(layer);
       }
+    });
+
+    const visibleCount = leafletLayers.filter(({ card, searchText }) =>
+      activeCards.includes(card) && (!q || searchText.includes(q))
+    ).length;
+    document.getElementById('map-count').textContent = `${visibleCount.toLocaleString()} בתי עסק`;
+  }
+
+  function initMap() {
+    if (leafletMap) { leafletMap.remove(); leafletMap = null; }
+
+    const mapEl = document.getElementById('map');
+    leafletMap = L.map(mapEl, { zoomControl: true }).setView([31.5, 34.9], 8);
+
+    L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/attributions">CARTO</a>',
+      subdomains: 'abcd',
+      maxZoom: 19
+    }).addTo(leafletMap);
+
+    leafletLayers = [];
+
+    allMarkers.forEach(m => {
+      if (!m.latitude || !m.longitude) return;
+      const card = typeToCard(m.type);
+      if (!card) return;
+
+      const name = m.title || '';
+      const city = m.city || '';
+      const addr = m.address || '';
+      const cat  = m.category || '';
+      const disc = m.discount ? `<br><span style="color:#f59e0b">${m.discount}</span>` : '';
+      const searchText = [name, city, addr, cat].join(' ').toLowerCase();
+
+      const layer = L.marker([m.latitude, m.longitude], { icon: makeIcon(card) })
+        .bindPopup(
+          `<strong style="color:#e8ecf4">${name}</strong>` +
+          (cat ? `<br><span style="color:#7d6425;font-size:0.8em">${cat}</span>` : '') +
+          `<br><span style="color:#7a8399">${city}${addr ? ', ' + addr : ''}</span>` +
+          disc
+        );
+
+      leafletLayers.push({ layer, card, searchText });
+    });
+
+    applyMapFilters();
+    setTimeout(() => leafletMap.invalidateSize(), 120);
+  }
+
+  // wire up filter buttons
+  document.querySelectorAll('.map-card-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      btn.classList.toggle('active');
+      applyMapFilters();
+    });
+  });
+
+  document.getElementById('search-map').addEventListener('input', applyMapFilters);
+
+  // load markers.json and init map when tab is opened
+  async function loadAndInitMap() {
+    if (allMarkers.length === 0) {
+      try {
+        const res = await fetch('markers.json');
+        allMarkers = await res.json();
+      } catch (e) {
+        console.error('Failed to load markers.json', e);
+        return;
+      }
+    }
+    initMap();
+  }
+
+  // hook into tab switcher
+  const _origSwitchTab = window.switchTab;
+  window.switchTab = function(id, btn) {
+    _origSwitchTab(id, btn);
+    if (id === 'map' && !leafletMap) {
+      loadAndInitMap();
     }
   };
 </script>
