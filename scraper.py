@@ -91,11 +91,17 @@ def scrape_giftcard_companies(page):
             badge_el = card.query_selector("span.online-badge")
             online = badge_el is not None and "hide" not in (badge_el.get_attribute("class") or "")
 
+            logo_el = card.query_selector("img")
+            logo_src = logo_el.get_attribute("src") if logo_el else ""
+            if logo_src and logo_src.startswith("/"):
+                logo_src = "https://www.hvr.co.il" + logo_src
+
             if name:
                 companies.append({
                     "name": name,
                     "category": category,
                     "online": online,
+                    "logo": logo_src,
                 })
         except Exception:
             continue
@@ -137,6 +143,11 @@ def scrape_restaurants(page):
             hours_el = card.query_selector("div.d-none.d-lg-inline.col-lg-2 span")
             hours = hours_el.inner_text().strip() if hours_el else ""
 
+            logo_el = card.query_selector("div.col-4.col-lg-1 img")
+            logo_src = logo_el.get_attribute("src") if logo_el else ""
+            if logo_src and logo_src.startswith("/"):
+                logo_src = "https://www.hvr.co.il" + logo_src
+
             if name:
                 restaurants.append({
                     "name": name,
@@ -144,6 +155,7 @@ def scrape_restaurants(page):
                     "address": address,
                     "phone": phone,
                     "hours": hours,
+                    "logo": logo_src,
                 })
         except Exception:
             continue
