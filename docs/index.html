@@ -7,7 +7,6 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Rubik:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -693,6 +692,33 @@
       height: 440px;
       display: block;
       border-top: 1px solid var(--border);
+      position: relative;
+    }
+
+    #map-spinner {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--surface);
+      z-index: 1000;
+      pointer-events: none;
+    }
+
+    #map-spinner.hidden { display: none; }
+
+    .spinner-ring {
+      width: 44px;
+      height: 44px;
+      border: 4px solid var(--border);
+      border-top-color: var(--accent);
+      border-radius: 50%;
+      animation: spin 0.7s linear infinite;
+    }
+
+    @keyframes spin {
+      to { transform: rotate(360deg); }
     }
 
     .map-cta {
@@ -911,27 +937,8 @@
 
 <!-- MAP PANEL -->
 <div class="panel" id="panel-map">
-  <div class="map-controls">
-    <input type="search" id="search-map" placeholder="חיפוש עסק, עיר, קטגוריה..." autocomplete="off">
-    <div class="map-card-filters">
-      <button class="map-card-btn active" data-card="food" title="חבר טעמים — מסעדות">
-        <img src="https://www.hvr.co.il/pics/site_home/teamimcard_img_170324.png" alt="חבר טעמים">
-      </button>
-      <button class="map-card-btn active" data-card="gift" title="כרטיס חבר — רשתות וחנויות">
-        <img src="https://www.hvr.co.il/pics/site_home/kevacard_img_170324.png" alt="כרטיס חבר">
-      </button>
-      <button class="map-card-btn active" data-card="credit" title="כרטיס אשראי חבר">
-        <img src="https://www.hvr.co.il/pics/site_home/creditcard_img_170324.png" alt="כרטיס אשראי">
-      </button>
-      <button class="map-card-btn active" data-card="culture" title="אתרי תרבות ופנאי">
-        <img src="https://www.hvr.co.il/pics/site_home/tarbut_img_170324.png" alt="תרבות ופנאי">
-      </button>
-    </div>
-    <span class="map-count" id="map-count"></span>
-  </div>
-  <div id="map"></div>
-  <div class="map-cta">
-    <p>מציג את כל בתי העסק הרשומים במפת חבר. למפה הרשמית:</p>
+  <div class="map-cta" style="margin:40px auto;max-width:480px;flex-direction:column;align-items:center;text-align:center;gap:16px">
+    <p>מפת בתי העסק זמינה באתר חבר הרשמי</p>
     <a class="map-cta-btn" href="https://www.hvr.co.il/site/pg/maps_hvr" target="_blank" rel="noopener">פתח את מפת חבר &larr;</a>
   </div>
 </div>
@@ -1058,21 +1065,23 @@
     countEl.textContent = `${list.length} מסעדות`;
 
     grid.innerHTML = list.map((r, i) => {
-      const name    = escapeHtml(r.name);
-      const type    = escapeHtml(r.type);
-      const address = escapeHtml(r.address);
-      const phone   = escapeHtml(r.phone);
-      const hours   = escapeHtml(r.hours ? r.hours.replace(/\n/g, ' | ') : '');
+      const name     = escapeHtml(r.name);
+      const type     = escapeHtml(r.type);
+      const address  = escapeHtml(r.address);
+      const phone    = escapeHtml(r.phone);
+      const hours    = escapeHtml(r.hours ? r.hours.replace(/\n/g, ' | ') : '');
+      const services = escapeHtml(r.services || '');
+      const notes    = escapeHtml(r.notes || '');
       const hasDelivery = (r.type || '').includes('מארזים במשלוח') ||
-        (r.services || '').includes('אפליקציה') ||
-        (r.services || '').includes('משלוח') ||
-        (r.hours || '').includes('אפליקציה') ||
-        (r.hours || '').includes('משלוח');
+        (r.services || '').includes('משלוחים') ||
+        (r.services || '').includes('משלוח');
 
       let body = '';
-      if (address) body += `<div class="detail-row"><span class="detail-label">כתובת</span><span class="detail-value">${address}</span></div>`;
-      if (phone)   body += `<div class="detail-row"><span class="detail-label">טלפון</span><span class="detail-value"><a href="tel:${phone}">${phone}</a></span></div>`;
-      if (hours)   body += `<div class="detail-row"><span class="detail-label">שעות</span><span class="detail-value">${hours}</span></div>`;
+      if (address)  body += `<div class="detail-row"><span class="detail-label">כתובת</span><span class="detail-value">${address}</span></div>`;
+      if (phone)    body += `<div class="detail-row"><span class="detail-label">טלפון</span><span class="detail-value"><a href="tel:${phone}">${phone}</a></span></div>`;
+      if (hours)    body += `<div class="detail-row"><span class="detail-label">שעות</span><span class="detail-value">${hours}</span></div>`;
+      if (notes)    body += `<div class="detail-row"><span class="detail-label">הערות</span><span class="detail-value">${notes}</span></div>`;
+      if (services) body += `<div class="detail-row"><span class="detail-label">פרטים נוספים</span><span class="detail-value">${services}</span></div>`;
 
       const logoHtml = r.logo ? `<img class="card-logo" src="${escapeHtml(r.logo)}" alt="${name}" loading="lazy">` : '';
       const badge = hasDelivery
@@ -1154,10 +1163,8 @@
     let list = filterList(query, allRestaurants, searchIndex);
     if (deliveryOnly) list = list.filter(r =>
       (r.type || '').includes('מארזים במשלוח') ||
-      (r.services || '').includes('אפליקציה') ||
-      (r.services || '').includes('משלוח') ||
-      (r.hours || '').includes('אפליקציה') ||
-      (r.hours || '').includes('משלוח')
+      (r.services || '').includes('משלוחים') ||
+      (r.services || '').includes('משלוח')
     );
     renderCards(list);
   }
@@ -1216,19 +1223,7 @@
   loadData();
 </script>
 
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
 <script>
-  let leafletMap = null;
-  let allMarkers = [];
-  let leafletLayers = [];
-
-  // card type → filter key mapping
-  const CARD_TYPES = {
-    food:    ['F0', 'F1'],
-    gift:    ['G', 'G0', 'G1'],
-    credit:  ['C0', 'C1'],
-    culture: ['S'],
-  };
 
   // pin colours per card type
   const PIN_COLORS = {
@@ -1323,7 +1318,11 @@
 
     applyMapFilters();
     setTimeout(() => leafletMap.invalidateSize(), 50);
-    setTimeout(() => leafletMap.invalidateSize(), 400);
+    setTimeout(() => {
+      leafletMap.invalidateSize();
+      const spinner = document.getElementById('map-spinner');
+      if (spinner) spinner.classList.add('hidden');
+    }, 400);
   }
 
   // wire up filter buttons
@@ -1345,9 +1344,10 @@
         allMarkers = await res.json();
       } catch (e) {
         console.error('Failed to load markers.json', e);
+        const spinner = document.getElementById('map-spinner');
+        if (spinner) spinner.classList.add('hidden');
         document.getElementById('map').innerHTML =
           '<div style="display:flex;align-items:center;justify-content:center;height:100%;color:var(--text-dim);font-size:0.9rem;flex-direction:column;gap:8px">' +
-          '<span style="font-size:2rem">⚠️</span>' +
           '<span>לא ניתן לטעון את נתוני המפה</span>' +
           '<span style="font-size:0.78rem;color:var(--text-mute)">נסה לפתוח את הדף דרך שרת מקומי או GitHub Pages</span>' +
           '</div>';
