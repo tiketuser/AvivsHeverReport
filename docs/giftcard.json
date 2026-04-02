@@ -2,1781 +2,2119 @@
   {
     "name": "SHASHA GIFTS",
     "category": "מתנות ופנאי",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_shasha.jpg"
   },
   {
     "name": "4chef",
     "category": "אביזרי מטבח",
-    "online": false
+    "online": false,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_4chef.jpg"
   },
   {
     "name": "99 דרכים",
     "category": "מתנות ופנאי",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_99ways.jpg"
   },
   {
     "name": "Absolute Teamsport",
     "category": "ביגוד והנעלה | ספורט",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_absoluteteamsport.jpg"
   },
   {
     "name": "ACE",
     "category": "לבית ולחצר",
-    "online": false
+    "online": false,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_ace_autodepot.jpg"
   },
   {
     "name": "aerie",
     "category": "ביגוד והנעלה | ספורט | הלבשה תחתונה",
-    "online": false
+    "online": false,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_aerie.jpg"
   },
   {
     "name": "ALDO",
     "category": "ביגוד והנעלה | תכשיטים ואקססוריז",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_aldo.jpg"
   },
   {
     "name": "allsaints",
     "category": "ביגוד והנעלה",
-    "online": false
+    "online": false,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_allsaints.jpg"
   },
   {
     "name": "American Comfort",
     "category": "שינה וטקסטיל",
-    "online": false
+    "online": false,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_americancomfort.png"
   },
   {
     "name": "AMOR",
     "category": "ביגוד והנעלה",
-    "online": false
+    "online": false,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_amor.jpg"
   },
   {
     "name": "ASUS",
     "category": "לימודים וספרים | חשמל ואלקטרוניקה",
-    "online": false
+    "online": false,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_asus.jpg"
   },
   {
     "name": "ATIA",
     "category": "לבית ולחצר | מתנות ופנאי",
-    "online": false
+    "online": false,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_atia_2024.jpg"
   },
   {
     "name": "AYUCHKA",
     "category": "ביגוד והנעלה",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_ayuchka.jpg"
   },
   {
     "name": "Baby Jogger",
     "category": "ילדים ותינוקות | מתנות ופנאי",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_babyjogger.jpg"
   },
   {
     "name": "babybeep",
     "category": "ילדים ותינוקות",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_babybeep.jpg"
   },
   {
     "name": "BabyBrezza",
     "category": "ילדים ותינוקות",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_babybrezza.jpg"
   },
   {
     "name": "BagStore",
     "category": "נסיעות ומחנאות",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_bagstore.jpg"
   },
   {
     "name": "BALR",
     "category": "ביגוד והנעלה",
-    "online": false
+    "online": false,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_barl.jpg"
   },
   {
     "name": "Bconnect",
     "category": "חשמל ואלקטרוניקה",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_bconnect.jpg"
   },
   {
     "name": "B-CURE LASER",
     "category": "ספורט",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_bcure.jpg"
   },
   {
     "name": "BEAUTY CLINIC",
     "category": "טיפוח וקוסמטיקה",
-    "online": false
+    "online": false,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_beautyclinic.jpg"
   },
   {
     "name": "Beeny",
     "category": "ילדים ותינוקות | מתנות ופנאי",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_beeny.jpg"
   },
   {
     "name": "BETONI",
     "category": "לבית ולחצר",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_betoni.jpg"
   },
   {
     "name": "biamba",
     "category": "ילדים ותינוקות",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_biamba.jpg"
   },
   {
     "name": "BIMB Y LOLA",
     "category": "ביגוד והנעלה | תכשיטים ואקססוריז",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_bimbaylola.jpg"
   },
   {
     "name": "BODY SHOP",
     "category": "טיפוח וקוסמטיקה",
-    "online": false
+    "online": false,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_bodyshop.jpg"
   },
   {
     "name": "BOGART",
     "category": "ביגוד והנעלה",
-    "online": false
+    "online": false,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_bogart.jpg"
   },
   {
     "name": "BOOSA&CO",
     "category": "חיות מחמד",
-    "online": false
+    "online": false,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_boosa.jpg"
   },
   {
     "name": "BOSS",
     "category": "ביגוד והנעלה",
-    "online": false
+    "online": false,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_boss.jpg"
   },
   {
     "name": "BPOWER",
     "category": "לבית ולחצר | חשמל ואלקטרוניקה",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_bpower.jpg"
   },
   {
     "name": "BROOKS",
     "category": "ספורט",
-    "online": false
+    "online": false,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_brooks_reshtot.jpg"
   },
   {
     "name": "BROWNIE",
     "category": "ביגוד והנעלה",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_brownie.jpg"
   },
   {
     "name": "Buycarpet.co.il",
     "category": "לבית ולחצר",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_buycarpet.jpg"
   },
   {
     "name": "CAPRICE",
     "category": "תכשיטים ואקססוריז",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_caprice.jpg"
   },
   {
     "name": "caravan club",
     "category": "נסיעות ומחנאות",
-    "online": false
+    "online": false,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_caravanclub.jpg"
   },
   {
     "name": "CARELINE",
     "category": "טיפוח וקוסמטיקה",
-    "online": false
+    "online": false,
+    "logo": "https://www.hvr.co.il/pics/giftcard/careline.jpg"
   },
   {
     "name": "carter's",
     "category": "ביגוד והנעלה | ילדים ותינוקות",
-    "online": false
+    "online": false,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_carters_oshkosh.jpg"
   },
   {
     "name": "Casa Bella",
     "category": "לבית ולחצר",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_casabella.jpg"
   },
   {
     "name": "Chicco",
     "category": "ילדים ותינוקות | מתנות ופנאי",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_chicco.jpg"
   },
   {
     "name": "Chill shop",
     "category": "לבית ולחצר",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_chill.jpg"
   },
   {
     "name": "CHOZEN",
     "category": "תכשיטים ואקססוריז",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_chozen.jpg"
   },
   {
     "name": "CONVERSE",
     "category": "ביגוד והנעלה",
-    "online": false
+    "online": false,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_converse.jpg"
   },
   {
     "name": "cubica",
     "category": "ביגוד והנעלה",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_cubica.jpg"
   },
   {
     "name": "DAFNI",
     "category": "טיפוח וקוסמטיקה",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_dafni.jpg"
   },
   {
     "name": "DESIGUAL",
     "category": "תכשיטים ואקססוריז",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_desigual.jpg"
   },
   {
     "name": "DKNY",
     "category": "ביגוד והנעלה | תכשיטים ואקססוריז",
-    "online": false
+    "online": false,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_dkny.jpg"
   },
   {
     "name": "dolls",
     "category": "ביגוד והנעלה | ילדים ותינוקות | מתנות ופנאי",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_dolls.jpg"
   },
   {
     "name": "dollybox",
     "category": "לבית ולחצר | אביזרי מטבח | מתנות ופנאי",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_dollybox.jpg"
   },
   {
     "name": "ECOSALL",
     "category": "מתנות ופנאי",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_ecosall.jpg"
   },
   {
     "name": "EGO",
     "category": "לבית ולחצר",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_ego.jpg"
   },
   {
     "name": "EKO",
     "category": "לבית ולחצר | אביזרי מטבח",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_eko.jpg"
   },
   {
     "name": "Ellesse",
     "category": "ביגוד והנעלה",
-    "online": false
+    "online": false,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_ellesse.jpg"
   },
   {
     "name": "EMPORIUM",
     "category": "ביגוד והנעלה",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_emporium.jpg"
   },
   {
     "name": "ERGOTOP",
     "category": "לבית ולחצר",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_ergotop.jpg"
   },
   {
     "name": "ERROCA",
     "category": "אופטיקה",
-    "online": false
+    "online": false,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_erroca_2024.jpg"
   },
   {
     "name": "EVA METAL",
     "category": "לבית ולחצר | מתנות ופנאי",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_eva.jpg"
   },
   {
     "name": "fit step pro",
     "category": "ביגוד והנעלה | ספורט",
-    "online": false
+    "online": false,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_fitsteppro.jpg"
   },
   {
     "name": "FIVE POINT FOUR",
     "category": "ביגוד והנעלה",
-    "online": false
+    "online": false,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_fivepointfour.jpg"
   },
   {
     "name": "Fizzio",
     "category": "לבית ולחצר",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_fizzio.jpg"
   },
   {
     "name": "fly מאווררים",
     "category": "לבית ולחצר | חשמל ואלקטרוניקה",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_fly.jpg"
   },
   {
     "name": "flying tiger",
     "category": "מתנות ופנאי",
-    "online": false
+    "online": false,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_flyingtiger.jpg"
   },
   {
     "name": "Food appeal",
     "category": "לבית ולחצר | אביזרי מטבח",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_foodappeal.jpg"
   },
   {
     "name": "FOOT LOCKER",
     "category": "ביגוד והנעלה",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_footlocker_new.jpg"
   },
   {
     "name": "FOX - פוקס",
     "category": "ביגוד והנעלה",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_fox.png"
   },
   {
     "name": "FOX home",
     "category": "שינה וטקסטיל | אביזרי מטבח",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_foxhome.png"
   },
   {
     "name": "G - CONCEPT",
     "category": "ביגוד והנעלה | טיפוח וקוסמטיקה | תכשיטים ואקססוריז",
-    "online": false
+    "online": false,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_conceptstore.jpg"
   },
   {
     "name": "Get Pro",
     "category": "ביגוד והנעלה | ספורט",
-    "online": false
+    "online": false,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_getpro.jpg"
   },
   {
     "name": "GETHA",
     "category": "שינה וטקסטיל",
-    "online": false
+    "online": false,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_gethe_reshtot.jpg"
   },
   {
     "name": "GONATURE",
     "category": "נסיעות ומחנאות",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_gonature.jpg"
   },
   {
     "name": "GUESS",
     "category": "ביגוד והנעלה | טיפוח וקוסמטיקה | תכשיטים ואקססוריז",
-    "online": false
+    "online": false,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_guess.jpg"
   },
   {
     "name": "HAGARA",
     "category": "ביגוד והנעלה",
-    "online": false
+    "online": false,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_hagara.png"
   },
   {
     "name": "HAPPY HEMPY",
     "category": "תכשיטים ואקססוריז",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_happyhempy.jpg"
   },
   {
     "name": "Havaianas",
     "category": "ביגוד והנעלה",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_havaianas.jpg"
   },
   {
     "name": "HOME DECOR",
     "category": "לבית ולחצר",
-    "online": false
+    "online": false,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_homedecor.jpg"
   },
   {
     "name": "HONEY CAN DO",
     "category": "לבית ולחצר",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_honeycando.jpg"
   },
   {
     "name": "HUBLOT",
     "category": "תכשיטים ואקססוריז",
-    "online": false
+    "online": false,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_hublot.jpg"
   },
   {
     "name": "ICE CUBE",
     "category": "ביגוד והנעלה",
-    "online": false
+    "online": false,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_icecube.jpg"
   },
   {
     "name": "IL MAKIAGE",
     "category": "טיפוח וקוסמטיקה",
-    "online": false
+    "online": false,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_ilmakiage.jpg"
   },
   {
     "name": "IMAHOT",
     "category": "ביגוד והנעלה",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_imahot.jpg"
   },
   {
     "name": "INTIMA",
     "category": "הלבשה תחתונה",
-    "online": false
+    "online": false,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_intima.png"
   },
   {
     "name": "JD SPORTS",
     "category": "ביגוד והנעלה | ספורט",
-    "online": false
+    "online": false,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_jd.jpg"
   },
   {
     "name": "JUMP & ONOT",
     "category": "ביגוד והנעלה | הלבשה תחתונה",
-    "online": false
+    "online": false,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_jumponot.jpg"
   },
   {
     "name": "kare",
     "category": "לבית ולחצר | אביזרי מטבח",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_kare.jpg"
   },
   {
     "name": "Kikkaboo",
     "category": "ביגוד והנעלה | ילדים ותינוקות",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_kikkaboo.jpg"
   },
   {
     "name": "KUKA",
     "category": "שינה וטקסטיל | לבית ולחצר",
-    "online": false
+    "online": false,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_kukahome.jpg"
   },
   {
     "name": "LACOSTE",
     "category": "ביגוד והנעלה",
-    "online": false
+    "online": false,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_lacoste.jpg"
   },
   {
     "name": "LAMER",
     "category": "ילדים ותינוקות",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_lamer.jpg"
   },
   {
     "name": "Lavido",
     "category": "טיפוח וקוסמטיקה",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_lavido.jpg"
   },
   {
     "name": "Lee",
     "category": "ביגוד והנעלה",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_lee.jpg"
   },
   {
     "name": "leifheit",
     "category": "לבית ולחצר",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_leifheit.jpg"
   },
   {
     "name": "Lenovo",
     "category": "חשמל ואלקטרוניקה",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_lenovo.jpg"
   },
   {
     "name": "LivinGreen",
     "category": "לבית ולחצר",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_livingreen.jpg"
   },
   {
     "name": "LONGCHAMP",
     "category": "תכשיטים ואקססוריז",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_longchamp.jpg"
   },
   {
     "name": "Loopi",
     "category": "נסיעות ומחנאות",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_loopi_new.jpg"
   },
   {
     "name": "Loopump",
     "category": "ילדים ותינוקות",
-    "online": true
-  },
-  {
-    "name": "lorens",
-    "category": "ביגוד והנעלה | ילדים ותינוקות",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_loopump.jpg"
   },
   {
     "name": "LOVE",
     "category": "ביגוד והנעלה | טיפוח וקוסמטיקה | מתנות ופנאי",
-    "online": false
+    "online": false,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_love.jpg"
   },
   {
     "name": "MALU WILZ",
     "category": "טיפוח וקוסמטיקה",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_malu_wilz.jpg"
   },
   {
     "name": "MANGO",
     "category": "ביגוד והנעלה",
-    "online": false
+    "online": false,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_mango.jpg"
   },
   {
     "name": "MARLEY",
     "category": "חשמל ואלקטרוניקה",
-    "online": false
+    "online": false,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_marley.jpg"
   },
   {
     "name": "MAX MORETTI",
     "category": "ביגוד והנעלה",
-    "online": false
+    "online": false,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_max.png"
   },
   {
     "name": "MD מנדלבוים",
     "category": "שינה וטקסטיל",
-    "online": false
+    "online": false,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_mandelboim.jpg"
   },
   {
     "name": "Medics Care",
     "category": "לבית ולחצר | טיפוח וקוסמטיקה | חשמל ואלקטרוניקה",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_medicscare.jpg"
   },
   {
     "name": "MiyoScent",
     "category": "לבית ולחצר | שונה",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_miyoscent.jpg"
   },
   {
     "name": "MOY",
     "category": "ביגוד והנעלה | ילדים ותינוקות | מתנות ופנאי",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_moy.jpg"
   },
   {
     "name": "MY FLY",
     "category": "אטרקציות",
-    "online": false
+    "online": false,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_myfly.jpg"
   },
   {
     "name": "my grill",
     "category": "לבית ולחצר | אביזרי מטבח",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_mygrill.jpg"
   },
   {
     "name": "NAPO",
     "category": "לבית ולחצר",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_napo.jpg"
   },
   {
     "name": "NAUTICA",
     "category": "ביגוד והנעלה",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_nautica.png"
   },
   {
     "name": "NEO SMILE",
     "category": "טיפוח וקוסמטיקה | שונה",
-    "online": false
+    "online": false,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_neosmile.jpg"
   },
   {
     "name": "Neoja",
     "category": "ספורט | אטרקציות",
-    "online": false
+    "online": false,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_neoja.jpg"
   },
   {
     "name": "New Era",
     "category": "ביגוד והנעלה",
-    "online": false
+    "online": false,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_newera.jpg"
   },
   {
     "name": "NEXT HEAT",
     "category": "לבית ולחצר | שונה",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_nextheat.jpg"
   },
   {
     "name": "NIKE",
     "category": "ביגוד והנעלה | ספורט",
-    "online": false
+    "online": false,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_nike.jpg"
   },
   {
     "name": "Noam Living",
     "category": "שינה וטקסטיל",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_noam2_reshtot.jpg"
   },
   {
     "name": "NYOU אינטר ג'ינס",
     "category": "ביגוד והנעלה",
-    "online": false
+    "online": false,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_interjeans.jpg"
   },
   {
     "name": "ONE PROJECT",
     "category": "ביגוד והנעלה",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_oneproject_new.jpg"
   },
   {
     "name": "ONLY’S",
     "category": "ביגוד והנעלה | טיפוח וקוסמטיקה",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_onlys.jpg"
   },
   {
     "name": "ONYX",
     "category": "טיפוח וקוסמטיקה",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_onyx.jpg"
   },
   {
     "name": "Outsiders מחנאות",
     "category": "ביגוד והנעלה | נסיעות ומחנאות",
-    "online": false
+    "online": false,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_outsiders.png"
   },
   {
     "name": "pelle",
     "category": "טיפוח וקוסמטיקה",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_pelle.jpg"
   },
   {
     "name": "PET EAT",
     "category": "חיות מחמד",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_peteat.jpg"
   },
   {
     "name": "PETIT BATEAU",
     "category": "ילדים ותינוקות",
-    "online": false
+    "online": false,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_petit_bateau.jpg"
   },
   {
     "name": "PLANETA",
     "category": "לבית ולחצר",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_planeta.jpg"
   },
   {
     "name": "PLATIN",
     "category": "ביגוד והנעלה",
-    "online": false
+    "online": false,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_platin.jpg"
   },
   {
     "name": "Play Game",
     "category": "אטרקציות",
-    "online": false
+    "online": false,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_playgame.jpg"
   },
   {
     "name": "PLAY GAME PANDA",
     "category": "אטרקציות",
-    "online": false
+    "online": false,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_playgame_2025.jpg"
   },
   {
     "name": "PRINT GLASS",
     "category": "לבית ולחצר",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_printglass.jpg"
   },
   {
     "name": "pulliez",
     "category": "ביגוד והנעלה | הלבשה תחתונה",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_pulliez.jpg"
   },
   {
     "name": "PUMA",
     "category": "ביגוד והנעלה",
-    "online": false
+    "online": false,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_puma.jpg"
   },
   {
     "name": "Puremagics",
     "category": "טיפוח וקוסמטיקה",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_astain_reshtot.jpg"
   },
   {
     "name": "REMEDY",
     "category": "טיפוח וקוסמטיקה",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_remedy.jpg"
   },
   {
     "name": "RIP CURL",
     "category": "ביגוד והנעלה | ספורט",
-    "online": false
+    "online": false,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_ripcurl.jpg"
   },
   {
     "name": "ROYAL CARE",
     "category": "טיפוח וקוסמטיקה",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_royalcare_new.jpg"
   },
   {
     "name": "RUBY BAY",
     "category": "ביגוד והנעלה",
-    "online": false
+    "online": false,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_rubybay.jpg"
   },
   {
     "name": "RUZILIA",
     "category": "לבית ולחצר",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_ruzilia.jpg"
   },
   {
     "name": "S2h",
     "category": "לבית ולחצר | שונה",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_s2h.jpg"
   },
   {
     "name": "SAM EDELMAN",
     "category": "ביגוד והנעלה",
-    "online": false
+    "online": false,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_samedelman.jpg"
   },
   {
     "name": "Sand Israel",
     "category": "ביגוד והנעלה | ילדים ותינוקות",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_sandisrael.jpg"
   },
   {
     "name": "SATARA קוסמטיקה",
     "category": "טיפוח וקוסמטיקה",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_satara.jpg"
   },
   {
     "name": "Scotch & Soda",
     "category": "ביגוד והנעלה",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_scotch_soda.jpg"
   },
   {
     "name": "selmor",
     "category": "חשמל ואלקטרוניקה",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_selmor.jpg"
   },
   {
     "name": "SHANI PALATCHI",
     "category": "ביגוד והנעלה",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_shani.jpg"
   },
   {
     "name": "sim2fly",
     "category": "נסיעות ומחנאות | שונה",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_sim2fly.jpg"
   },
   {
     "name": "SIMMONS",
     "category": "שינה וטקסטיל",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_simmons.jpg"
   },
   {
     "name": "Six play",
     "category": "ילדים ותינוקות | אטרקציות",
-    "online": false
+    "online": false,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_sixplay.jpg"
   },
   {
     "name": "SKECHERS",
     "category": "ביגוד והנעלה",
-    "online": false
+    "online": false,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_skechers.jpg"
   },
   {
     "name": "SKIL ISRAEL",
     "category": "לבית ולחצר",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_skil.jpg"
   },
   {
     "name": "star shop",
     "category": "לבית ולחצר",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_star_shop.jpg"
   },
   {
     "name": "Step In",
     "category": "ביגוד והנעלה",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_stepin.jpg"
   },
   {
     "name": "STEVE MADDEN",
     "category": "ביגוד והנעלה",
-    "online": false
+    "online": false,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_stevemaddan.jpg"
   },
   {
     "name": "STORY",
     "category": "ביגוד והנעלה",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_story.jpg"
   },
   {
     "name": "sunglass hut",
     "category": "אופטיקה",
-    "online": false
+    "online": false,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_sunglasshut.jpg"
   },
   {
     "name": "SUNSHINE",
     "category": "מתנות ופנאי",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_sunshine.jpg"
   },
   {
     "name": "SUPERDRY",
     "category": "ביגוד והנעלה",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_superdry.jpg"
   },
   {
     "name": "SWAGG",
     "category": "חשמל ואלקטרוניקה | נסיעות ומחנאות | מתנות ופנאי",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_swagg.jpg"
   },
   {
     "name": "sweetgirlshop",
     "category": "ביגוד והנעלה | ילדים ותינוקות",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_sweetgirlshop.jpg"
   },
   {
     "name": "Swiss Trends",
     "category": "ביגוד והנעלה | לבית ולחצר | נסיעות ומחנאות",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_swisstrends.jpg"
   },
   {
     "name": "Talking",
     "category": "לימודים וספרים",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_talking.jpg"
   },
   {
     "name": "TDI Arms",
     "category": "שונה",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_tdiarms.jpg"
   },
   {
     "name": "TERMINAL X",
     "category": "ביגוד והנעלה",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_terminalx.jpg"
   },
   {
     "name": "THE NORTH FACE",
     "category": "ביגוד והנעלה | ספורט",
-    "online": false
+    "online": false,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_thenorthface.jpg"
   },
   {
     "name": "TIMBERLAND",
     "category": "ביגוד והנעלה",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_timberland_new.jpg"
   },
   {
     "name": "TOUS",
     "category": "תכשיטים ואקססוריז",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_tous.jpg"
   },
   {
     "name": "TOY STORE",
     "category": "לימודים וספרים | ילדים ותינוקות | מתנות ופנאי",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_toystore.jpg"
   },
   {
     "name": "Trek Market",
     "category": "נסיעות ומחנאות | מתנות ופנאי",
-    "online": false
+    "online": false,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_trekmarket.jpg"
   },
   {
     "name": "TRUE MOTION",
     "category": "ביגוד והנעלה | ספורט",
-    "online": false
+    "online": false,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_truemotion.jpg"
   },
   {
     "name": "True Story",
     "category": "טיפוח וקוסמטיקה",
-    "online": false
+    "online": false,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_truestory.jpg"
   },
   {
     "name": "Twigy",
     "category": "ילדים ותינוקות",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_twigy.jpg"
   },
   {
     "name": "Under Armour",
     "category": "ביגוד והנעלה | ספורט",
-    "online": false
+    "online": false,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_underarmour.jpg"
   },
   {
     "name": "URBAN",
     "category": "לבית ולחצר",
-    "online": false
+    "online": false,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_urban.jpg"
   },
   {
     "name": "VANS",
     "category": "ביגוד והנעלה",
-    "online": false
+    "online": false,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_vans_new.jpg"
   },
   {
     "name": "VENTA",
     "category": "לבית ולחצר | חשמל ואלקטרוניקה",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_venta.jpg"
   },
   {
     "name": "VILEBREQUIN",
     "category": "ביגוד והנעלה",
-    "online": false
+    "online": false,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_vilebrequin.jpg"
   },
   {
     "name": "We Shoes",
     "category": "ביגוד והנעלה",
-    "online": false
+    "online": false,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_weshoes_new.jpg"
   },
   {
     "name": "White Space",
     "category": "מתנות ופנאי",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_whitespace_new.jpg"
   },
   {
     "name": "WORD",
     "category": "ביגוד והנעלה",
-    "online": false
+    "online": false,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_word.jpg"
   },
   {
     "name": "Wrangler",
     "category": "ביגוד והנעלה",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_wrangler.jpg"
   },
   {
     "name": "XRAY",
     "category": "אופטיקה",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_xray.jpg"
   },
   {
     "name": "YOLO",
     "category": "לימודים וספרים | ילדים ותינוקות | מתנות ופנאי",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_yolo.jpg"
   },
   {
     "name": "zappy-pro",
     "category": "שונה",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_zappypro.jpg"
   },
   {
     "name": "Zeero מוצרי אנרגיה",
     "category": "חשמל ואלקטרוניקה",
-    "online": true
-  },
-  {
-    "name": "ZEN ENERGY",
-    "category": "שונה",
-    "online": false
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_zeero.jpg"
   },
   {
     "name": "Ziegler&Brown",
     "category": "לבית ולחצר",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_zieglerbrown.jpg"
   },
   {
     "name": "ZIP TOP",
     "category": "אביזרי מטבח",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_ziptop.jpg"
   },
   {
     "name": "א.א אורטופדיה",
     "category": "ביגוד והנעלה",
-    "online": false
+    "online": false,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_aaortopedia.jpg"
   },
   {
     "name": "א.ל.מ",
     "category": "חשמל ואלקטרוניקה",
-    "online": false
+    "online": false,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_alam_2023.jpg"
   },
   {
     "name": "אבא חטוב",
     "category": "ספורט",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_abahatuv_new.jpg"
   },
   {
     "name": "אביר הספורט",
     "category": "ספורט",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_abir_sport.jpg"
   },
   {
     "name": "אדידס",
     "category": "ספורט",
-    "online": false
+    "online": false,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_adidas.png"
   },
   {
     "name": "אדידס ילדים",
     "category": "ספורט",
-    "online": false
+    "online": false,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_adidas_ya.jpg"
   },
   {
     "name": "אדיר א",
     "category": "לבית ולחצר",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_adir.jpg"
   },
   {
     "name": "אהבה קטנה",
     "category": "אביזרי מטבח | מתנות ופנאי",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_ahava_ktana.jpg"
   },
   {
     "name": "אודיו מדיק",
     "category": "שונה",
-    "online": true
-  },
-  {
-    "name": "אופטיקה הלפרין",
-    "category": "אופטיקה",
-    "online": false
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_audiomedic.jpg"
   },
   {
     "name": "אופטיקל סנטר",
     "category": "אופטיקה",
-    "online": false
+    "online": false,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_optical_senter_reshtot.jpg"
   },
   {
     "name": "אופטיקנה",
     "category": "אופטיקה",
-    "online": false
+    "online": false,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_opticana_new.jpg"
   },
   {
     "name": "אוריג'ינלס",
     "category": "ביגוד והנעלה",
-    "online": false
+    "online": false,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_originals_new.jpg"
   },
   {
     "name": "אורלי סוהר",
     "category": "ספורט",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_orlisoher.jpg"
   },
   {
     "name": "אטנדינג",
     "category": "מתנות ופנאי | שונה",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_attending.jpg"
   },
   {
     "name": "איטלסופה",
     "category": "לבית ולחצר",
-    "online": false
+    "online": false,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_italsofa.jpg"
   },
   {
     "name": "אייץ אנד או",
     "category": "ביגוד והנעלה | שינה וטקסטיל",
-    "online": false
+    "online": false,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_ho_2021.jpg"
   },
   {
     "name": "אילן גורי",
     "category": "טיפוח וקוסמטיקה",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_guri.jpg"
   },
   {
     "name": "איתי ברנדס",
     "category": "ביגוד והנעלה",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_itaybrands.jpg"
   },
   {
     "name": "אלוף ספורט",
     "category": "ביגוד והנעלה",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_alufsport.jpg"
   },
   {
     "name": "אמפוריו ארמני",
     "category": "ביגוד והנעלה",
-    "online": false
+    "online": false,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_emporioarmani.jpg"
   },
   {
     "name": "אמריקן איגל",
     "category": "ביגוד והנעלה",
-    "online": false
+    "online": false,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_ae.jpg"
   },
   {
     "name": "אסיקס",
     "category": "ספורט",
-    "online": false
+    "online": false,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_asics.jpg"
   },
   {
     "name": "אפל מדיקל",
     "category": "טיפוח וקוסמטיקה",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_applemedical.jpg"
   },
   {
     "name": "אפרודיטה",
     "category": "ביגוד והנעלה | הלבשה תחתונה",
-    "online": false
+    "online": false,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_afrodita.jpg"
   },
   {
     "name": "אקסטרים",
     "category": "ספורט",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_extreme.jpg"
   },
   {
     "name": "ארמני אקסצ'יינג'",
     "category": "ביגוד והנעלה",
-    "online": false
+    "online": false,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_armaniexchange.jpg"
   },
   {
     "name": "ארנקי עמנואל",
     "category": "תכשיטים ואקססוריז",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_emanuel.jpg"
   },
   {
     "name": "ארקוסטיל קיטצ'ן",
     "category": "לבית ולחצר | אביזרי מטבח",
-    "online": false
+    "online": false,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_arcosteel_new.jpg"
   },
   {
     "name": "באבלס",
     "category": "אטרקציות | מתנות ופנאי",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_bubbles.jpg"
   },
   {
     "name": "באהבה",
     "category": "לימודים וספרים | מתנות ופנאי",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_beahava.jpg"
   },
   {
     "name": "בבילון",
     "category": "אטרקציות",
-    "online": false
+    "online": false,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_babylon.jpg"
   },
   {
     "name": "בוניטה דה מאס",
     "category": "ביגוד והנעלה | הלבשה תחתונה",
-    "online": false
+    "online": false,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_bonitademas.jpg"
   },
   {
     "name": "ביג אלקטריק",
     "category": "חשמל ואלקטרוניקה",
-    "online": false
+    "online": false,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_bigelectric.jpg"
   },
   {
     "name": "ביג גרף",
     "category": "מתנות ופנאי",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_biggraf.jpg"
   },
   {
     "name": "בייבי סטאר",
     "category": "ילדים ותינוקות | מתנות ופנאי",
-    "online": false
+    "online": false,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_babystar.jpg"
   },
   {
     "name": "בילבונג",
     "category": "ביגוד והנעלה",
-    "online": false
+    "online": false,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_billabong.png"
   },
   {
     "name": "בירקנשטוק",
     "category": "ביגוד והנעלה",
-    "online": false
+    "online": false,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_birkenstock.jpg"
   },
   {
     "name": "ביתילי",
     "category": "לבית ולחצר",
-    "online": false
+    "online": false,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_beitili.jpg"
   },
   {
     "name": "ברקום",
     "category": "חשמל ואלקטרוניקה",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_barcom.jpg"
   },
   {
     "name": "גוד נייט",
     "category": "שינה וטקסטיל",
-    "online": false
+    "online": false,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_goodnight.png"
   },
   {
     "name": "גולף",
     "category": "ביגוד והנעלה",
-    "online": false
+    "online": false,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_golf.png"
   },
   {
     "name": "גולף קו",
     "category": "לבית ולחצר",
-    "online": false
+    "online": false,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_golfco.png"
   },
   {
     "name": "גולף-קידס",
     "category": "ילדים ותינוקות",
-    "online": false
+    "online": false,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_golfkids_new.jpg"
   },
   {
     "name": "ג'וסי קוטור",
     "category": "ביגוד והנעלה",
-    "online": false
+    "online": false,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_juicycouture.jpg"
   },
   {
     "name": "גלי",
     "category": "ביגוד והנעלה",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_gali.png"
   },
   {
     "name": "ג'מבו",
     "category": "לבית ולחצר | ילדים ותינוקות | מתנות ופנאי",
-    "online": false
+    "online": false,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_jumbo.jpg"
   },
   {
     "name": "גן סטודיו",
     "category": "מתנות ופנאי",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_gunstudio.jpg"
   },
   {
     "name": "ד\"ר גב",
     "category": "שינה וטקסטיל",
-    "online": false
+    "online": false,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_drgav.jpg"
   },
   {
     "name": "דארלן",
     "category": "שינה וטקסטיל",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_darlain.jpg"
   },
   {
     "name": "דיזל",
     "category": "ביגוד והנעלה",
-    "online": false
+    "online": false,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_diesel.jpg"
   },
   {
     "name": "דיל תאורה",
     "category": "חשמל ואלקטרוניקה",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_deel_reshtot.jpg"
   },
   {
     "name": "דני נויפלד",
     "category": "תכשיטים ואקססוריז",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_dannynewfeld.jpg"
   },
   {
     "name": "דפנה לוינסון",
     "category": "ביגוד והנעלה",
-    "online": false
+    "online": false,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_hdl.png"
   },
   {
     "name": "דפני סקין",
     "category": "טיפוח וקוסמטיקה",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_daphne.jpg"
   },
   {
     "name": "דקורדו",
     "category": "לבית ולחצר | מתנות ופנאי",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_decorado_2024.jpg"
   },
   {
     "name": "הוגה שטיחים",
     "category": "לבית ולחצר",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_hogacarpets.jpg"
   },
   {
     "name": "הוגו",
     "category": "ביגוד והנעלה",
-    "online": false
+    "online": false,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_hugo.jpg"
   },
   {
     "name": "הום סטייל",
     "category": "שינה וטקסטיל",
-    "online": false
+    "online": false,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_homestyle.jpg"
   },
   {
     "name": "הום סנטר",
     "category": "לבית ולחצר",
-    "online": false
+    "online": false,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_homecenter.png"
   },
   {
     "name": "המטבח",
     "category": "לבית ולחצר",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_hamitbah.jpg"
   },
   {
     "name": "המשביר לצרכן",
     "category": "ביגוד והנעלה",
-    "online": false
+    "online": false,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_mashbir_new.jpg"
   },
   {
     "name": "השטיח האדום",
     "category": "שינה וטקסטיל | לבית ולחצר",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_redcarpet.jpg"
   },
   {
     "name": "ואהבת",
     "category": "מתנות ופנאי | יודאיקה",
-    "online": false
+    "online": false,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_vehavta_new.jpg"
   },
   {
     "name": "ורדינון",
     "category": "שינה וטקסטיל",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_vardinon1.jpg"
   },
   {
     "name": "זר פו יו",
     "category": "לבית ולחצר | מתנות ופנאי",
-    "online": false
+    "online": false,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_zer4u.jpg"
   },
   {
     "name": "חגור",
     "category": "נסיעות ומחנאות",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_hagor.jpg"
   },
   {
     "name": "חוף חנניה",
     "category": "ספורט | אטרקציות",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_hananya_beach.jpg"
   },
   {
     "name": "חניון שרונה",
     "category": "שונה",
-    "online": false
+    "online": false,
+    "logo": "https://www.hvr.co.il/pics/giftcard/parking.jpg"
   },
   {
     "name": "טאצ'",
     "category": "לבית ולחצר",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_touch.jpg"
   },
   {
     "name": "טומי הילפיגר",
     "category": "ביגוד והנעלה",
-    "online": false
+    "online": false,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_tommyhilfiger.jpg"
   },
   {
     "name": "טופ ספיד",
     "category": "ספורט | אטרקציות | מתנות ופנאי",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_topspeed.jpg"
   },
   {
     "name": "טיים מאשין",
     "category": "אטרקציות",
-    "online": false
+    "online": false,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_time_machine.jpg"
   },
   {
     "name": "טכנו גן",
     "category": "לבית ולחצר",
-    "online": false
+    "online": false,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_technogan.jpg"
   },
   {
     "name": "טכנולייט",
     "category": "לבית ולחצר",
-    "online": false
+    "online": false,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_technolite.jpg"
   },
   {
     "name": "טכנוקט",
     "category": "ילדים ותינוקות",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_technokat.jpg"
   },
   {
     "name": "יאנגה",
     "category": "ביגוד והנעלה",
-    "online": false
+    "online": false,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_yanga.jpg"
   },
   {
     "name": "יונידרס",
     "category": "ביגוד והנעלה",
-    "online": false
+    "online": false,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_unidress.jpg"
   },
   {
     "name": "יעקבי",
     "category": "לבית ולחצר",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_yaacobi.jpg"
   },
   {
     "name": "ישראלי עיצוב הבית",
     "category": "לבית ולחצר",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_glass_reshtot.jpg"
   },
   {
     "name": "כיתן",
     "category": "שינה וטקסטיל",
-    "online": false
+    "online": false,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_kitan.jpg"
   },
   {
     "name": "כרית לי",
     "category": "שינה וטקסטיל",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_caritli.jpg"
   },
   {
     "name": "לאסטר",
     "category": "תכשיטים ואקססוריז",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_laster.jpg"
   },
   {
     "name": "לבנדר",
     "category": "טיפוח וקוסמטיקה",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_lavender.jpg"
   },
   {
     "name": "לד מרקט",
     "category": "חשמל ואלקטרוניקה",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_ledmarkat.jpg"
   },
   {
     "name": "לדיקו BOCSH",
     "category": "לבית ולחצר | חשמל ואלקטרוניקה",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_ledico.jpg"
   },
   {
     "name": "לוגודביק",
     "category": "לימודים וספרים | שונה",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_logodvik.jpg"
   },
   {
     "name": "לי קופר",
     "category": "ביגוד והנעלה",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_leecooper.png"
   },
   {
     "name": "לי קופר קידס",
     "category": "ילדים ותינוקות",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_lckids.jpg"
   },
   {
     "name": "ליוויס",
     "category": "ביגוד והנעלה",
-    "online": false
+    "online": false,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_levis.jpg"
   },
   {
     "name": "לייזר סטריט רעננה",
     "category": "אטרקציות",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_laser_city.jpg"
   },
   {
     "name": "ליליה",
     "category": "לבית ולחצר | מתנות ופנאי",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_lilya.jpg"
   },
   {
     "name": "לילית קוסמטיקה",
     "category": "טיפוח וקוסמטיקה",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_lilitcosmetics.jpg"
   },
   {
     "name": "ללין",
     "category": "טיפוח וקוסמטיקה",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_laline.png"
   },
   {
     "name": "מאמאלה",
     "category": "ילדים ותינוקות | מתנות ופנאי",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_mamale.jpg"
   },
   {
     "name": "מגה ספורט",
     "category": "ספורט",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_megasport.png"
   },
   {
     "name": "מדען נולד",
     "category": "ילדים ותינוקות | מתנות ופנאי",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_madannolad.jpg"
   },
   {
     "name": "מועדון הכותנה",
     "category": "שינה וטקסטיל",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_cottonclub.jpg"
   },
   {
     "name": "מוצצים",
     "category": "ילדים ותינוקות",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_motzezim.jpg"
   },
   {
     "name": "מיטל אלקיים",
     "category": "תכשיטים ואקססוריז",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_meitalelkayam.jpg"
   },
   {
     "name": "מייקל קורס",
     "category": "ביגוד והנעלה",
-    "online": false
+    "online": false,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_michaelkors.jpg"
   },
   {
     "name": "מינוס 417",
     "category": "טיפוח וקוסמטיקה",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_417.jpg"
   },
   {
     "name": "מיננה",
     "category": "ביגוד והנעלה | ילדים ותינוקות",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_minene.jpg"
   },
   {
     "name": "מכלול",
     "category": "לימודים וספרים",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_michlol.jpg"
   },
   {
     "name": "מלך האריות",
     "category": "חיות מחמד",
-    "online": false
+    "online": false,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_melech_araiot.jpg"
   },
   {
     "name": "מצמן את מרוץ",
     "category": "ספורט",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_matzman_merotz.jpg"
   },
   {
     "name": "נאוטיקה הום",
     "category": "שינה וטקסטיל",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_nauticahome.jpg"
   },
   {
     "name": "נאטורפיל",
     "category": "טיפוח וקוסמטיקה",
-    "online": false
+    "online": false,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_naturapil.jpg"
   },
   {
     "name": "נטוצ'י",
     "category": "לבית ולחצר",
-    "online": false
+    "online": false,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_natuzzi.jpg"
   },
   {
     "name": "ניין ווסט",
     "category": "ביגוד והנעלה",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_ninewest.png"
   },
   {
     "name": "נינג'ה מיני ישראל",
     "category": "ספורט | אטרקציות",
-    "online": false
+    "online": false,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_ninja_miniisrael.jpg"
   },
   {
     "name": "נעלי נמרוד",
     "category": "ביגוד והנעלה",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_nimrod.jpg"
   },
   {
     "name": "נעמן פורצלן",
     "category": "אביזרי מטבח",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_naaman1.jpg"
   },
   {
     "name": "סאטו",
     "category": "לבית ולחצר",
-    "online": false
+    "online": false,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_ceto.jpg"
   },
   {
     "name": "סאקוני",
     "category": "ספורט",
-    "online": false
+    "online": false,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_saucony.jpg"
   },
   {
     "name": "סבון של פעם",
     "category": "טיפוח וקוסמטיקה",
-    "online": false
+    "online": false,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_sabon.png"
   },
   {
     "name": "סוהו",
     "category": "מתנות ופנאי",
-    "online": false
+    "online": false,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_soho.jpg"
   },
   {
     "name": "סולתם רדד",
     "category": "לבית ולחצר | אביזרי מטבח",
-    "online": false
+    "online": false,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_sultam_rdd.jpg"
   },
   {
     "name": "סטודיו AYO",
     "category": "לבית ולחצר",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_ayo.jpg"
   },
   {
     "name": "סטודיו נורמן",
     "category": "מתנות ופנאי",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_norman_reshtot.jpg"
   },
   {
     "name": "סטימצקי",
     "category": "לימודים וספרים",
-    "online": false
+    "online": false,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_stimatzki.png"
   },
   {
     "name": "סנו",
     "category": "לבית ולחצר",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_sano.jpg"
   },
   {
     "name": "ספידו",
     "category": "ספורט",
-    "online": false
+    "online": false,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_speedo.png"
   },
   {
     "name": "סקאב ישראל",
     "category": "לבית ולחצר",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_scab_2025.jpg"
   },
   {
     "name": "עגליס",
     "category": "ביגוד והנעלה | ילדים ותינוקות",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_agalis.jpg"
   },
   {
     "name": "עדה לזורגן",
     "category": "טיפוח וקוסמטיקה",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_adah.jpg"
   },
   {
     "name": "עוז קרמיקה",
     "category": "לבית ולחצר",
-    "online": false
+    "online": false,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_oz_ceramic_new.jpg"
   },
   {
     "name": "עמינח",
     "category": "שינה וטקסטיל",
-    "online": false
+    "online": false,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_aminah.png"
   },
   {
     "name": "ערד טקסטיל",
     "category": "שינה וטקסטיל",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_arad.jpg"
   },
   {
     "name": "פול אנד שארק",
     "category": "ביגוד והנעלה",
-    "online": false
+    "online": false,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_paulshark.jpg"
   },
   {
     "name": "פולגת",
     "category": "ביגוד והנעלה",
-    "online": false
+    "online": false,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_polgat.png"
   },
   {
     "name": "פולו ראלף לורן",
     "category": "ביגוד והנעלה",
-    "online": false
+    "online": false,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_polo_reshtot.jpg"
   },
   {
     "name": "פיוז'ן",
     "category": "ביגוד והנעלה",
-    "online": false
+    "online": false,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_fusion.png"
   },
   {
     "name": "פיטנגו אקדמי",
     "category": "לימודים וספרים",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_pitangoacademy.jpg"
   },
   {
     "name": "פלורה בלום",
     "category": "מתנות ופנאי",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_flora_bloom.jpg"
   },
   {
     "name": "פמינה",
     "category": "ביגוד והנעלה | הלבשה תחתונה",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_femina.jpg"
   },
   {
     "name": "פנינה רוזנבלום",
     "category": "טיפוח וקוסמטיקה",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_pnina_rosenblum.jpg"
   },
   {
     "name": "פקטורי 54",
     "category": "ביגוד והנעלה",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_factory54_new.jpg"
   },
   {
     "name": "פרד פרי",
     "category": "ביגוד והנעלה",
-    "online": false
+    "online": false,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_fredperry.jpg"
   },
   {
     "name": "פריחת הסחלב",
     "category": "מתנות ופנאי",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_prihat_sahlav.jpg"
   },
   {
     "name": "פרימייר ים המלח",
     "category": "טיפוח וקוסמטיקה",
-    "online": false
+    "online": false,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_premier.jpg"
   },
   {
     "name": "פריקרס",
     "category": "ביגוד והנעלה",
-    "online": false
+    "online": false,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_freakers.jpg"
   },
   {
     "name": "פרסונל טריינרס",
     "category": "ספורט",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_personal_trainers.jpg"
   },
   {
     "name": "צ׳ילדרנס פלייס",
     "category": "ילדים ותינוקות",
-    "online": false
+    "online": false,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_place.png"
   },
   {
     "name": "צומת ספרים",
     "category": "לימודים וספרים",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_tzometsfarim.png"
   },
   {
     "name": "צ'ימיגג",
     "category": "נסיעות ומחנאות",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_chimigag.jpg"
   },
   {
     "name": "צמר שטיחים יפים",
     "category": "לבית ולחצר",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_tzemer.jpg"
   },
   {
     "name": "צ'ק אפ - צמיגים",
     "category": "שונה",
-    "online": false
+    "online": false,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_checkup.jpg"
   },
   {
     "name": "קוביס",
     "category": "חשמל ואלקטרוניקה",
-    "online": false
+    "online": false,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_kubiz.jpg"
   },
   {
     "name": "קולומביה",
     "category": "ביגוד והנעלה | נסיעות ומחנאות",
-    "online": false
+    "online": false,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_columbia.jpg"
   },
   {
     "name": "קלאסיקה",
     "category": "לבית ולחצר | אביזרי מטבח",
-    "online": false
+    "online": false,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_clasica_new.jpg"
   },
   {
     "name": "קלווין קליין",
     "category": "ביגוד והנעלה",
-    "online": false
+    "online": false,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_cljeans.jpg"
   },
   {
     "name": "קרביץ",
     "category": "לימודים וספרים | מתנות ופנאי",
-    "online": false
+    "online": false,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_kravitz.jpg"
   },
   {
     "name": "קרן וולף",
     "category": "תכשיטים ואקססוריז",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_kerenwolf.jpg"
   },
   {
     "name": "רד צ'ילי",
     "category": "שינה וטקסטיל",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_redchilli.jpg"
   },
   {
     "name": "רהיטי קיסר",
     "category": "לבית ולחצר",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_keisr.jpg"
   },
   {
     "name": "רהיטי שורש",
     "category": "לבית ולחצר",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_shoresh.jpg"
   },
   {
     "name": "רוברטו",
     "category": "ביגוד והנעלה",
-    "online": false
+    "online": false,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_roberto.jpg"
   },
   {
     "name": "רוזן ומינץ",
     "category": "ספורט",
-    "online": false
+    "online": false,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_rosenmeents.png"
   },
   {
     "name": "ריבוק",
     "category": "ספורט",
-    "online": false
+    "online": false,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_reebok_new.jpg"
   },
   {
     "name": "ריפליי",
     "category": "ביגוד והנעלה",
-    "online": false
+    "online": false,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_replay.png"
   },
   {
     "name": "ריקושט",
     "category": "חשמל ואלקטרוניקה | נסיעות ומחנאות",
-    "online": false
+    "online": false,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_rikoshet_2023.jpg"
   },
   {
     "name": "שבילים ציוד טיולים",
     "category": "נסיעות ומחנאות",
-    "online": false
+    "online": false,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_shvilim_new.jpg"
   },
   {
     "name": "שגריר",
     "category": "נסיעות ומחנאות | שונה",
-    "online": false
+    "online": false,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_shagrir.jpg"
   },
   {
     "name": "שילב",
     "category": "ילדים ותינוקות | מתנות ופנאי",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_shilav.jpg"
   },
   {
     "name": "שקם אלקטריק",
     "category": "חשמל ואלקטרוניקה",
-    "online": false
+    "online": false,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_shekemelectric.png"
   },
   {
     "name": "תג וומן",
     "category": "ביגוד והנעלה",
-    "online": false
+    "online": false,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_tagwoman.png"
   },
   {
     "name": "תהילות",
     "category": "מתנות ופנאי | יודאיקה",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_tehilot.jpg"
   },
   {
     "name": "תכשיטי צבאן",
     "category": "תכשיטים ואקססוריז",
-    "online": false
+    "online": false,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_zaban.jpg"
   },
   {
     "name": "תמי4 ברי מים",
     "category": "חשמל ואלקטרוניקה | אביזרי מטבח",
-    "online": false
+    "online": false,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_tami4.jpg"
   },
   {
     "name": "תפילין חברון",
     "category": "יודאיקה",
-    "online": true
+    "online": true,
+    "logo": "https://www.hvr.co.il/pics/giftcard/logo_tefilinhebron.jpg"
   }
 ]
