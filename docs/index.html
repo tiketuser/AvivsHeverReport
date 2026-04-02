@@ -69,6 +69,14 @@
       justify-content: space-between;
       gap: 20px;
       height: 68px;
+      transition: transform .25s ease;
+    }
+
+    header.nav-hidden { transform: translateY(-100%); }
+    .nav-tabs.nav-hidden { transform: translateY(-68px); }
+
+    @media (max-width: 600px) {
+      .nav-tabs.nav-hidden { transform: translateY(-56px); }
     }
 
     header::after {
@@ -142,6 +150,7 @@
       overflow-y: hidden;
       touch-action: pan-x;
       scrollbar-width: none;
+      transition: transform .25s ease;
     }
     .nav-tabs::-webkit-scrollbar { display: none; }
 
@@ -828,6 +837,32 @@
 </div>
 
 <script>
+  // ── HIDE/SHOW NAVBAR ON SCROLL ──────────────────────────────────
+  (function() {
+    const hdr = document.querySelector('header');
+    const nav = document.getElementById('nav-tabs');
+    let lastY = 0;
+    let ticking = false;
+
+    window.addEventListener('scroll', function() {
+      if (!ticking) {
+        window.requestAnimationFrame(function() {
+          const y = window.scrollY;
+          if (y > lastY && y > 80) {
+            hdr.classList.add('nav-hidden');
+            nav.classList.add('nav-hidden');
+          } else {
+            hdr.classList.remove('nav-hidden');
+            nav.classList.remove('nav-hidden');
+          }
+          lastY = y;
+          ticking = false;
+        });
+        ticking = true;
+      }
+    }, { passive: true });
+  })();
+
   let allRestaurants = [];
   let searchIndex = [];
   let allCompanies = [];
