@@ -131,6 +131,8 @@
       top: 68px;
       z-index: 90;
       overflow-x: auto;
+      overflow-y: hidden;
+      touch-action: pan-x;
       scrollbar-width: none;
     }
     .nav-tabs::-webkit-scrollbar { display: none; }
@@ -1160,10 +1162,15 @@
     renderCards(list);
   }
 
-  document.getElementById('search').addEventListener('input', applyRestaurantFilters);
-  document.getElementById('search-shops').addEventListener('input', function () {
+  function debounce(fn, delay) {
+    let timer;
+    return function(...args) { clearTimeout(timer); timer = setTimeout(() => fn.apply(this, args), delay); };
+  }
+
+  document.getElementById('search').addEventListener('input', debounce(applyRestaurantFilters, 250));
+  document.getElementById('search-shops').addEventListener('input', debounce(function () {
     renderShops(filterList(this.value, allCompanies, shopIndex));
-  });
+  }, 250));
 
   // ── DATA LOADING ───────────────────────────────────────────────
   async function loadData() {
@@ -1209,7 +1216,7 @@
   loadData();
 </script>
 
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV/XN/sp38=" crossorigin=""></script>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
 <script>
   let leafletMap = null;
   let allMarkers = [];
@@ -1327,7 +1334,7 @@
     });
   });
 
-  document.getElementById('search-map').addEventListener('input', applyMapFilters);
+  document.getElementById('search-map').addEventListener('input', debounce(applyMapFilters, 250));
 
   // load markers.json and init map when tab is opened
   async function loadAndInitMap() {

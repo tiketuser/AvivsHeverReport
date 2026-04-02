@@ -165,15 +165,38 @@ def scrape_restaurants(page):
             spans = card.query_selector_all("div.col-8.col-lg-2 span")
             restaurant_type = spans[0].inner_text().strip() if spans else ""
 
-            # Services: first <p> inside the "restrictions" column (e.g. "ישיבה במסעדה" or "משלוחים")
-            services_p = card.query_selector("div.col-12.col-lg-2.font-size-14 p.mb-2")
-            services = services_p.inner_text().strip() if services_p else ""
+            # פרטים נוספים (services/details): all <p> tags in the details column
+            details_col = card.query_selector("div.col-12.col-lg-2.font-size-14")
+            if details_col:
+                p_tags = details_col.query_selector_all("p.mb-2")
+                services_parts = [p.inner_text().strip() for p in p_tags if p.inner_text().strip()]
+                services = " | ".join(services_parts)
+            else:
+                services = ""
 
             # Also check if the delivery icon is visible (no "hide" class) to catch apps/delivery
             delivery_icon = card.query_selector("a[data-original-title='משלוחים']")
             if delivery_icon and "hide" not in (delivery_icon.get_attribute("class") or ""):
                 if "משלוח" not in services:
                     services = (services + " | משלוחים").strip(" | ") if services else "משלוחים"
+
+            # הערות (notes): text in the notes column
+            notes_col = card.query_selector("div.col-12.col-lg-2.font-size-14 ~ div, div.col-lg-2.col-12.font-size-14")
+            # Try a broader approach: find the column that comes after services column
+            # The הערות column typically has class col-12 col-lg-2 and contains <p> or <a> for "להסברים ופרטים נוספים"
+            notes = ""
+            all_detail_cols = card.query_selector_all("div.col-12.col-lg-2")
+            for col in all_detail_cols:
+                col_text = col.inner_text().strip()
+                # The notes column contains links like "להסברים ופרטים נוספים" or plain notes
+                # It's the column that does NOT contain icons (משלוחים, כשר, etc.)
+                if col_text and "להסברים" not in col_text and "משלוח" not in col_text and "ישיבה" not in col_text and "איסוף" not in col_text and "מוגש" not in col_text and "כשר" not in col_text:
+                    # Check it's not the type/category column
+                    if not any(col_text == t for t in [restaurant_type]):
+                        notes_candidate = col_text.split("להסברים")[0].strip()
+                        if notes_candidate and len(notes_candidate) > 2:
+                            notes = notes_candidate
+                            break
 
             addr_span = card.query_selector("div.col-8.col-lg-3 span")
             address = addr_span.inner_text().strip() if addr_span else ""
