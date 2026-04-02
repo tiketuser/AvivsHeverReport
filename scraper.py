@@ -1,4 +1,5 @@
 import os
+import sys
 import json
 import urllib.request
 import urllib.parse
@@ -6,6 +7,8 @@ import traceback
 from datetime import datetime
 from playwright.sync_api import sync_playwright
 from dotenv import load_dotenv
+
+sys.stdout.reconfigure(encoding="utf-8")
 
 load_dotenv()
 
@@ -15,6 +18,27 @@ TELEGRAM_BOT_TOKEN = os.environ["TELEGRAM_BOT_TOKEN"]
 TELEGRAM_CHAT_ID = os.environ["TELEGRAM_CHAT_ID"]
 
 DOCS_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "docs")
+LOGOS_DIR = os.path.join(DOCS_DIR, "logos")
+
+
+def download_logo(url):
+    """Download a logo from url into docs/logos/, return relative path or empty string."""
+    if not url:
+        return ""
+    try:
+        filename = os.path.basename(urllib.parse.urlparse(url).path)
+        if not filename:
+            return ""
+        os.makedirs(LOGOS_DIR, exist_ok=True)
+        dest = os.path.join(LOGOS_DIR, filename)
+        if not os.path.exists(dest):
+            req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
+            with urllib.request.urlopen(req, timeout=10) as resp:
+                with open(dest, "wb") as f:
+                    f.write(resp.read())
+        return f"logos/{filename}"
+    except Exception:
+        return url  # fall back to external URL if download fails
 
 
 def send_telegram(text):
@@ -65,8 +89,14 @@ def scrape_deals(page):
         else:
             href = None
 
+        # Extract deal card image
+        img_el = card.query_selector("img.box-img")
+        img_src = img_el.get_attribute("src") if img_el else None
+        if img_src and img_src.startswith("/"):
+            img_src = "https://www.hvr.co.il" + img_src
+
         if label and len(label) > 2:
-            deals.append({"label": "🛒 " + label, "subtitle": subtitle, "url": href})
+            deals.append({"label": "🛒 " + label, "subtitle": subtitle, "url": href, "image": img_src})
 
     return deals
 
@@ -95,6 +125,7 @@ def scrape_giftcard_companies(page):
             logo_src = logo_el.get_attribute("src") if logo_el else ""
             if logo_src and logo_src.startswith("/"):
                 logo_src = "https://www.hvr.co.il" + logo_src
+            logo_src = download_logo(logo_src)
 
             if name:
                 companies.append({
@@ -134,6 +165,16 @@ def scrape_restaurants(page):
             spans = card.query_selector_all("div.col-8.col-lg-2 span")
             restaurant_type = spans[0].inner_text().strip() if spans else ""
 
+            # Services: first <p> inside the "restrictions" column (e.g. "ישיבה במסעדה" or "משלוחים")
+            services_p = card.query_selector("div.col-12.col-lg-2.font-size-14 p.mb-2")
+            services = services_p.inner_text().strip() if services_p else ""
+
+            # Also check if the delivery icon is visible (no "hide" class) to catch apps/delivery
+            delivery_icon = card.query_selector("a[data-original-title='משלוחים']")
+            if delivery_icon and "hide" not in (delivery_icon.get_attribute("class") or ""):
+                if "משלוח" not in services:
+                    services = (services + " | משלוחים").strip(" | ") if services else "משלוחים"
+
             addr_span = card.query_selector("div.col-8.col-lg-3 span")
             address = addr_span.inner_text().strip() if addr_span else ""
 
@@ -147,11 +188,13 @@ def scrape_restaurants(page):
             logo_src = logo_el.get_attribute("src") if logo_el else ""
             if logo_src and logo_src.startswith("/"):
                 logo_src = "https://www.hvr.co.il" + logo_src
+            logo_src = download_logo(logo_src)
 
             if name:
                 restaurants.append({
                     "name": name,
                     "type": restaurant_type,
+                    "services": services,
                     "address": address,
                     "phone": phone,
                     "hours": hours,
@@ -183,6 +226,30 @@ def build_deals_message(deals):
     lines.append("🌐 רשימת מסעדות מעודכנת:")
     lines.append("https://tiketuser.github.io/AvivsHeverReport")
     return "\n".join(lines)
+
+
+def fetch_map_markers(page):
+    """Fetch all map markers from the Hever markers API (includes lat/lng and card type)."""
+    markers_data = []
+
+    def handle_response(response):
+        if "markers_hvr" in response.url:
+            try:
+                raw = response.text()
+                parsed = json.loads(raw)
+                # API returns double-encoded JSON (a JSON string containing a JSON array)
+                if isinstance(parsed, str):
+                    parsed = json.loads(parsed)
+                if isinstance(parsed, list):
+                    markers_data.extend(parsed)
+            except Exception:
+                pass
+
+    page.on("response", handle_response)
+    page.goto("https://www.hvr.co.il/site/pg/maps_hvr", wait_until="domcontentloaded")
+    page.wait_for_timeout(6000)
+    page.remove_listener("response", handle_response)
+    return markers_data
 
 
 def save_json(path, data):
@@ -225,6 +292,10 @@ def main():
         companies = scrape_giftcard_companies(page)
         print(f"Found {len(companies)} gift card companies")
 
+        print("Fetching map markers...")
+        markers = fetch_map_markers(page)
+        print(f"Found {len(markers)} map markers")
+
         browser.close()
 
     # Save deals to docs/deals.json
@@ -241,6 +312,11 @@ def main():
     giftcard_path = os.path.join(DOCS_DIR, "giftcard.json")
     save_json(giftcard_path, companies)
     print(f"Saved {len(companies)} companies to {giftcard_path}")
+
+    # Save map markers to docs/markers.json
+    markers_path = os.path.join(DOCS_DIR, "markers.json")
+    save_json(markers_path, markers)
+    print(f"Saved {len(markers)} markers to {markers_path}")
 
     # Save last_updated.json
     today_str = datetime.now().strftime("%d/%m/%Y")
