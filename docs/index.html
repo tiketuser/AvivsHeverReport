@@ -388,6 +388,20 @@
       transform: translateX(-14px);
     }
 
+    .open-toggle.checked {
+      color: var(--accent);
+      border-color: rgba(26,95,212,.3);
+      background: var(--blue-dim);
+    }
+    .open-toggle.checked .delivery-toggle-dot {
+      background: rgba(26,95,212,.15);
+      border-color: var(--accent);
+    }
+    .open-toggle.checked .delivery-toggle-dot::after {
+      background: var(--accent);
+      transform: translateX(-14px);
+    }
+
     /* ─── MAIN CONTENT ─── */
     .panel-content {
       max-width: 1360px;
@@ -839,6 +853,11 @@
       <div class="delivery-toggle-dot"></div>
       מכובד במשלוחים
     </label>
+    <label class="delivery-toggle open-toggle" id="open-toggle-label">
+      <input type="checkbox" id="filter-open">
+      <div class="delivery-toggle-dot"></div>
+      פתוח עכשיו
+    </label>
   </div>
   <div class="panel-content">
     <div class="result-count" id="result-count"></div>
@@ -910,7 +929,7 @@
   let allCompanies = [];
   let shopIndex = [];
   let userLocation = null;   // { lat, lng }
-  let coordsMap = {};        // name -> { lat, lng }
+  let coordsMap = {};        // "name|normalized-address" -> { lat, lng }
 
   // ── TAB SWITCHING ──────────────────────────────────────────────
   function switchTab(id, btn) {
@@ -925,6 +944,13 @@
   const deliveryLabel = document.getElementById('delivery-toggle-label');
   deliveryCheckbox.addEventListener('change', function() {
     deliveryLabel.classList.toggle('checked', this.checked);
+    applyRestaurantFilters();
+  });
+
+  const openCheckbox = document.getElementById('filter-open');
+  const openLabel = document.getElementById('open-toggle-label');
+  openCheckbox.addEventListener('change', function() {
+    openLabel.classList.toggle('checked', this.checked);
     applyRestaurantFilters();
   });
 
@@ -1194,7 +1220,9 @@
   }
 
   function getRestaurantCoords(r) {
-    return coordsMap[r.name] || null;
+    const normAddr = (r.address || '').replace(/\s+/g, ' ').trim().toLowerCase();
+    const key = (r.name || '').trim().toLowerCase() + '|' + normAddr;
+    return coordsMap[key] || null;
   }
 
   function distanceForRestaurant(r) {
@@ -1208,12 +1236,14 @@
   function applyRestaurantFilters() {
     const query = document.getElementById('search').value;
     const deliveryOnly = document.getElementById('filter-delivery').checked;
+    const openOnly = document.getElementById('filter-open').checked;
     let list = filterList(query, allRestaurants, searchIndex);
     if (deliveryOnly) list = list.filter(r =>
       (r.type || '').includes('מארזים במשלוח') ||
       (r.services || '').includes('משלוחים') ||
       (r.notes || '').includes('משלוחים')
     );
+    if (openOnly) list = list.filter(r => getOpenStatus(r.hours) === 'open');
     if (userLocation) {
       list = [...list].sort((a, b) => distanceForRestaurant(a) - distanceForRestaurant(b));
     }
@@ -1248,7 +1278,9 @@
       coordsMap = {};
       for (const m of markers) {
         if (m.title && m.latitude && m.longitude) {
-          coordsMap[m.title.trim()] = { lat: parseFloat(m.latitude), lng: parseFloat(m.longitude) };
+          const normAddr = ((m.city || '') + ', ' + (m.address || '')).replace(/\s+/g, ' ').trim().toLowerCase();
+          const key = m.title.trim().toLowerCase() + '|' + normAddr;
+          coordsMap[key] = { lat: parseFloat(m.latitude), lng: parseFloat(m.longitude) };
         }
       }
 
