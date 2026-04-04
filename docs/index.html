@@ -575,6 +575,11 @@
 
     .detail-value a:hover { color: #1246a8; }
 
+    .dist-value {
+      color: var(--accent);
+      font-weight: 500;
+    }
+
     /* ─── SHOPS ─── */
     .shop-card {
       background: var(--surface);
@@ -867,6 +872,8 @@
   let searchIndex = [];
   let allCompanies = [];
   let shopIndex = [];
+  let userLocation = null;   // { lat, lng }
+  let coordsMap = {};        // name -> { lat, lng }
 
   // ── TAB SWITCHING ──────────────────────────────────────────────
   function switchTab(id, btn) {
@@ -996,6 +1003,13 @@
         (r.notes || '').includes('משלוחים');
 
       let body = '';
+      if (userLocation) {
+        const km = distanceForRestaurant(r);
+        if (km !== Infinity) {
+          const distStr = km < 1 ? `${Math.round(km * 1000)} מ'` : `${km.toFixed(1)} ק"מ`;
+          body += `<div class="detail-row"><span class="detail-label">מרחק</span><span class="detail-value dist-value">${distStr}</span></div>`;
+        }
+      }
       if (address)  body += `<div class="detail-row"><span class="detail-label">כתובת</span><span class="detail-value">${address}</span></div>`;
       if (phone)    body += `<div class="detail-row"><span class="detail-label">טלפון</span><span class="detail-value"><a href="tel:${phone}">${phone}</a></span></div>`;
       if (hours)    body += `<div class="detail-row"><span class="detail-label">שעות</span><span class="detail-value">${hours}</span></div>`;
@@ -1075,6 +1089,27 @@
     }).join('');
   }
 
+  // ── DISTANCE HELPERS ───────────────────────────────────────────
+  function haversineKm(lat1, lng1, lat2, lng2) {
+    const R = 6371;
+    const dLat = (lat2 - lat1) * Math.PI / 180;
+    const dLng = (lng2 - lng1) * Math.PI / 180;
+    const a = Math.sin(dLat/2)**2 +
+              Math.cos(lat1 * Math.PI/180) * Math.cos(lat2 * Math.PI/180) * Math.sin(dLng/2)**2;
+    return R * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
+  }
+
+  function getRestaurantCoords(r) {
+    return coordsMap[r.name] || null;
+  }
+
+  function distanceForRestaurant(r) {
+    if (!userLocation) return Infinity;
+    const c = getRestaurantCoords(r);
+    if (!c) return Infinity;
+    return haversineKm(userLocation.lat, userLocation.lng, c.lat, c.lng);
+  }
+
   // ── FILTER HANDLERS ────────────────────────────────────────────
   function applyRestaurantFilters() {
     const query = document.getElementById('search').value;
@@ -1085,6 +1120,9 @@
       (r.services || '').includes('משלוחים') ||
       (r.notes || '').includes('משלוחים')
     );
+    if (userLocation) {
+      list = [...list].sort((a, b) => distanceForRestaurant(a) - distanceForRestaurant(b));
+    }
     renderCards(list);
   }
 
@@ -1101,15 +1139,35 @@
   // ── DATA LOADING ───────────────────────────────────────────────
   async function loadData() {
     try {
-      const [restRes, metaRes, dealsRes, gcRes] = await Promise.all([
+      const [restRes, metaRes, dealsRes, gcRes, markersRes] = await Promise.all([
         fetch('restaurants.json'),
         fetch('last_updated.json'),
         fetch('deals.json'),
-        fetch('giftcard.json')
+        fetch('giftcard.json'),
+        fetch('markers.json')
       ]);
 
       allRestaurants = await restRes.json();
       searchIndex = buildIndex(allRestaurants);
+
+      const markers = await markersRes.json();
+      coordsMap = {};
+      for (const m of markers) {
+        if (m.title && m.latitude && m.longitude) {
+          coordsMap[m.title.trim()] = { lat: parseFloat(m.latitude), lng: parseFloat(m.longitude) };
+        }
+      }
+
+      // Request geolocation silently; re-render when it arrives
+      if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(
+          pos => {
+            userLocation = { lat: pos.coords.latitude, lng: pos.coords.longitude };
+            applyRestaurantFilters();
+          },
+          () => {} // denied or unavailable — keep original order
+        );
+      }
 
       allCompanies = await gcRes.json();
       shopIndex = buildShopIndex(allCompanies);
