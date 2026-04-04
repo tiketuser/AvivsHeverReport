@@ -536,6 +536,43 @@
       flex-shrink: 0;
     }
 
+    .card-badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+      margin-top: 6px;
+    }
+    .card-badges .delivery-badge { margin-top: 0; }
+
+    .open-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 0.69rem;
+      font-weight: 600;
+      padding: 3px 8px;
+      border-radius: 20px;
+      letter-spacing: .01em;
+    }
+    .open-badge::before {
+      content: '';
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background: currentColor;
+      flex-shrink: 0;
+    }
+    .open-badge.open-now {
+      background: var(--green-dim);
+      color: var(--green);
+      border: 1px solid rgba(21,138,62,.25);
+    }
+    .open-badge.closed-now {
+      background: rgba(220,38,38,.08);
+      color: #b91c1c;
+      border: 1px solid rgba(220,38,38,.2);
+    }
+
     .card-body {
       padding: 12px 16px 16px;
       display: flex;
@@ -1020,6 +1057,12 @@
       const badge = hasDelivery
         ? `<span class="delivery-badge has-delivery">גם במשלוח</span>`
         : `<span class="delivery-badge seating-only">ישיבה בלבד</span>`;
+      const openStatus = getOpenStatus(r.hours);
+      const openBadge = openStatus === 'open'
+        ? `<span class="open-badge open-now">פתוח עכשיו</span>`
+        : openStatus === 'closed'
+          ? `<span class="open-badge closed-now">סגור עכשיו</span>`
+          : '';
 
       return `<div class="card${hasDelivery ? ' has-delivery' : ''}" style="animation-delay:${Math.min(i,20)*18}ms">
         <div class="card-header">
@@ -1027,7 +1070,7 @@
           <div class="card-header-text">
             <a class="card-name card-name-link" href="https://www.google.com/search?q=${encodeURIComponent(r.name)}" target="_blank" rel="noopener noreferrer">${name}</a>
             ${type ? `<div class="card-type">${type}</div>` : ''}
-            ${badge}
+            <div class="card-badges">${badge}${openBadge}</div>
           </div>
         </div>
         <div class="card-body">${body}</div>
@@ -1087,6 +1130,57 @@
       }
       return `<li class="deal-item" style="animation-delay:${i*30}ms">${inner}</li>`;
     }).join('');
+  }
+
+  // ── OPEN/CLOSED INDICATOR ──────────────────────────────────────
+  // Returns 'open', 'closed', or null (unknown)
+  function getOpenStatus(hoursStr) {
+    if (!hoursStr) return null;
+
+    // Get current Israel time (Asia/Jerusalem)
+    const now = new Date();
+    let ilDate;
+    try {
+      ilDate = new Date(now.toLocaleString('en-US', { timeZone: 'Asia/Jerusalem' }));
+    } catch(e) {
+      ilDate = now; // fallback
+    }
+    // 0=Sun,1=Mon,...,5=Fri,6=Sat
+    const dow = ilDate.getDay();
+    const nowMins = ilDate.getHours() * 60 + ilDate.getMinutes();
+
+    // Split hours string into three sections: א-ה / שישי / שבת
+    // Format: "א-ה: <text> שישי: <text> שבת: <text>"
+    const friIdx  = hoursStr.indexOf('שישי:');
+    const satIdx  = hoursStr.indexOf('שבת:');
+    if (friIdx === -1 || satIdx === -1) return null;
+
+    let sectionText;
+    if (dow === 6) {                        // Saturday
+      sectionText = hoursStr.slice(satIdx + 4).trim();
+    } else if (dow === 5) {                 // Friday
+      sectionText = hoursStr.slice(friIdx + 5, satIdx).trim();
+    } else {                                // Sun–Thu (א-ה)
+      sectionText = hoursStr.slice(0, friIdx).replace(/^א-ה:/, '').trim();
+    }
+
+    // Extract first HH:MM-HH:MM pattern
+    const m = sectionText.match(/(\d{1,2}):(\d{2})\s*[-–]\s*(\d{1,2}):(\d{2})/);
+    if (!m) return null;
+
+    const openMins  = parseInt(m[1]) * 60 + parseInt(m[2]);
+    let   closeMins = parseInt(m[3]) * 60 + parseInt(m[4]);
+
+    // Handle midnight-crossing (e.g. 19:00-01:00 means close at 25:00)
+    if (closeMins <= openMins) closeMins += 24 * 60;
+
+    // Also check if we're in the tail of yesterday's midnight-crossing slot
+    // (e.g. it's 00:30 and yesterday was open until 01:00)
+    const nowMinsAdj = nowMins < openMins && nowMins < 8 * 60
+      ? nowMins + 24 * 60
+      : nowMins;
+
+    return (nowMinsAdj >= openMins && nowMinsAdj < closeMins) ? 'open' : 'closed';
   }
 
   // ── DISTANCE HELPERS ───────────────────────────────────────────
