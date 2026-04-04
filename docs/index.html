@@ -631,6 +631,54 @@
       font-weight: 500;
     }
 
+    /* ─── CATEGORY FILTERS ─── */
+    .category-filters {
+      padding: 10px 32px 12px;
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 7px;
+      align-items: center;
+    }
+
+    .cat-chip {
+      display: inline-flex;
+      align-items: center;
+      padding: 5px 13px;
+      font-family: 'Rubik', sans-serif;
+      font-size: 0.78rem;
+      font-weight: 500;
+      color: var(--text-dim);
+      background: var(--surface2);
+      border: 1.5px solid var(--border);
+      border-radius: 20px;
+      cursor: pointer;
+      white-space: nowrap;
+      transition: color .15s, background .15s, border-color .15s;
+      user-select: none;
+    }
+
+    .cat-chip:hover {
+      color: var(--accent);
+      border-color: rgba(26,95,212,.35);
+      background: var(--accent-dim);
+    }
+
+    .cat-chip.active {
+      color: var(--accent);
+      background: var(--accent-dim);
+      border-color: rgba(26,95,212,.5);
+    }
+
+    @media (max-width: 600px) {
+      .category-filters {
+        padding: 8px 14px 10px;
+        gap: 6px;
+      }
+      .cat-chip { font-size: 0.76rem; padding: 5px 11px; }
+    }
+
     /* ─── SHOPS ─── */
     .shop-card {
       background: var(--surface);
@@ -874,6 +922,7 @@
       <input type="search" class="search-input" id="search-shops" placeholder="חיפוש חנות, קטגוריה..." autocomplete="off">
     </div>
   </div>
+  <div class="category-filters" id="category-filters"></div>
   <div class="panel-content">
     <div class="result-count" id="shop-count"></div>
     <div class="grid" id="shop-grid"></div>
@@ -928,6 +977,7 @@
   let searchIndex = [];
   let allCompanies = [];
   let shopIndex = [];
+  let activeCategory = null;
   let userLocation = null;   // { lat, lng }
   let coordsMap = {};        // "name|normalized-address" -> { lat, lng }
 
@@ -1104,6 +1154,47 @@
     }).join('');
   }
 
+  // ── CATEGORY FILTERS ───────────────────────────────────────────
+  function buildCategoryFilters(companies) {
+    const catSet = new Set();
+    companies.forEach(c => {
+      if (c.category) {
+        c.category.split('|').forEach(part => {
+          const trimmed = part.trim();
+          if (trimmed) catSet.add(trimmed);
+        });
+      }
+    });
+    const cats = Array.from(catSet).sort((a, b) => a.localeCompare(b, 'he'));
+
+    const container = document.getElementById('category-filters');
+    const allChip = `<button class="cat-chip active" data-cat="">הכל</button>`;
+    const chips = cats.map(cat =>
+      `<button class="cat-chip" data-cat="${escapeHtml(cat)}">${escapeHtml(cat)}</button>`
+    ).join('');
+    container.innerHTML = allChip + chips;
+
+    container.addEventListener('click', function(e) {
+      const chip = e.target.closest('.cat-chip');
+      if (!chip) return;
+      container.querySelectorAll('.cat-chip').forEach(c => c.classList.remove('active'));
+      chip.classList.add('active');
+      activeCategory = chip.dataset.cat || null;
+      applyShopFilters();
+    });
+  }
+
+  function applyShopFilters() {
+    const query = document.getElementById('search-shops').value;
+    let list = filterList(query, allCompanies, shopIndex);
+    if (activeCategory) {
+      list = list.filter(c =>
+        c.category && c.category.split('|').map(p => p.trim()).includes(activeCategory)
+      );
+    }
+    renderShops(list);
+  }
+
   // ── RENDER SHOPS ───────────────────────────────────────────────
   function renderShops(list) {
     const grid = document.getElementById('shop-grid');
@@ -1256,9 +1347,7 @@
   }
 
   document.getElementById('search').addEventListener('input', debounce(applyRestaurantFilters, 250));
-  document.getElementById('search-shops').addEventListener('input', debounce(function () {
-    renderShops(filterList(this.value, allCompanies, shopIndex));
-  }, 250));
+  document.getElementById('search-shops').addEventListener('input', debounce(applyShopFilters, 250));
 
   // ── DATA LOADING ───────────────────────────────────────────────
   async function loadData() {
@@ -1297,6 +1386,7 @@
 
       allCompanies = await gcRes.json();
       shopIndex = buildShopIndex(allCompanies);
+      buildCategoryFilters(allCompanies);
 
       const meta  = await metaRes.json();
       const deals = await dealsRes.json();
