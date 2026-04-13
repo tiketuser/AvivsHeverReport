@@ -67,7 +67,12 @@ def scrape_deals(page):
         if caption:
             text = caption.inner_text().strip()
             if text:
-                deals.append({"label": "🔔 " + text, "subtitle": None})
+                # Try to extract the carousel banner image
+                img_el = item.query_selector("img")
+                img_src = img_el.get_attribute("src") if img_el else None
+                if img_src and img_src.startswith("/"):
+                    img_src = "https://www.hvr.co.il" + img_src
+                deals.append({"label": "🔔 " + text, "subtitle": None, "image": img_src})
 
     # 2. Weekly deals grid cards
     deal_cards = page.query_selector_all("div.col-xl-2.col-md-3.col-6")

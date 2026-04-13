@@ -1232,14 +1232,14 @@
   // ── RENDER DEALS ───────────────────────────────────────────────
   function renderDeals(deals) {
     if (!deals || deals.length === 0) return;
+    const visibleDeals = deals.filter(d => d.image);
     document.getElementById('tab-deals').style.display = 'flex';
-    document.getElementById('tab-count-deals').textContent = deals.length;
-    document.getElementById('deals-list').innerHTML = deals.map((d, i) => {
+    document.getElementById('tab-count-deals').textContent = visibleDeals.length;
+    document.getElementById('deals-list').innerHTML = visibleDeals.map((d, i) => {
       const label = escapeHtml((d.label || '').replace(/^[\p{Emoji}\s]+/u, '').trim());
       const sub = d.subtitle ? `<div class="deal-sub">${escapeHtml(d.subtitle)}</div>` : '';
-      const imgHtml = d.image
-        ? `<img class="deal-img" src="${escapeHtml(d.image)}" alt="${label}" loading="lazy">`
-        : `<div class="deal-img-placeholder"></div>`;
+      const eager = i < 8 ? 'eager' : 'lazy';
+      const imgHtml = `<img class="deal-img" src="${escapeHtml(d.image)}" alt="${label}" loading="${eager}">`;
       const footer = `<div class="deal-footer"><span class="deal-label">${label}</span>${sub}</div>`;
       const inner = imgHtml + footer;
       if (d.url) {
