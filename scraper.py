@@ -1,5 +1,6 @@
 import os
 import sys
+import re
 import json
 import urllib.request
 import urllib.parse
@@ -67,9 +68,20 @@ def scrape_deals(page):
         if caption:
             text = caption.inner_text().strip()
             if text:
-                # Try to extract the carousel banner image
+                # Try <img> tag first, then CSS background-image
                 img_el = item.query_selector("img")
                 img_src = img_el.get_attribute("src") if img_el else None
+                if not img_src:
+                    # Try background-image on the item or its first child
+                    for sel in [None, "*"]:
+                        el = item.query_selector(sel) if sel else item
+                        if not el:
+                            continue
+                        style = el.get_attribute("style") or ""
+                        m = re.search(r'background-image\s*:\s*url\(["\']?([^"\')\s]+)["\']?\)', style)
+                        if m:
+                            img_src = m.group(1)
+                            break
                 if img_src and img_src.startswith("/"):
                     img_src = "https://www.hvr.co.il" + img_src
                 deals.append({"label": "🔔 " + text, "subtitle": None, "image": img_src})
