@@ -1239,7 +1239,7 @@
       const label = escapeHtml((d.label || '').replace(/^[\p{Emoji}\s]+/u, '').trim());
       const sub = d.subtitle ? `<div class="deal-sub">${escapeHtml(d.subtitle)}</div>` : '';
       const eager = i < 8 ? 'eager' : 'lazy';
-      const imgHtml = `<img class="deal-img" src="${escapeHtml(d.image)}" alt="${label}" loading="${eager}">`;
+      const imgHtml = `<img class="deal-img" src="${escapeHtml(d.image)}" alt="${label}" loading="${eager}" onerror="this.closest('li').remove()">`;
       const footer = `<div class="deal-footer"><span class="deal-label">${label}</span>${sub}</div>`;
       const inner = imgHtml + footer;
       if (d.url) {
