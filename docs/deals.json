@@ -2,22 +2,22 @@
   {
     "label": "🔔 אנו מכריזים בזאת על מבצעי יום העצמאות",
     "subtitle": null,
-    "image": null
+    "image": "https://www.hvr.co.il/pics/site_home/azmaut_78_sld_GIF.gif"
   },
   {
     "label": "🔔 מבצע דיור בהנחות ענק – ההרשמה פתוחה",
     "subtitle": null,
-    "image": null
+    "image": "https://www.hvr.co.il/pics/site_home/nadlan_main_sld_150226.jpg"
   },
   {
     "label": "🔔 הילדים יגידו לכם תודה! כרטיס נטען עבורם",
     "subtitle": null,
-    "image": null
+    "image": "https://www.hvr.co.il/pics/site_home/card_kids_sld_031224.jpg"
   },
   {
     "label": "🔔 הצטרפו לעמותת \"הבית\" לחיזוק משפחות הקבע",
     "subtitle": null,
-    "image": null
+    "image": "https://www.hvr.co.il/pics/site_home/hbait_sld100326.png"
   },
   {
     "label": "🛒 איתכם ולצידכם: 2 מוצרי בשר ב-20 ₪",
@@ -50,16 +50,16 @@
     "image": "https://www.hvr.co.il/pics/site_home/35_cards_pesahmed230226.jpg"
   },
   {
+    "label": "🛒 סדנת כתיבה אונליין ליום השואה, ללא עלות",
+    "subtitle": null,
+    "url": null,
+    "image": "https://www.hvr.co.il/pics/site_home/zikaron_ktiva_med_100425.jpg"
+  },
+  {
     "label": "🛒 \"חבר\"ותא: \"מצחיקונת\" – כרטיסים אחרונים",
     "subtitle": null,
     "url": null,
     "image": "https://www.hvr.co.il/pics/site_home/funny_girl_med_070126.jpg"
-  },
-  {
-    "label": "🛒 גריל קטן ב-15 ₪ ופחמים ב-5 ₪ ב-yellow",
-    "subtitle": null,
-    "url": null,
-    "image": "https://www.hvr.co.il/pics/site_home/yellow_mangal_med250326.jpg"
   },
   {
     "label": "🛒 משלו\"חבר\": מארז מוצרי כביסה ב- 99 ₪",
@@ -68,10 +68,10 @@
     "image": "https://www.hvr.co.il/pics/site_home/mishlohever_kvisa_med_300326.jpg"
   },
   {
-    "label": "🛒 סדנת כתיבה אונליין ליום השואה, ללא עלות",
+    "label": "🛒 גריל קטן ב-15 ₪ ופחמים ב-5 ₪ ב-yellow",
     "subtitle": null,
     "url": null,
-    "image": "https://www.hvr.co.il/pics/site_home/zikaron_ktiva_med_100425.jpg"
+    "image": "https://www.hvr.co.il/pics/site_home/yellow_mangal_med250326.jpg"
   },
   {
     "label": "🛒 \"חבר\" על המפה – כל ההנחות במקום אחד",
@@ -92,10 +92,10 @@
     "image": "https://www.hvr.co.il/pics/site_home/elite_coffee2_med120426.jpg"
   },
   {
-    "label": "🛒 פטיפון בלוטוס בהנחה + 10% באשראי",
+    "label": "🛒 15% הנחה על הקטגוריות מוצרי מטבח",
     "subtitle": null,
     "url": null,
-    "image": "https://www.hvr.co.il/pics/site_home/aiwa_med_blk_230326.jpg"
+    "image": "https://www.hvr.co.il/pics/site_home/buona_casa_med_blk190326.jpg"
   },
   {
     "label": "🛒 חדש באשראי! אתר Ardo Medical",

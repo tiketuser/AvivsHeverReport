@@ -36336,6 +36336,18 @@
     "type": "G"
   },
   {
+    "idn": 4015416,
+    "title": "ספארי (2026)",
+    "category": "אתרים ואטרקציות",
+    "city": "רמת גן",
+    "address": "ליד הפארק הלאומי- רמת גן ,שדרות הצבי מס' 1",
+    "website": "",
+    "discount": "",
+    "latitude": 32.048275,
+    "longitude": 34.824257,
+    "type": "S"
+  },
+  {
     "idn": 2005417,
     "title": "JUMP & ONOT",
     "category": "ביגוד והנעלה,הלבשה תחתונה",
@@ -114033,6 +114045,18 @@
     "discount": "",
     "latitude": 32.076279,
     "longitude": 34.776652,
+    "type": "F0"
+  },
+  {
+    "idn": 1024005,
+    "title": "moon",
+    "category": "מסעדה",
+    "city": "הרצליה",
+    "address": "אריה שנקר 9",
+    "website": "www.moon-sushi.co.il/",
+    "discount": "",
+    "latitude": 32.158613,
+    "longitude": 34.808851,
     "type": "F0"
   }
 ]
