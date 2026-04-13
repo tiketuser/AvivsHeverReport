@@ -34,12 +34,14 @@ jobs:
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: python scraper.py
 
-      - name: Upload debug screenshot
+      - name: Upload debug artifacts
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: debug-screenshot
-          path: docs/debug_login.png
+          name: debug-artifacts
+          path: |
+            docs/debug_login.png
+            docs/debug_login.html
 
       - name: Commit and push data
         run: |

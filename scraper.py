@@ -285,6 +285,17 @@ def main():
 
         print("Logging in...")
         page.goto("https://www.hvr.co.il/", wait_until="domcontentloaded")
+        # Save a screenshot immediately after page load for debugging
+        page.screenshot(path=os.path.join(DOCS_DIR, "debug_login.png"), full_page=True)
+        # Also dump the HTML so we can inspect the actual login form selectors
+        html_dump = page.content()
+        with open(os.path.join(DOCS_DIR, "debug_login.html"), "w", encoding="utf-8") as f:
+            f.write(html_dump)
+        print(f"Login page URL: {page.url}")
+        print(f"Login page title: {page.title()}")
+        # Log all input elements found on the page for debugging
+        inputs = page.query_selector_all("input")
+        print(f"Inputs found on page: {[{'name': el.get_attribute('name'), 'type': el.get_attribute('type'), 'id': el.get_attribute('id')} for el in inputs]}")
         page.wait_for_selector('input[name="tz"]', timeout=30000)
         page.fill('input[name="tz"]', HVR_ID)
         page.fill('input[name="password"]', HVR_PASSWORD)
