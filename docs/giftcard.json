@@ -90,12 +90,6 @@
     "logo": "logos/logo_babybeep.jpg"
   },
   {
-    "name": "BabyBrezza",
-    "category": "ילדים ותינוקות",
-    "online": true,
-    "logo": "logos/logo_babybrezza.jpg"
-  },
-  {
     "name": "BagStore",
     "category": "נסיעות ומחנאות",
     "online": true,
@@ -354,6 +348,12 @@
     "logo": "logos/logo_fizzio.jpg"
   },
   {
+    "name": "FLOW",
+    "category": "טיפוח וקוסמטיקה",
+    "online": true,
+    "logo": "logos/logo_flow.jpg"
+  },
+  {
     "name": "fly מאווררים",
     "category": "לבית ולחצר | חשמל ואלקטרוניקה",
     "online": true,
@@ -400,12 +400,6 @@
     "category": "ביגוד והנעלה | ספורט",
     "online": false,
     "logo": "logos/logo_getpro.jpg"
-  },
-  {
-    "name": "GETHA",
-    "category": "שינה וטקסטיל",
-    "online": false,
-    "logo": "logos/logo_gethe_reshtot.jpg"
   },
   {
     "name": "GONATURE",
@@ -2086,12 +2080,6 @@
     "category": "חשמל ואלקטרוניקה",
     "online": false,
     "logo": "logos/logo_shekemelectric.png"
-  },
-  {
-    "name": "תג וומן",
-    "category": "ביגוד והנעלה",
-    "online": false,
-    "logo": "logos/logo_tagwoman.png"
   },
   {
     "name": "תהילות",

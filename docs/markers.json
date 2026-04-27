@@ -20688,6 +20688,18 @@
     "type": "S"
   },
   {
+    "idn": 4022573,
+    "title": "נווה הדרים ראשל''צ (2026)",
+    "category": "מועדוני ספורט",
+    "city": "ראשון לציון",
+    "address": "ירושלים 88, ראשון לציון",
+    "website": "",
+    "discount": "",
+    "latitude": 31.962205,
+    "longitude": 34.818579,
+    "type": "S"
+  },
+  {
     "idn": 2002635,
     "title": "sweetgirlshop",
     "category": "ביגוד והנעלה,ילדים ותינוקות",
@@ -21069,150 +21081,6 @@
     "discount": "",
     "latitude": 32.216586,
     "longitude": 34.822409,
-    "type": "G"
-  },
-  {
-    "idn": 2002727,
-    "title": "תג וומן",
-    "category": "ביגוד והנעלה",
-    "city": "אילת",
-    "address": "הפלמח 1",
-    "website": "",
-    "discount": "",
-    "latitude": 29.549872,
-    "longitude": 34.953455,
-    "type": "G"
-  },
-  {
-    "idn": 2002728,
-    "title": "תג וומן",
-    "category": "ביגוד והנעלה",
-    "city": "באר שבע",
-    "address": "יצחק נפחא 25",
-    "website": "",
-    "discount": "",
-    "latitude": 31.249217,
-    "longitude": 34.811315,
-    "type": "G"
-  },
-  {
-    "idn": 2002729,
-    "title": "תג וומן",
-    "category": "ביגוד והנעלה",
-    "city": "באר שבע",
-    "address": "צומת אלי כהן",
-    "website": "",
-    "discount": "",
-    "latitude": 31.24423,
-    "longitude": 34.792259,
-    "type": "G"
-  },
-  {
-    "idn": 2002730,
-    "title": "תג וומן",
-    "category": "ביגוד והנעלה",
-    "city": "אשדוד",
-    "address": "הגדוד העברי 6",
-    "website": "",
-    "discount": "",
-    "latitude": 31.791914,
-    "longitude": 34.638739,
-    "type": "G"
-  },
-  {
-    "idn": 2002731,
-    "title": "תג וומן",
-    "category": "ביגוד והנעלה",
-    "city": "ירושלים",
-    "address": "האומן 17",
-    "website": "",
-    "discount": "",
-    "latitude": 31.751275,
-    "longitude": 35.208849,
-    "type": "G"
-  },
-  {
-    "idn": 2002732,
-    "title": "תג וומן",
-    "category": "ביגוד והנעלה",
-    "city": "מודיעין",
-    "address": "לב העיר 2",
-    "website": "",
-    "discount": "",
-    "latitude": 31.899867,
-    "longitude": 35.008251,
-    "type": "G"
-  },
-  {
-    "idn": 2002733,
-    "title": "תג וומן",
-    "category": "ביגוד והנעלה",
-    "city": "רמת גן",
-    "address": "אבא הלל סילבר 301",
-    "website": "",
-    "discount": "",
-    "latitude": 32.100314,
-    "longitude": 34.826728,
-    "type": "G"
-  },
-  {
-    "idn": 2002734,
-    "title": "תג וומן",
-    "category": "ביגוד והנעלה",
-    "city": "רמת גן",
-    "address": "דרך יצחק רבין 53",
-    "website": "",
-    "discount": "",
-    "latitude": 32.066486,
-    "longitude": 34.810205,
-    "type": "G"
-  },
-  {
-    "idn": 2002735,
-    "title": "תג וומן",
-    "category": "ביגוד והנעלה",
-    "city": "חולון",
-    "address": "גולדה מאיר 7",
-    "website": "",
-    "discount": "",
-    "latitude": 32.012039,
-    "longitude": 34.779326,
-    "type": "G"
-  },
-  {
-    "idn": 2002736,
-    "title": "תג וומן",
-    "category": "ביגוד והנעלה",
-    "city": "קרית אונו",
-    "address": "שלמה המלך 37",
-    "website": "",
-    "discount": "",
-    "latitude": 32.055574,
-    "longitude": 34.863378,
-    "type": "G"
-  },
-  {
-    "idn": 2002737,
-    "title": "תג וומן",
-    "category": "ביגוד והנעלה",
-    "city": "חיפה",
-    "address": "שמחה גולן 54",
-    "website": "",
-    "discount": "",
-    "latitude": 32.789711,
-    "longitude": 35.007822,
-    "type": "G"
-  },
-  {
-    "idn": 2002738,
-    "title": "תג וומן",
-    "category": "ביגוד והנעלה",
-    "city": "חיפה",
-    "address": "משה פלימן 4",
-    "website": "",
-    "discount": "",
-    "latitude": 32.789601,
-    "longitude": 34.965066,
     "type": "G"
   },
   {
@@ -34632,18 +34500,6 @@
     "type": "S"
   },
   {
-    "idn": 2005319,
-    "title": "GETHA",
-    "category": "שינה וטקסטיל",
-    "city": "ראשון לציון ",
-    "address": "אצל 2",
-    "website": "getha.co.il",
-    "discount": "5%",
-    "latitude": 31.988769,
-    "longitude": 34.768292,
-    "type": "G"
-  },
-  {
     "idn": 4015319,
     "title": "גרביטי פארק עכו 2026",
     "category": "אתרים ואטרקציות",
@@ -35688,6 +35544,18 @@
     "type": "G"
   },
   {
+    "idn": 4015383,
+    "title": "לייזר זון (2026)",
+    "category": "אתרים ואטרקציות",
+    "city": "טבריה",
+    "address": "יהודה לוי 7 טבריה",
+    "website": "",
+    "discount": "",
+    "latitude": 32.790445,
+    "longitude": 35.534072,
+    "type": "S"
+  },
+  {
     "idn": 2005384,
     "title": "JUMP & ONOT",
     "category": "ביגוד והנעלה,הלבשה תחתונה",
@@ -35782,6 +35650,18 @@
     "latitude": 32.84538,
     "longitude": 35.091888,
     "type": "G"
+  },
+  {
+    "idn": 4015388,
+    "title": "לעוף על המים (2026)",
+    "category": "אתרים ואטרקציות",
+    "city": "אילת",
+    "address": "מרינה צפונית מסחרית , אילת",
+    "website": "",
+    "discount": "",
+    "latitude": 29.549465,
+    "longitude": 34.959806,
+    "type": "S"
   },
   {
     "idn": 2005389,
@@ -36984,18 +36864,6 @@
     "type": "G"
   },
   {
-    "idn": 4015458,
-    "title": "היכל התרבות מודיעין מכבים רעות - 2026/27 - מחיר מיוחד",
-    "category": "תיאטראות",
-    "city": "מודיעין",
-    "address": "עמק דותן 49, מודיעין מכבים רעות",
-    "website": "",
-    "discount": "",
-    "latitude": 31.898627,
-    "longitude": 35.015185,
-    "type": "S"
-  },
-  {
     "idn": 2005459,
     "title": "ביתילי",
     "category": "לבית ולחצר",
@@ -38181,42 +38049,6 @@
     "discount": "5%",
     "latitude": 31.62695,
     "longitude": 34.583679,
-    "type": "G"
-  },
-  {
-    "idn": 2005654,
-    "title": "GETHA",
-    "category": "שינה וטקסטיל",
-    "city": "באר שבע ",
-    "address": "שד' דוד טוביהו 125",
-    "website": "getha.co.il",
-    "discount": "5%",
-    "latitude": 31.251333,
-    "longitude": 34.772043,
-    "type": "G"
-  },
-  {
-    "idn": 2005655,
-    "title": "GETHA",
-    "category": "שינה וטקסטיל",
-    "city": "רמת גן ",
-    "address": "דרך אבא הלל 301",
-    "website": "getha.co.il",
-    "discount": "5%",
-    "latitude": 32.099065,
-    "longitude": 34.826616,
-    "type": "G"
-  },
-  {
-    "idn": 2005656,
-    "title": "GETHA",
-    "category": "שינה וטקסטיל",
-    "city": "הרצליה ",
-    "address": "אבא אבן 5",
-    "website": "getha.co.il",
-    "discount": "5%",
-    "latitude": 32.161863,
-    "longitude": 34.809351,
     "type": "G"
   },
   {
@@ -54007,8 +53839,8 @@
     "address": "שד' הגעתון 26",
     "website": "",
     "discount": "",
-    "latitude": 33.00691,
-    "longitude": 34.094876,
+    "latitude": 33.005927,
+    "longitude": 35.098227,
     "type": "G"
   },
   {
@@ -54703,8 +54535,8 @@
     "address": "השוק 13",
     "website": "www.homestyle.co.il/",
     "discount": "",
-    "latitude": 32.605509,
-    "longitude": 34.293435,
+    "latitude": 32.605054,
+    "longitude": 35.292864,
     "type": "G"
   },
   {
@@ -55245,6 +55077,42 @@
     "discount": "",
     "latitude": 31.750573,
     "longitude": 35.214511,
+    "type": "G"
+  },
+  {
+    "idn": 2007646,
+    "title": "ד\"ר גב",
+    "category": "שינה וטקסטיל",
+    "city": "נס ציונה",
+    "address": "הפטיש 6",
+    "website": "",
+    "discount": "",
+    "latitude": 31.9209,
+    "longitude": 34.791269,
+    "type": "G"
+  },
+  {
+    "idn": 2007647,
+    "title": "ERROCA",
+    "category": "אופטיקה",
+    "city": "ירושלים",
+    "address": "קניון לב הפסגה",
+    "website": "erroca.co.il",
+    "discount": "",
+    "latitude": 31.824262,
+    "longitude": 35.237096,
+    "type": "G"
+  },
+  {
+    "idn": 2007648,
+    "title": "ERROCA",
+    "category": "אופטיקה",
+    "city": "ירושלים",
+    "address": "הראל 1 מבשרת ציון",
+    "website": "erroca.co.il",
+    "discount": "",
+    "latitude": 31.799673,
+    "longitude": 35.14904,
     "type": "G"
   },
   {
@@ -81973,8 +81841,8 @@
   },
   {
     "idn": 3021889,
-    "title": "GETHA",
-    "category": "שינה וטקסטיל",
+    "title": "GETHA   מזרונים",
+    "category": "לבית ולמשרד",
     "city": "ראשון לציון",
     "address": "אצל 2  , (מתחם ביתילי)",
     "website": "getha.co.il/",
@@ -84132,18 +84000,6 @@
     "type": "C1"
   },
   {
-    "idn": 1022109,
-    "title": "שגב אקספרס",
-    "category": "מסעדת שף",
-    "city": "תל אביב - יפו",
-    "address": "הברזל 38",
-    "website": "www.segevchef.com",
-    "discount": "",
-    "latitude": 32.110513,
-    "longitude": 34.842479,
-    "type": "F0"
-  },
-  {
     "idn": 3022109,
     "title": "אופטיקל סנטר",
     "category": "אופטיקה",
@@ -84253,8 +84109,8 @@
   },
   {
     "idn": 3022117,
-    "title": "GETHA",
-    "category": "שינה וטקסטיל",
+    "title": "GETHA   מזרונים",
+    "category": "לבית ולמשרד",
     "city": "באר-שבע",
     "address": "גרנד קניון שד' דוד טוביהו 125 קומה ראשונה",
     "website": "getha.co.il/",
@@ -84265,8 +84121,8 @@
   },
   {
     "idn": 3022118,
-    "title": "GETHA",
-    "category": "שינה וטקסטיל",
+    "title": "GETHA   מזרונים",
+    "category": "לבית ולמשרד",
     "city": "רמת-גן",
     "address": "קניון איילון דרך אבא הלל 301 קומת כניסה ",
     "website": "getha.co.il/",
@@ -84289,8 +84145,8 @@
   },
   {
     "idn": 3022119,
-    "title": "GETHA",
-    "category": "שינה וטקסטיל",
+    "title": "GETHA   מזרונים",
+    "category": "לבית ולמשרד",
     "city": "הרצליה פתוח",
     "address": "אבא אבן 5 ( פתיחה בקרוב )",
     "website": "getha.co.il/",
@@ -85200,18 +85056,6 @@
     "type": "C1"
   },
   {
-    "idn": 1022207,
-    "title": "קלאסיק",
-    "category": "מסעדה",
-    "city": "תל אביב - יפו",
-    "address": "יהודה מכבי 53",
-    "website": "",
-    "discount": "",
-    "latitude": 32.093959,
-    "longitude": 34.790645,
-    "type": "F0"
-  },
-  {
     "idn": 1022209,
     "title": "אבו כנאפה - רמת גן",
     "category": "גלידריה מתוקים וקינוחים",
@@ -85378,18 +85222,6 @@
     "latitude": 32.130675,
     "longitude": 34.792893,
     "type": "C0"
-  },
-  {
-    "idn": 1022230,
-    "title": "ג'ויה",
-    "category": "מסעדה",
-    "city": "תל אביב - יפו",
-    "address": "ויצמן 2",
-    "website": "",
-    "discount": "",
-    "latitude": 32.077465,
-    "longitude": 34.788764,
-    "type": "F1"
   },
   {
     "idn": 3022230,
@@ -85574,7 +85406,7 @@
   {
     "idn": 1022242,
     "title": "מקס ברנר",
-    "category": "גלידריה מתוקים וקינוחים,יקבים ומבשלות בירה",
+    "category": "גלידריה מתוקים וקינוחים",
     "city": "ירושלים",
     "address": "עמק רפאים 40",
     "website": "www.max-brenner.co.il",
@@ -88294,18 +88126,6 @@
     "latitude": 32.78858,
     "longitude": 35.01047,
     "type": "C1"
-  },
-  {
-    "idn": 1022446,
-    "title": "גלידה GOLDA",
-    "category": "גלידריה מתוקים וקינוחים",
-    "city": "הרצליה",
-    "address": "כיכר דה שליט",
-    "website": "www.goldaglida.co.il",
-    "discount": "",
-    "latitude": 32.178811,
-    "longitude": 34.804985,
-    "type": "F0"
   },
   {
     "idn": 3022446,
@@ -91378,18 +91198,6 @@
     "latitude": 32.511053,
     "longitude": 35.50073,
     "type": "C0"
-  },
-  {
-    "idn": 1022653,
-    "title": "קפה גרג",
-    "category": "בית קפה",
-    "city": "רעננה",
-    "address": "המלאכה 2 קניון רננים",
-    "website": "",
-    "discount": "",
-    "latitude": 32.19748,
-    "longitude": 34.87809,
-    "type": "F1"
   },
   {
     "idn": 3022653,
@@ -96252,18 +96060,6 @@
     "type": "C1"
   },
   {
-    "idn": 1023003,
-    "title": "NIGHT COOKIE",
-    "category": "גלידריה מתוקים וקינוחים",
-    "city": "רעננה",
-    "address": "חנקין 2",
-    "website": "",
-    "discount": "",
-    "latitude": 32.180338,
-    "longitude": 34.876956,
-    "type": "F1"
-  },
-  {
     "idn": 3023003,
     "title": "צומת ספרים",
     "category": "לימודים וספרים",
@@ -97404,18 +97200,6 @@
     "type": "C0"
   },
   {
-    "idn": 1023074,
-    "title": "פיצה סטורי",
-    "category": "מסעדה",
-    "city": "כפר סבא",
-    "address": "ויצמן 57",
-    "website": "pizza-story.co.il",
-    "discount": "",
-    "latitude": 32.176792,
-    "longitude": 34.901997,
-    "type": "F1"
-  },
-  {
     "idn": 3023074,
     "title": "רשת החמניה",
     "category": "מזון ומשקאות",
@@ -97966,18 +97750,6 @@
     "latitude": 31.755253,
     "longitude": 35.221668,
     "type": "C0"
-  },
-  {
-    "idn": 1023102,
-    "title": "פיצה סטורי",
-    "category": "מסעדה",
-    "city": "רמלה",
-    "address": "הרצל 45",
-    "website": "pizza-story.co.il",
-    "discount": "",
-    "latitude": 31.931767,
-    "longitude": 34.869411,
-    "type": "F1"
   },
   {
     "idn": 3023102,
@@ -100020,18 +99792,6 @@
     "type": "C0"
   },
   {
-    "idn": 1023253,
-    "title": "בית הפול",
-    "category": "מסעדה",
-    "city": "באר שבע",
-    "address": "הבדיל 17",
-    "website": "",
-    "discount": "",
-    "latitude": 31.225999,
-    "longitude": 34.809624,
-    "type": "F1"
-  },
-  {
     "idn": 1023254,
     "title": "קפה גרג",
     "category": "מסעדה,בית קפה",
@@ -101376,18 +101136,6 @@
     "type": "C0"
   },
   {
-    "idn": 1023317,
-    "title": "TLAB מבית ויסוצקי",
-    "category": "בר-פאב",
-    "city": "תל אביב - יפו",
-    "address": "החשמונאים 103",
-    "website": "",
-    "discount": "",
-    "latitude": 32.069559,
-    "longitude": 34.784603,
-    "type": "F0"
-  },
-  {
     "idn": 3023317,
     "title": "נטע אפרתי   NETA EFRATI",
     "category": "אופנה",
@@ -101686,18 +101434,6 @@
     "latitude": 31.865575,
     "longitude": 35.261645,
     "type": "C0"
-  },
-  {
-    "idn": 1023336,
-    "title": "NOTO",
-    "category": "מסעדה",
-    "city": "חדרה",
-    "address": "מתחם מול החוף פרופסור דן שכטמן ",
-    "website": "www.noto.co.il",
-    "discount": "",
-    "latitude": 32.44168,
-    "longitude": 34.895172,
-    "type": "F1"
   },
   {
     "idn": 3023336,
@@ -105768,18 +105504,6 @@
     "type": "C0"
   },
   {
-    "idn": 1023536,
-    "title": "חומוס אליהו",
-    "category": "מסעדה",
-    "city": "ראשון לציון",
-    "address": "דוד סחרוב 21",
-    "website": "",
-    "discount": "",
-    "latitude": 31.989662,
-    "longitude": 34.774511,
-    "type": "F1"
-  },
-  {
     "idn": 1023537,
     "title": "חומוס אליהו",
     "category": "מסעדה",
@@ -107050,18 +106774,6 @@
     "latitude": 32.146903,
     "longitude": 34.80442,
     "type": "C0"
-  },
-  {
-    "idn": 1023598,
-    "title": "KOI",
-    "category": "בר-פאב",
-    "city": "תל אביב - יפו",
-    "address": "עולי ציון 4",
-    "website": "",
-    "discount": "",
-    "latitude": 32.053968,
-    "longitude": 34.755754,
-    "type": "F0"
   },
   {
     "idn": 3023598,
@@ -112032,6 +111744,18 @@
     "type": "F0"
   },
   {
+    "idn": 3023833,
+    "title": "מאפה נאמן",
+    "category": "מזון ומשקאות",
+    "city": "גדרה",
+    "address": "מרכז ביג",
+    "website": "",
+    "discount": "5%",
+    "latitude": 31.797528,
+    "longitude": 34.767588,
+    "type": "C0"
+  },
+  {
     "idn": 1023834,
     "title": "מקדונלד'ס",
     "category": "מסעדה",
@@ -112044,6 +111768,18 @@
     "type": "F1"
   },
   {
+    "idn": 3023834,
+    "title": "מאפה נאמן",
+    "category": "מזון ומשקאות",
+    "city": "ירושלים",
+    "address": "יפו 234 ",
+    "website": "",
+    "discount": "5%",
+    "latitude": 31.789721,
+    "longitude": 35.200893,
+    "type": "C0"
+  },
+  {
     "idn": 1023835,
     "title": "מקדונלד'ס",
     "category": "מסעדה",
@@ -112054,6 +111790,18 @@
     "latitude": 30.612974,
     "longitude": 34.802236,
     "type": "F0"
+  },
+  {
+    "idn": 3023835,
+    "title": "מנטה הרב   Menta Herb – עולם של בריאות טבעית",
+    "category": "לא ידוע",
+    "city": "צפת",
+    "address": "ירושלים 39",
+    "website": "www.mentaherb.online/category/all-products",
+    "discount": "10%",
+    "latitude": 32.969089,
+    "longitude": 35.493217,
+    "type": "C0"
   },
   {
     "idn": 1023836,
@@ -112078,6 +111826,18 @@
     "latitude": 33.223662,
     "longitude": 35.614743,
     "type": "F0"
+  },
+  {
+    "idn": 3023837,
+    "title": "מאפה נאמן",
+    "category": "מזון ומשקאות",
+    "city": "בית שמש",
+    "address": "שדרות יגאל אלון 24",
+    "website": "",
+    "discount": "5%",
+    "latitude": 31.754442,
+    "longitude": 34.992761,
+    "type": "C0"
   },
   {
     "idn": 1023838,
@@ -112116,6 +111876,18 @@
     "type": "F0"
   },
   {
+    "idn": 3023840,
+    "title": "SHIMON PINHASOV  שמעון פנחסוב",
+    "category": "לא ידוע",
+    "city": "רמת-גן",
+    "address": "רח' שמעון פרוג 2 ",
+    "website": "refuativet.co.il",
+    "discount": "10%",
+    "latitude": 32.080552,
+    "longitude": 34.811696,
+    "type": "C0"
+  },
+  {
     "idn": 1023841,
     "title": "מקדונלד'ס",
     "category": "מסעדה",
@@ -112128,6 +111900,18 @@
     "type": "F0"
   },
   {
+    "idn": 3023841,
+    "title": "SHIMON PINHASOV  שמעון פנחסוב",
+    "category": "לא ידוע",
+    "city": "נתיבות",
+    "address": "מרכז פריז סנטר ",
+    "website": "refuativet.co.il",
+    "discount": "10%",
+    "latitude": 31.417831,
+    "longitude": 34.595054,
+    "type": "C0"
+  },
+  {
     "idn": 1023842,
     "title": "מקדונלד'ס",
     "category": "מסעדה",
@@ -112138,6 +111922,18 @@
     "latitude": 32.864552,
     "longitude": 35.181973,
     "type": "F0"
+  },
+  {
+    "idn": 3023842,
+    "title": "מאפה נאמן",
+    "category": "מזון ומשקאות",
+    "city": "ירושלים",
+    "address": "הראל 1 , מבשרת ציון",
+    "website": "",
+    "discount": "5%",
+    "latitude": 31.799705,
+    "longitude": 35.149051,
+    "type": "C0"
   },
   {
     "idn": 1023843,
@@ -112764,18 +112560,6 @@
     "type": "F1"
   },
   {
-    "idn": 1023897,
-    "title": "פיצה פונגי",
-    "category": "מסעדה",
-    "city": "אילת",
-    "address": "מרכז התיירות החדש, אילת",
-    "website": "",
-    "discount": "",
-    "latitude": 29.551039,
-    "longitude": 34.952506,
-    "type": "F0"
-  },
-  {
     "idn": 1023898,
     "title": "הפריקסה של חיימיקו",
     "category": "מסעדה",
@@ -113168,7 +112952,7 @@
     "website": "",
     "discount": "",
     "latitude": 32.708544,
-    "longitude": 34.17464,
+    "longitude": 35.17473,
     "type": "F0"
   },
   {
@@ -114057,6 +113841,78 @@
     "discount": "",
     "latitude": 32.158613,
     "longitude": 34.808851,
+    "type": "F0"
+  },
+  {
+    "idn": 1024007,
+    "title": "YUMMY YUMMY",
+    "category": "גלידריה מתוקים וקינוחים",
+    "city": "תל אביב - יפו",
+    "address": "דיזנגוף סנטר בניין A קומה מינוס 1",
+    "website": "",
+    "discount": "",
+    "latitude": 32.075224,
+    "longitude": 34.775172,
+    "type": "F1"
+  },
+  {
+    "idn": 1024008,
+    "title": "קפה קפה",
+    "category": "מסעדה,בית קפה",
+    "city": "עכו",
+    "address": "קניון עזריאלי",
+    "website": "",
+    "discount": "",
+    "latitude": 32.923235,
+    "longitude": 35.081046,
+    "type": "F0"
+  },
+  {
+    "idn": 1024009,
+    "title": "בריסטה קפה",
+    "category": "בית קפה",
+    "city": "לוד",
+    "address": "הנשיא 5",
+    "website": "",
+    "discount": "",
+    "latitude": 31.948793,
+    "longitude": 34.893204,
+    "type": "F1"
+  },
+  {
+    "idn": 1024010,
+    "title": "מרכז חומוס האסלי",
+    "category": "מסעדה",
+    "city": "תל אביב - יפו",
+    "address": "יפת 73",
+    "website": "",
+    "discount": "",
+    "latitude": 32.046181,
+    "longitude": 34.752562,
+    "type": "F0"
+  },
+  {
+    "idn": 1024011,
+    "title": "logo_asli.jpg",
+    "category": "מסעדה",
+    "city": "תל אביב - יפו",
+    "address": "קפלן 36 שרונה",
+    "website": "",
+    "discount": "",
+    "latitude": 32.073088,
+    "longitude": 34.78822,
+    "type": "F0"
+  },
+  {
+    "idn": 1024012,
+    "title": "logo_asli.jpg",
+    "category": "מסעדה",
+    "city": "תל אביב - יפו",
+    "address": "קפלן 36 שרונה",
+    "website": "",
+    "discount": "",
+    "latitude": 32.073088,
+    "longitude": 34.78822,
     "type": "F0"
   }
 ]
