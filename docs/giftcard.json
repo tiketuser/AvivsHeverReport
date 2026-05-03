@@ -1086,12 +1086,6 @@
     "logo": "logos/logo_zieglerbrown.jpg"
   },
   {
-    "name": "ZIP TOP",
-    "category": "אביזרי מטבח",
-    "online": true,
-    "logo": "logos/logo_ziptop.jpg"
-  },
-  {
     "name": "א.א אורטופדיה",
     "category": "ביגוד והנעלה",
     "online": false,
@@ -1222,12 +1216,6 @@
     "category": "ספורט",
     "online": false,
     "logo": "logos/logo_asics.jpg"
-  },
-  {
-    "name": "אפל מדיקל",
-    "category": "טיפוח וקוסמטיקה",
-    "online": true,
-    "logo": "logos/logo_applemedical.jpg"
   },
   {
     "name": "אפרודיטה",

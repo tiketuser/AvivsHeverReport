@@ -23652,18 +23652,6 @@
     "type": "G"
   },
   {
-    "idn": 3003214,
-    "title": "ג'יג'י אקדמי תל אביב",
-    "category": "לימודים",
-    "city": "תל אביב",
-    "address": "המסגר 9",
-    "website": "",
-    "discount": "10%",
-    "latitude": 32.062137,
-    "longitude": 34.784627,
-    "type": "C0"
-  },
-  {
     "idn": 2003219,
     "title": "א.ל.מ",
     "category": "חשמל ואלקטרוניקה",
@@ -35388,18 +35376,6 @@
     "type": "G"
   },
   {
-    "idn": 4015376,
-    "title": "טרק ים אכזיב (2026)",
-    "category": "אתרים ואטרקציות",
-    "city": "אכזיב",
-    "address": "חוף אכזיב",
-    "website": "",
-    "discount": "",
-    "latitude": 33.041345,
-    "longitude": 35.098707,
-    "type": "S"
-  },
-  {
     "idn": 2005377,
     "title": "JUMP & ONOT",
     "category": "ביגוד והנעלה,הלבשה תחתונה",
@@ -36180,18 +36156,6 @@
     "type": "G"
   },
   {
-    "idn": 4015414,
-    "title": "סייל אילת   (2026)",
-    "category": "אתרים ואטרקציות",
-    "city": "אילת",
-    "address": "",
-    "website": "",
-    "discount": "",
-    "latitude": 29.563521,
-    "longitude": 34.958021,
-    "type": "S"
-  },
-  {
     "idn": 2005415,
     "title": "JUMP & ONOT",
     "category": "ביגוד והנעלה,הלבשה תחתונה",
@@ -36370,18 +36334,6 @@
     "latitude": 31.247605,
     "longitude": 34.798374,
     "type": "G"
-  },
-  {
-    "idn": 4015423,
-    "title": "פאנקי מאנקי ראשון לציון  (2026)",
-    "category": "אתרים ואטרקציות",
-    "city": "ראשון לציון",
-    "address": "קניון G רוטשילד  רוטשילד 45, ראשל\"צ",
-    "website": "",
-    "discount": "",
-    "latitude": 31.963248,
-    "longitude": 34.801488,
-    "type": "S"
   },
   {
     "idn": 2005424,
@@ -37008,18 +36960,6 @@
     "type": "S"
   },
   {
-    "idn": 4015468,
-    "title": "פאנקי מאנקי באר שבע  (2026)",
-    "category": "אתרים ואטרקציות",
-    "city": "באר שבע",
-    "address": "מתחם סינמה סיטי חיטה 1, באר שבע (קומת הכניסה, צמוד לKFC) ",
-    "website": "",
-    "discount": "",
-    "latitude": 31.234122,
-    "longitude": 34.799462,
-    "type": "S"
-  },
-  {
     "idn": 4015469,
     "title": "תיאטרון הבימה - 2026/27 - מחיר מיוחד",
     "category": "תיאטראות",
@@ -37188,30 +37128,6 @@
     "type": "G"
   },
   {
-    "idn": 2005484,
-    "title": "אפל מדיקל",
-    "category": "טיפוח וקוסמטיקה",
-    "city": "אלעד",
-    "address": "בן זכאי 98",
-    "website": "applemedical.geo-media.co.il",
-    "discount": "10%",
-    "latitude": 32.04809,
-    "longitude": 34.965622,
-    "type": "G"
-  },
-  {
-    "idn": 2005485,
-    "title": "אפל מדיקל",
-    "category": "טיפוח וקוסמטיקה",
-    "city": "מצליח ",
-    "address": "המלאכה 122",
-    "website": "applemedical.geo-media.co.il",
-    "discount": "10%",
-    "latitude": 31.904472,
-    "longitude": 34.878345,
-    "type": "G"
-  },
-  {
     "idn": 2005487,
     "title": "XRAY",
     "category": "אופטיקה",
@@ -37269,18 +37185,6 @@
     "discount": "",
     "latitude": 31.793107,
     "longitude": 34.639083,
-    "type": "G"
-  },
-  {
-    "idn": 2005492,
-    "title": "אפל מדיקל",
-    "category": "טיפוח וקוסמטיקה",
-    "city": "בית שמש ",
-    "address": "ביאליק 34",
-    "website": "applemedical.geo-media.co.il",
-    "discount": "10%",
-    "latitude": 31.751443,
-    "longitude": 34.981592,
     "type": "G"
   },
   {
@@ -47724,18 +47628,6 @@
     "type": "G"
   },
   {
-    "idn": 2006995,
-    "title": "רוזן ומינץ",
-    "category": "ספורט",
-    "city": "הוד השרון",
-    "address": "הנגר 1 ",
-    "website": "www.rosen-meents.co.il",
-    "discount": "",
-    "latitude": 32.131312,
-    "longitude": 34.893541,
-    "type": "G"
-  },
-  {
     "idn": 2006996,
     "title": "רוזן ומינץ",
     "category": "ספורט",
@@ -47745,18 +47637,6 @@
     "discount": "5%",
     "latitude": 32.162641,
     "longitude": 34.80677,
-    "type": "G"
-  },
-  {
-    "idn": 2006997,
-    "title": "רוזן ומינץ",
-    "category": "ספורט",
-    "city": "הרצליה",
-    "address": "שבעת הכוכבים 8",
-    "website": "www.rosen-meents.co.il",
-    "discount": "5%",
-    "latitude": 32.164988,
-    "longitude": 34.82391,
     "type": "G"
   },
   {
@@ -55116,6 +54996,150 @@
     "type": "G"
   },
   {
+    "idn": 2007649,
+    "title": "FLOW",
+    "category": "טיפוח וקוסמטיקה",
+    "city": "גני תקווה",
+    "address": "צים אורבן",
+    "website": "www.flowshops.co.il",
+    "discount": "",
+    "latitude": 32.064679,
+    "longitude": 34.87567,
+    "type": "G"
+  },
+  {
+    "idn": 2007650,
+    "title": "FLOW",
+    "category": "טיפוח וקוסמטיקה",
+    "city": "רמת השרון",
+    "address": "אוסישקין 54",
+    "website": "www.flowshops.co.il",
+    "discount": "",
+    "latitude": 32.142256,
+    "longitude": 34.843481,
+    "type": "G"
+  },
+  {
+    "idn": 2007651,
+    "title": "FLOW",
+    "category": "טיפוח וקוסמטיקה",
+    "city": "תל אביב",
+    "address": "אבן גבירול 71 גן העיר",
+    "website": "www.flowshops.co.il",
+    "discount": "",
+    "latitude": 32.082494,
+    "longitude": 34.781203,
+    "type": "G"
+  },
+  {
+    "idn": 2007652,
+    "title": "FLOW",
+    "category": "טיפוח וקוסמטיקה",
+    "city": "נתניה",
+    "address": "בני ברמן 2 קניון עיר ימים ",
+    "website": "www.flowshops.co.il",
+    "discount": "",
+    "latitude": 32.278851,
+    "longitude": 34.845755,
+    "type": "G"
+  },
+  {
+    "idn": 2007653,
+    "title": "FLOW",
+    "category": "טיפוח וקוסמטיקה",
+    "city": "פתח תקווה",
+    "address": "זבוטינסקי 72-74",
+    "website": "www.flowshops.co.il",
+    "discount": "",
+    "latitude": 32.091795,
+    "longitude": 34.866508,
+    "type": "G"
+  },
+  {
+    "idn": 2007654,
+    "title": "שבילים ציוד טיולים",
+    "category": "נסיעות ומחנאות",
+    "city": "אריאל",
+    "address": "הבנאי 6",
+    "website": "",
+    "discount": "",
+    "latitude": 32.100708,
+    "longitude": 35.170192,
+    "type": "G"
+  },
+  {
+    "idn": 2007655,
+    "title": "ריפליי",
+    "category": "ביגוד והנעלה",
+    "city": "טבריה",
+    "address": "יהודה הלוי 16 מתחם ביג",
+    "website": "",
+    "discount": "",
+    "latitude": 32.787922,
+    "longitude": 35.534595,
+    "type": "G"
+  },
+  {
+    "idn": 2007656,
+    "title": "carter's",
+    "category": "ביגוד והנעלה,ילדים ותינוקות",
+    "city": "מודיעין",
+    "address": "לב העיר 2",
+    "website": "www.cartersoshkosh.co.il/",
+    "discount": "",
+    "latitude": 31.899219,
+    "longitude": 35.007567,
+    "type": "G"
+  },
+  {
+    "idn": 2007657,
+    "title": "carter's",
+    "category": "ביגוד והנעלה,ילדים ותינוקות",
+    "city": "באקה אל גרביה ",
+    "address": "באקה אל גרביה",
+    "website": "www.cartersoshkosh.co.il/",
+    "discount": "",
+    "latitude": 32.414612,
+    "longitude": 35.046222,
+    "type": "G"
+  },
+  {
+    "idn": 2007658,
+    "title": "carter's",
+    "category": "ביגוד והנעלה,ילדים ותינוקות",
+    "city": "חיפה",
+    "address": "גרנד קניון",
+    "website": "www.cartersoshkosh.co.il/",
+    "discount": "",
+    "latitude": 32.789155,
+    "longitude": 35.000803,
+    "type": "G"
+  },
+  {
+    "idn": 2007659,
+    "title": "רוזן ומינץ",
+    "category": "ספורט",
+    "city": "נהריה",
+    "address": "הגעתון 16",
+    "website": "www.rosen-meents.co.il",
+    "discount": "",
+    "latitude": 33.006462,
+    "longitude": 35.096792,
+    "type": "G"
+  },
+  {
+    "idn": 2007660,
+    "title": "רוזן ומינץ",
+    "category": "ספורט",
+    "city": "מודיעין",
+    "address": "צלע ההר 47 מתחם ליגד",
+    "website": "www.rosen-meents.co.il",
+    "discount": "",
+    "latitude": 31.920284,
+    "longitude": 34.96451,
+    "type": "G"
+  },
+  {
     "idn": 3007696,
     "title": "רומן - רמת גן - בגדי גברים",
     "category": "אופנה",
@@ -62136,90 +62160,6 @@
     "type": "C0"
   },
   {
-    "idn": 3014609,
-    "title": "קמ\"י - קרב מגן ישראלי- הגנה עצמית",
-    "category": "פנאי וספורט",
-    "city": "ראשון לציון",
-    "address": "רוטשילד 82 , אקדמיה לאומנויות לחימה",
-    "website": "WWW.KAMI-CENTER.CO.IL",
-    "discount": "15%",
-    "latitude": 31.96436,
-    "longitude": 34.795793,
-    "type": "C0"
-  },
-  {
-    "idn": 3014610,
-    "title": "קמ\"י - קרב מגן ישראלי- הגנה עצמית",
-    "category": "פנאי וספורט",
-    "city": "קרית מלאכי",
-    "address": "סטודיו של ''סמדי''",
-    "website": "WWW.KAMI-CENTER.CO.IL",
-    "discount": "15%",
-    "latitude": 31.718747,
-    "longitude": 34.72868,
-    "type": "C0"
-  },
-  {
-    "idn": 3014611,
-    "title": "קמ\"י - קרב מגן ישראלי- הגנה עצמית",
-    "category": "פנאי וספורט",
-    "city": "אריאל",
-    "address": "רח' אבנר פינת בקעת הירדן",
-    "website": "WWW.KAMI-CENTER.CO.IL",
-    "discount": "15%",
-    "latitude": 32.106228,
-    "longitude": 35.185983,
-    "type": "C0"
-  },
-  {
-    "idn": 3014612,
-    "title": "קמ\"י - קרב מגן ישראלי- הגנה עצמית",
-    "category": "פנאי וספורט",
-    "city": "רמת-גן",
-    "address": "פיזיקל, הרואה 2 פינת הרצל",
-    "website": "WWW.KAMI-CENTER.CO.IL",
-    "discount": "15%",
-    "latitude": 32.083366,
-    "longitude": 34.816006,
-    "type": "C0"
-  },
-  {
-    "idn": 3014613,
-    "title": "קמ\"י - קרב מגן ישראלי- הגנה עצמית",
-    "category": "פנאי וספורט",
-    "city": "מודיעין",
-    "address": "בי''ס לפיד בישוב לפיד",
-    "website": "WWW.KAMI-CENTER.CO.IL",
-    "discount": "15%",
-    "latitude": 31.917844,
-    "longitude": 35.029161,
-    "type": "C0"
-  },
-  {
-    "idn": 3014614,
-    "title": "קמ\"י - קרב מגן ישראלי- הגנה עצמית",
-    "category": "פנאי וספורט",
-    "city": "כפר יונה",
-    "address": "כפר יונה (נתניה)",
-    "website": "WWW.KAMI-CENTER.CO.IL",
-    "discount": "15%",
-    "latitude": 32.376357,
-    "longitude": 34.93302,
-    "type": "C0"
-  },
-  {
-    "idn": 3014615,
-    "title": "קמ\"י - קרב מגן ישראלי- הגנה עצמית",
-    "category": "פנאי וספורט",
-    "city": "כרמיאל",
-    "address": "כרמיאל",
-    "website": "WWW.KAMI-CENTER.CO.IL",
-    "discount": "15%",
-    "latitude": 32.914671,
-    "longitude": 35.292417,
-    "type": "C0"
-  },
-  {
     "idn": 3014673,
     "title": "עשינו עסק סוכניות בע\"מ / HYUNDAI",
     "category": "חשמל מחשבים ואלקטרוניקה",
@@ -62349,18 +62289,6 @@
     "discount": "7%",
     "latitude": 32.08411,
     "longitude": 34.801537,
-    "type": "C0"
-  },
-  {
-    "idn": 3014782,
-    "title": "קמ\"י - קרב מגן ישראלי- הגנה עצמית",
-    "category": "פנאי וספורט",
-    "city": "נשר",
-    "address": "אורח חיים 2 ",
-    "website": "WWW.KAMI-CENTER.CO.IL",
-    "discount": "15%",
-    "latitude": 32.763792,
-    "longitude": 35.048701,
     "type": "C0"
   },
   {
@@ -63537,18 +63465,6 @@
     "discount": "10%",
     "latitude": 31.24327,
     "longitude": 34.809334,
-    "type": "C0"
-  },
-  {
-    "idn": 3015677,
-    "title": "סוכנות מכוניות לים התיכון בע\"מ - יבואנית פיאט ואלפא רומיאו",
-    "category": "תחבורה ורכב",
-    "city": "חיפה",
-    "address": "שפיק, רח' תל אביב 14",
-    "website": "",
-    "discount": "10%",
-    "latitude": 32.825546,
-    "longitude": 34.986886,
     "type": "C0"
   },
   {
@@ -64930,18 +64846,6 @@
     "latitude": 32.702842,
     "longitude": 35.586377,
     "type": "C1"
-  },
-  {
-    "idn": 3016611,
-    "title": "אדוויס תקשורת",
-    "category": "חשמל מחשבים ואלקטרוניקה",
-    "city": "ראש-העין",
-    "address": "המלאכה 8 , פארק אפק",
-    "website": "www.advice.co.il",
-    "discount": "10%",
-    "latitude": 32.109282,
-    "longitude": 34.961409,
-    "type": "C0"
   },
   {
     "idn": 3016634,
@@ -73116,18 +73020,6 @@
     "type": "C1"
   },
   {
-    "idn": 3019921,
-    "title": "רוזן ומינץ",
-    "category": "ספורט",
-    "city": "הרצליה",
-    "address": "שד' שבעת הכוכבים 8",
-    "website": "",
-    "discount": "5%",
-    "latitude": 32.164988,
-    "longitude": 34.82391,
-    "type": "C1"
-  },
-  {
     "idn": 3019925,
     "title": "MICRO  מיקרו ישראל",
     "category": "תחבורה ורכב",
@@ -73869,18 +73761,6 @@
     "discount": "10%",
     "latitude": 32.025321,
     "longitude": 34.933196,
-    "type": "C0"
-  },
-  {
-    "idn": 3020233,
-    "title": "קדמה קפה",
-    "category": "מזון ומשקאות",
-    "city": "רמת ישי",
-    "address": "האקליפטוס 1 , א.ת",
-    "website": "www.espresso-center.co.il            ",
-    "discount": "5%",
-    "latitude": 32.707452,
-    "longitude": 35.174596,
     "type": "C0"
   },
   {
@@ -81840,18 +81720,6 @@
     "type": "F1"
   },
   {
-    "idn": 3021889,
-    "title": "GETHA   מזרונים",
-    "category": "לבית ולמשרד",
-    "city": "ראשון לציון",
-    "address": "אצל 2  , (מתחם ביתילי)",
-    "website": "getha.co.il/",
-    "discount": "5%",
-    "latitude": 31.988769,
-    "longitude": 34.768292,
-    "type": "C1"
-  },
-  {
     "idn": 3021891,
     "title": "עוז קרמיקה",
     "category": "לבית ולחצר",
@@ -82236,30 +82104,6 @@
     "type": "C0"
   },
   {
-    "idn": 3021940,
-    "title": "אפל מדיקל",
-    "category": "טיפוח וקוסמטיקה",
-    "city": "אלעד",
-    "address": "בן זכאי 98 ",
-    "website": "applemedical.geo-media.co.il/",
-    "discount": "10%",
-    "latitude": 32.04809,
-    "longitude": 34.965622,
-    "type": "C1"
-  },
-  {
-    "idn": 3021941,
-    "title": "אפל מדיקל",
-    "category": "טיפוח וקוסמטיקה",
-    "city": "מושב מצליח",
-    "address": "המלאכה 122",
-    "website": "applemedical.geo-media.co.il/",
-    "discount": "10%",
-    "latitude": 31.904472,
-    "longitude": 34.878345,
-    "type": "C1"
-  },
-  {
     "idn": 3021944,
     "title": "אירופלקס לשינה טובה יותר",
     "category": "לבית ולמשרד",
@@ -82282,18 +82126,6 @@
     "latitude": 32.974545,
     "longitude": 35.094841,
     "type": "F0"
-  },
-  {
-    "idn": 3021946,
-    "title": "אפל מדיקל",
-    "category": "טיפוח וקוסמטיקה",
-    "city": "בית שמש",
-    "address": "ביאליק 34",
-    "website": "applemedical.geo-media.co.il/",
-    "discount": "10%",
-    "latitude": 31.751443,
-    "longitude": 34.981592,
-    "type": "C1"
   },
   {
     "idn": 1021947,
@@ -83916,18 +83748,6 @@
     "type": "F1"
   },
   {
-    "idn": 1022103,
-    "title": "קפה גרג",
-    "category": "בית קפה",
-    "city": "דימונה",
-    "address": "קניון דימרי ",
-    "website": "gregcafe.co.il/",
-    "discount": "",
-    "latitude": 31.060279,
-    "longitude": 35.020139,
-    "type": "F1"
-  },
-  {
     "idn": 3022103,
     "title": "אסיקס",
     "category": "ספורט",
@@ -84108,30 +83928,6 @@
     "type": "C1"
   },
   {
-    "idn": 3022117,
-    "title": "GETHA   מזרונים",
-    "category": "לבית ולמשרד",
-    "city": "באר-שבע",
-    "address": "גרנד קניון שד' דוד טוביהו 125 קומה ראשונה",
-    "website": "getha.co.il/",
-    "discount": "5%",
-    "latitude": 31.251333,
-    "longitude": 34.772043,
-    "type": "C1"
-  },
-  {
-    "idn": 3022118,
-    "title": "GETHA   מזרונים",
-    "category": "לבית ולמשרד",
-    "city": "רמת-גן",
-    "address": "קניון איילון דרך אבא הלל 301 קומת כניסה ",
-    "website": "getha.co.il/",
-    "discount": "5%",
-    "latitude": 32.099065,
-    "longitude": 34.826616,
-    "type": "C1"
-  },
-  {
     "idn": 1022119,
     "title": "אגרוקפה",
     "category": "בית קפה",
@@ -84142,18 +83938,6 @@
     "latitude": 31.675796,
     "longitude": 34.936227,
     "type": "F1"
-  },
-  {
-    "idn": 3022119,
-    "title": "GETHA   מזרונים",
-    "category": "לבית ולמשרד",
-    "city": "הרצליה פתוח",
-    "address": "אבא אבן 5 ( פתיחה בקרוב )",
-    "website": "getha.co.il/",
-    "discount": "5%",
-    "latitude": 32.161863,
-    "longitude": 34.809351,
-    "type": "C1"
   },
   {
     "idn": 1022120,
@@ -87814,18 +87598,6 @@
     "latitude": 32.807034,
     "longitude": 35.074239,
     "type": "C1"
-  },
-  {
-    "idn": 1022429,
-    "title": "גלידה GOLDA",
-    "category": "גלידריה מתוקים וקינוחים",
-    "city": "אור עקיבא",
-    "address": "השיקמים 8 ",
-    "website": "www.goldaglida.co.il",
-    "discount": "",
-    "latitude": 32.504418,
-    "longitude": 34.917732,
-    "type": "F1"
   },
   {
     "idn": 3022429,
@@ -112008,6 +111780,18 @@
     "type": "F0"
   },
   {
+    "idn": 3023848,
+    "title": "אירופלקס לשינה טובה יותר",
+    "category": "לבית ולמשרד",
+    "city": "חולון",
+    "address": "הפלד 7 ",
+    "website": "",
+    "discount": "6%",
+    "latitude": 32.023561,
+    "longitude": 34.797682,
+    "type": "C0"
+  },
+  {
     "idn": 1023849,
     "title": "מקדונלד'ס",
     "category": "מסעדה",
@@ -113892,26 +113676,14 @@
     "type": "F0"
   },
   {
-    "idn": 1024011,
-    "title": "logo_asli.jpg",
+    "idn": 1024013,
+    "title": "מרכז חומוס האסלי",
     "category": "מסעדה",
     "city": "תל אביב - יפו",
     "address": "קפלן 36 שרונה",
     "website": "",
     "discount": "",
-    "latitude": 32.073088,
-    "longitude": 34.78822,
-    "type": "F0"
-  },
-  {
-    "idn": 1024012,
-    "title": "logo_asli.jpg",
-    "category": "מסעדה",
-    "city": "תל אביב - יפו",
-    "address": "קפלן 36 שרונה",
-    "website": "",
-    "discount": "",
-    "latitude": 32.073088,
+    "latitude": 32.073079,
     "longitude": 34.78822,
     "type": "F0"
   }
