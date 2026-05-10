@@ -1,29 +1,107 @@
 [
   {
-    "label": "🔔 חדש! חכם, חסכוני ושימושי, או בקיצור - Clever",
+    "label": "🔔 ביקשתם - קיבלתם: Clever! מצנם מעוצב עם מסך מגע בעברית",
     "subtitle": null,
-    "image": "https://www.hvr.co.il/pics/site_home/clever_revile_sld16.gif"
+    "image": "https://www.hvr.co.il/pics/site_home/clever_maznem_sld5.gif"
   },
   {
-    "label": "🔔 מוכנים? פסטיבל תל אביב EAT חוזר!",
+    "label": "🔔 לסופ\"ש בלבד! מבצע בלעדי על רכבי קופרה",
     "subtitle": null,
-    "image": "https://www.hvr.co.il/pics/site_home/tel_aviv_eat_sld_200426.jpg"
+    "image": "https://www.hvr.co.il/pics/site_home/bnr_2_cars_cupra_sld_060526.jpg"
   },
   {
-    "label": "🔔 ממליצים ל\"חבר\"ים ונהנים ממענק עד 1,500 ₪",
+    "label": "🔔 חוסכים חכם: לא מתפזרים - מפזרים!",
     "subtitle": null,
-    "image": "https://www.hvr.co.il/pics/site_home/benleumi_ido_sld_300625.jpg"
+    "image": "https://www.hvr.co.il/pics/site_home/pizur_sld050526.jpg"
   },
   {
-    "label": "🔔 מרוץ איתן RUN 2026 למען אנשים עם צרכים מיוחדים",
+    "label": "🔔 שובר תדלוק בסך 100 ₪ ברכישת ביטוח רכב ב\"כלל\"",
     "subtitle": null,
-    "image": "https://www.hvr.co.il/pics/site_home/amutat_eitan26_sld300426.jpg"
+    "image": "https://www.hvr.co.il/pics/site_home/clal_100_sld_060526.jpg"
   },
   {
-    "label": "🛒 \"חבר\" VIP: אביב גפן בפארק הירקון 18.6.26",
+    "label": "🛒 רעבים לכיף? פסטיבל תל אביב EAT חוזר",
     "subtitle": null,
     "url": null,
-    "image": "https://www.hvr.co.il/pics/site_home/aviv_vip_med290426.jpg"
+    "image": "https://www.hvr.co.il/pics/site_home/tel_aviv_eat_med_200426.jpg"
+  },
+  {
+    "label": "🛒 \"חבר\"ותא: חנן בן ארי במופע סגור ל\"חבר\"",
+    "subtitle": null,
+    "url": null,
+    "image": "https://www.hvr.co.il/pics/site_home/hanan_med_060526.jpg"
+  },
+  {
+    "label": "🛒 איתכם ולצידכם: גבינת פיראוס לבחירה ב-5 ₪",
+    "subtitle": null,
+    "url": null,
+    "image": "https://www.hvr.co.il/pics/site_home/pireus_med_050526.jpg"
+  },
+  {
+    "label": "🛒 איתכם ולצידכם: עוגת שמרים רולדין ב-20 ₪",
+    "subtitle": null,
+    "url": null,
+    "image": "https://www.hvr.co.il/pics/site_home/roladin_med_060526.jpg"
+  },
+  {
+    "label": "🛒 איתכם ולצידכם: מארז קרקרים RITZ ב-59 ₪",
+    "subtitle": null,
+    "url": null,
+    "image": "https://www.hvr.co.il/pics/site_home/ritz_med_060526.jpg"
+  },
+  {
+    "label": "🛒 איתכם ולצידכם: מארז קוקה קולה ב-99 ₪",
+    "subtitle": null,
+    "url": null,
+    "image": "https://www.hvr.co.il/pics/site_home/coca_cola_med_100526.jpg"
+  },
+  {
+    "label": "🛒 המוצר המנצח: קורקינט חשמלי איכותי INOKIM",
+    "subtitle": null,
+    "url": null,
+    "image": "https://www.hvr.co.il/pics/site_home/inokim_med_060526.jpg"
+  },
+  {
+    "label": "🛒 המוצר המנצח: מיטת נוער מתכווננת חשמלית",
+    "subtitle": null,
+    "url": null,
+    "image": "https://www.hvr.co.il/pics/site_home/dr_gav_bed_muzar_med_060526.jpg"
+  },
+  {
+    "label": "🛒 זום ללא עלות: ילדים, מסכים וגבולות",
+    "subtitle": null,
+    "url": null,
+    "image": "https://www.hvr.co.il/pics/site_home/shaat_horut_med290426.jpg"
+  },
+  {
+    "label": "🛒 מנויי קיץ להולמס פלייס ורשת הקאנטרי",
+    "subtitle": null,
+    "url": null,
+    "image": "https://www.hvr.co.il/pics/site_home/gym2b_med_040526.jpg"
+  },
+  {
+    "label": "🛒 חדש! 1% עמלת מט\"ח ב\"חבר\" מאסטרקארד",
+    "subtitle": null,
+    "url": null,
+    "image": "https://www.hvr.co.il/pics/site_home/alam_hul2_med300426.jpg"
+  },
+  {
+    "label": "🛒 20% הנחה על פארקי שעשועים באירופה",
+    "subtitle": null,
+    "url": null,
+    "image": "https://www.hvr.co.il/pics/site_home/bnr_parks_med_080625.jpg"
+  },
+  {
+    "label": "🛒 מבצעים והטבות לחג השבועות",
+    "subtitle": null,
+    "url": null,
+    "image": "https://www.hvr.co.il/pics/site_home/shavuot_med_090522.jpg"
+  },
+  {
+    "label": "🛒 קופוני חג שבועות באפליקציית yellow",
+    "subtitle": null,
+    "url": null,
+    "image": "https://www.hvr.co.il/pics/site_home/yellow_shavuot26_med280426.jpg"
   },
   {
     "label": "🛒 \"חבר\" VIP: דודו טסה חוזר לשכונה 2.6.26",
@@ -38,165 +116,87 @@
     "image": "https://www.hvr.co.il/pics/site_home/peer_tasi_med_280426.jpg"
   },
   {
-    "label": "🛒 איתכם ולצידכם: שובר לחנויות H&M",
+    "label": "🛒 חדש באשראי + מבצע! Neway - אמצעי תשלום",
     "subtitle": null,
     "url": null,
-    "image": "https://www.hvr.co.il/pics/site_home/h_and_m_med270426.jpg"
+    "image": "https://www.hvr.co.il/pics/site_home/nwneway_med_blk300426.jpg"
   },
   {
-    "label": "🛒 איתכם ולצידכם: מארז קוסמטיקה CARELINE",
+    "label": "🛒 חדש באשראי \"חבר\"! רשת GLORY MILANO",
     "subtitle": null,
     "url": null,
-    "image": "https://www.hvr.co.il/pics/site_home/careline2_med240326.jpg"
+    "image": "https://www.hvr.co.il/pics/site_home/glory_med_blk300426.jpg"
   },
   {
-    "label": "🛒 כל מה שצריך לחג שבועות טעים",
+    "label": "🛒 לזמן מוגבל: הנחה כפולה בסניפי עמינח",
     "subtitle": null,
     "url": null,
-    "image": "https://www.hvr.co.il/pics/site_home/shavuot_med_090522.jpg"
+    "image": "https://www.hvr.co.il/pics/site_home/aminach_med_keva040526.jpg"
   },
   {
-    "label": "🛒 איתכם ולצידכם: מארז מוצרי פסטה ורטבים",
+    "label": "🛒 הנחה כפולה באמריקן קומפורט",
     "subtitle": null,
     "url": null,
-    "image": "https://www.hvr.co.il/pics/site_home/diplomat_pasta2_med240326.jpg"
+    "image": "https://www.hvr.co.il/pics/site_home/american_comfort_med_keva040526.jpg"
   },
   {
-    "label": "🛒 איתכם ולצידכם: מארז מוצרי לוטוס ואוראו",
+    "label": "🛒 25% הנחה באתר ובחנויות מיננה + נטען",
     "subtitle": null,
     "url": null,
-    "image": "https://www.hvr.co.il/pics/site_home/diplomat_lotus_med290426.jpg"
+    "image": "https://www.hvr.co.il/pics/site_home/minene_med_keva300426.jpg"
   },
   {
-    "label": "🛒 איתכם ולצידכם: מארז פררו רושה וקינדר",
+    "label": "🛒 הנחה על בית משחק לילדים + נטען",
     "subtitle": null,
     "url": null,
-    "image": "https://www.hvr.co.il/pics/site_home/diplomat_nutella3_med240326.jpg"
+    "image": "https://www.hvr.co.il/pics/site_home/adir_house_med_keva300426.jpg"
   },
   {
-    "label": "🛒 איתכם ולצידכם: עוגת גבינה לבחירה ב-35 ₪",
+    "label": "🛒 5% הנחה על מאווררי התקרה + נטען",
     "subtitle": null,
     "url": null,
-    "image": "https://www.hvr.co.il/pics/site_home/shavuot_neaman_med_270426.jpg"
+    "image": "https://www.hvr.co.il/pics/site_home/swing_med_keva300426.jpg"
   },
   {
-    "label": "🛒 המוצר המנצח: מכונת גלידה NINJA CREAMI",
+    "label": "🛒 מתנה + נטען לשיעורי אנגלית לילדים ונוער",
     "subtitle": null,
     "url": null,
-    "image": "https://www.hvr.co.il/pics/site_home/ninja_icecream_med_270426.jpg"
+    "image": "https://www.hvr.co.il/pics/site_home/talkids_med_keva300426.png"
   },
   {
-    "label": "🛒 המוצר המנצח: מיקסר מקצועי מבית סלמור",
+    "label": "🛒 הפנינג והטבות בלעדיות באירוע BYD",
     "subtitle": null,
     "url": null,
-    "image": "https://www.hvr.co.il/pics/site_home/selmor_mixer_med_b_200426.jpg"
+    "image": "https://www.hvr.co.il/pics/site_home/byd_event2_med300426.jpg"
   },
   {
-    "label": "🛒 קופוני חג שבועות באפליקציית yellow",
+    "label": "🛒 מארז הגנה מהשמש בהנחה + 10% באשראי",
     "subtitle": null,
     "url": null,
-    "image": "https://www.hvr.co.il/pics/site_home/yellow_shavuot26_med280426.jpg"
+    "image": "https://www.hvr.co.il/pics/site_home/lierac_med_blk300426.jpg"
   },
   {
-    "label": "🛒 זום ללא עלות: ילדים, מסכים וגבולות",
-    "subtitle": null,
-    "url": null,
-    "image": "https://www.hvr.co.il/pics/site_home/shaat_horut_med290426.jpg"
-  },
-  {
-    "label": "🛒 משלו\"חבר\": 5 חבילות חיתולי BabySitter",
-    "subtitle": null,
-    "url": null,
-    "image": "https://www.hvr.co.il/pics/site_home/babysitter_med240326.jpg"
-  },
-  {
-    "label": "🛒 חדש בנטען! FLOW מותג ביוטי לנערות",
-    "subtitle": null,
-    "url": null,
-    "image": "https://www.hvr.co.il/pics/site_home/flow_med_keva_200426.jpg"
-  },
-  {
-    "label": "🛒 הנחה על מארז 2 חולצות טי + נטען",
-    "subtitle": null,
-    "url": null,
-    "image": "https://www.hvr.co.il/pics/site_home/pulliez_med_keva200426.jpg"
-  },
-  {
-    "label": "🛒 5% הנחה על גבינות ומארזים + \"טעמים\"",
-    "subtitle": null,
-    "url": null,
-    "image": "https://www.hvr.co.il/pics/site_home/melaket_shavotemed_teamim_300426.jpg"
-  },
-  {
-    "label": "🛒 מבצע על מגוון הרכבים של BYD",
-    "subtitle": null,
-    "url": null,
-    "image": "https://www.hvr.co.il/pics/site_home/byd_sealu_med_230326.jpg"
-  },
-  {
-    "label": "🛒 חדש באשראי! מרכז לרפואה סינית פנחסוב",
-    "subtitle": null,
-    "url": null,
-    "image": "https://www.hvr.co.il/pics/site_home/simon_pinhasov_med_blk200426.png"
-  },
-  {
-    "label": "🛒 הנחה על 2 מצלמות אבטחה חכמות",
-    "subtitle": null,
-    "url": null,
-    "image": "https://www.hvr.co.il/pics/site_home/eufy_med_blk200426.png"
-  },
-  {
-    "label": "🛒 מארז BBQ Organic Premium בהנחה",
-    "subtitle": null,
-    "url": null,
-    "image": "https://www.hvr.co.il/pics/site_home/natorapod_med_blk190426.png"
-  },
-  {
-    "label": "🛒 20% הנחה על סדרת הויטרינות החדשות",
-    "subtitle": null,
-    "url": null,
-    "image": "https://www.hvr.co.il/pics/site_home/stelix_med_blk200426.png"
-  },
-  {
-    "label": "🛒 40% הנחה על סטים ומארזים באתר GA-DE",
-    "subtitle": null,
-    "url": null,
-    "image": "https://www.hvr.co.il/pics/site_home/ga_de_med_blk090426.jpg"
-  },
-  {
-    "label": "🛒 חדש באשראי! מלונות רשת NARA",
-    "subtitle": null,
-    "url": null,
-    "image": "https://www.hvr.co.il/pics/site_home/nara_hotels_israc_med_280426.jpg"
-  },
-  {
-    "label": "🛒 חופשה והופעה - סטינג בלימסול בהנחה",
-    "subtitle": null,
-    "url": null,
-    "image": "https://www.hvr.co.il/pics/site_home/tiktik_sting_israc_med_301225.jpg"
-  },
-  {
-    "label": "🛒 100 $ הנחה על טיולים מאורגנים בחו\"ל",
+    "label": "🛒 חדש באשראי! טיולי \"גשר\" לשומרי מסורת",
     "subtitle": null,
     "url": null,
     "image": "https://www.hvr.co.il/pics/site_home/fly_trips_israc_med_260426.jpg"
   },
   {
-    "label": "🛒 150 € הנחה לחופשה משפחתית בפולין",
+    "label": "🛒 חדש בכרטיס האשראי! קבוצת \"גורדון תיירות\"",
     "subtitle": null,
     "url": null,
-    "image": "https://www.hvr.co.il/pics/site_home/eshet_poland_israc_med_150426.jpg"
+    "image": "https://www.hvr.co.il/pics/site_home/gordon_cruise_israc_med_300426.jpg"
   },
   {
-    "label": "🛒 הנחה לטיולים בחו\"ל עם כל המשפחה",
+    "label": "🛒 20% הנחה לחופשת חג שבועות במלון ממילא",
     "subtitle": null,
     "url": null,
-    "image": "https://www.hvr.co.il/pics/site_home/mona_batumi_med_140426.jpg"
+    "image": "https://www.hvr.co.il/pics/site_home/mamila_israc_med_230425.jpg"
   },
   {
-    "label": "🛒 ביטוח מחלות קשות, בתנאים מיוחדים",
+    "label": "🛒 עמותת עלם: כלים להתמודדות עם בריונות",
     "subtitle": null,
     "url": null,
-    "image": "https://www.hvr.co.il/pics/site_home/mahalot_med_210425.jpg"
+    "image": "https://www.hvr.co.il/pics/site_home/elem_med040526.jpg"
   }
 ]

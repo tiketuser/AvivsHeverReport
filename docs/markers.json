@@ -12,54 +12,6 @@
     "type": "F1"
   },
   {
-    "idn": 3000011,
-    "title": "קפה הלל",
-    "category": "בילוי ונופש",
-    "city": "חיפה",
-    "address": "קריון",
-    "website": "",
-    "discount": "5%",
-    "latitude": 32.844159,
-    "longitude": 35.091106,
-    "type": "C0"
-  },
-  {
-    "idn": 3000012,
-    "title": "קפה הלל",
-    "category": "בילוי ונופש",
-    "city": "תל אביב",
-    "address": "מרכז עזריאלי 7,קומה 2",
-    "website": "",
-    "discount": "5%",
-    "latitude": 32.07439,
-    "longitude": 34.792169,
-    "type": "C0"
-  },
-  {
-    "idn": 3000013,
-    "title": "קפה הלל",
-    "category": "בילוי ונופש",
-    "city": "פתח תקוה",
-    "address": "חיים עוזר 31",
-    "website": "",
-    "discount": "5%",
-    "latitude": 32.085991,
-    "longitude": 34.887644,
-    "type": "C0"
-  },
-  {
-    "idn": 3000015,
-    "title": "קפה הלל",
-    "category": "בילוי ונופש",
-    "city": "ירושלים",
-    "address": "קניון הדר",
-    "website": "",
-    "discount": "5%",
-    "latitude": 31.753434,
-    "longitude": 35.213897,
-    "type": "C0"
-  },
-  {
     "idn": 1000016,
     "title": "קאזה דו ברזיל",
     "category": "מסעדה",
@@ -70,18 +22,6 @@
     "latitude": 29.559034,
     "longitude": 34.955115,
     "type": "F0"
-  },
-  {
-    "idn": 3000017,
-    "title": "קפה הלל",
-    "category": "בילוי ונופש",
-    "city": "אשדוד",
-    "address": "קניון הסיטי",
-    "website": "",
-    "discount": "5%",
-    "latitude": 31.790792,
-    "longitude": 34.639468,
-    "type": "C0"
   },
   {
     "idn": 2000040,
@@ -7138,18 +7078,6 @@
     "latitude": 33.21061,
     "longitude": 35.568618,
     "type": "G"
-  },
-  {
-    "idn": 3000725,
-    "title": "מוסך גלית בע\"מ",
-    "category": "תחבורה ורכב",
-    "city": "תל אביב",
-    "address": "שפע טל 6,שכונת מונטיפיורי (בקרבת בנין קרית הממשלה),כניסה משדרות יהודית",
-    "website": "",
-    "discount": "10%",
-    "latitude": 32.07199,
-    "longitude": 34.790779,
-    "type": "C0"
   },
   {
     "idn": 2000726,
@@ -14472,18 +14400,6 @@
     "type": "G"
   },
   {
-    "idn": 3001578,
-    "title": "ילדותי",
-    "category": "אופנה",
-    "city": "תל אביב",
-    "address": "שנקין 32",
-    "website": "www.yaldooti.com",
-    "discount": "10%",
-    "latitude": 32.069011,
-    "longitude": 34.773863,
-    "type": "C0"
-  },
-  {
     "idn": 2001579,
     "title": "צומת ספרים",
     "category": "לימודים וספרים",
@@ -14496,18 +14412,6 @@
     "type": "G"
   },
   {
-    "idn": 3001579,
-    "title": "ילדותי",
-    "category": "אופנה",
-    "city": "תל אביב",
-    "address": "בית בנמל, נמל ת''א",
-    "website": "www.yaldooti.com",
-    "discount": "10%",
-    "latitude": 32.089815,
-    "longitude": 34.779207,
-    "type": "C0"
-  },
-  {
     "idn": 2001580,
     "title": "אמריקן איגל",
     "category": "ביגוד והנעלה",
@@ -14518,30 +14422,6 @@
     "latitude": 29.566609,
     "longitude": 34.95919,
     "type": "G"
-  },
-  {
-    "idn": 3001580,
-    "title": "ילדותי",
-    "category": "אופנה",
-    "city": "רמת אביב",
-    "address": "מרכז שוסטר",
-    "website": "www.yaldooti.com",
-    "discount": "10%",
-    "latitude": 32.107476,
-    "longitude": 34.795951,
-    "type": "C0"
-  },
-  {
-    "idn": 3001581,
-    "title": "ילדותי",
-    "category": "אופנה",
-    "city": "תל אביב",
-    "address": "מרכז ויצמן, קומה 2",
-    "website": "www.yaldooti.com",
-    "discount": "10%",
-    "latitude": 32.081373,
-    "longitude": 34.789619,
-    "type": "C0"
   },
   {
     "idn": 2001608,
@@ -21132,42 +21012,6 @@
     "type": "G"
   },
   {
-    "idn": 3002756,
-    "title": "Paganka - פגנקה",
-    "category": "אופנה",
-    "city": "טבריה",
-    "address": "הגליל 20",
-    "website": "",
-    "discount": "10%",
-    "latitude": 32.786434,
-    "longitude": 35.539884,
-    "type": "C0"
-  },
-  {
-    "idn": 3002757,
-    "title": "Paganka - פגנקה",
-    "category": "אופנה",
-    "city": "בית-שאן",
-    "address": "קניון בנימין",
-    "website": "",
-    "discount": "10%",
-    "latitude": 32.498889,
-    "longitude": 35.504444,
-    "type": "C0"
-  },
-  {
-    "idn": 3002759,
-    "title": "Paganka - פגנקה",
-    "category": "אופנה",
-    "city": "תל אביב",
-    "address": "חנות המפעל,גבולות 1 פינת לוינסקי",
-    "website": "",
-    "discount": "10%",
-    "latitude": 32.059468,
-    "longitude": 34.767484,
-    "type": "C0"
-  },
-  {
     "idn": 2002761,
     "title": "פמינה",
     "category": "ביגוד והנעלה,הלבשה תחתונה",
@@ -21178,18 +21022,6 @@
     "latitude": 32.086675,
     "longitude": 34.803239,
     "type": "G"
-  },
-  {
-    "idn": 3002761,
-    "title": "Paganka - פגנקה",
-    "category": "אופנה",
-    "city": "אשדוד",
-    "address": "קניון סימול",
-    "website": "",
-    "discount": "10%",
-    "latitude": 31.792879,
-    "longitude": 34.638941,
-    "type": "C0"
   },
   {
     "idn": 2002762,
@@ -36072,6 +35904,18 @@
     "type": "G"
   },
   {
+    "idn": 4015410,
+    "title": "נינג'ה סיטי חיפה (2026)",
+    "category": "אתרים ואטרקציות",
+    "city": "חיפה",
+    "address": "המוסכים 24 בצ'ק פוסט",
+    "website": "",
+    "discount": "",
+    "latitude": 32.793028,
+    "longitude": 35.042514,
+    "type": "S"
+  },
+  {
     "idn": 2005411,
     "title": "JUMP & ONOT",
     "category": "ביגוד והנעלה,הלבשה תחתונה",
@@ -36756,6 +36600,18 @@
     "type": "S"
   },
   {
+    "idn": 4015449,
+    "title": "חוף גיא (2026)",
+    "category": "אתרים ואטרקציות",
+    "city": "טבריה",
+    "address": "",
+    "website": "",
+    "discount": "",
+    "latitude": 32.795831,
+    "longitude": 35.530966,
+    "type": "S"
+  },
+  {
     "idn": 4015450,
     "title": "המוזיאון הישראלי לרפואה ומדע – טכנודע 2026",
     "category": "אתרים ואטרקציות",
@@ -36765,18 +36621,6 @@
     "discount": "",
     "latitude": 31.783426,
     "longitude": 35.11869,
-    "type": "S"
-  },
-  {
-    "idn": 4015451,
-    "title": "תיאטרון באר שבע - 2026/27 - מחיר מיוחד",
-    "category": "תיאטראות",
-    "city": "באר שבע",
-    "address": "שדרות יצחק רגר 41, באר שבע, 84894",
-    "website": "",
-    "discount": "",
-    "latitude": 31.251711,
-    "longitude": 34.797466,
     "type": "S"
   },
   {
@@ -36876,18 +36720,6 @@
     "type": "G"
   },
   {
-    "idn": 4015462,
-    "title": "תיאטרון הקאמרי - 2026/27 - מחיר מיוחד",
-    "category": "תיאטראות",
-    "city": "תל אביב",
-    "address": "שדרות שאול המלך 19, תל אביב-יפו",
-    "website": "",
-    "discount": "",
-    "latitude": 32.076278,
-    "longitude": 34.784948,
-    "type": "S"
-  },
-  {
     "idn": 2005463,
     "title": "ביתילי",
     "category": "לבית ולחצר",
@@ -36948,30 +36780,6 @@
     "type": "G"
   },
   {
-    "idn": 4015466,
-    "title": "תיאטרון הצפון - 2026/27 - מחיר מיוחד",
-    "category": "תיאטראות",
-    "city": "קריית חיים",
-    "address": "משה ביילינסון 41, חיפה",
-    "website": "",
-    "discount": "",
-    "latitude": 32.821734,
-    "longitude": 35.074375,
-    "type": "S"
-  },
-  {
-    "idn": 4015469,
-    "title": "תיאטרון הבימה - 2026/27 - מחיר מיוחד",
-    "category": "תיאטראות",
-    "city": "תל אביב",
-    "address": "שדרות תרס\"ט 2, תל אביב-יפו",
-    "website": "",
-    "discount": "",
-    "latitude": 32.072845,
-    "longitude": 34.778965,
-    "type": "S"
-  },
-  {
     "idn": 2005470,
     "title": "URBAN",
     "category": "לבית ולחצר",
@@ -37029,18 +36837,6 @@
     "discount": "5%",
     "latitude": 31.243914,
     "longitude": 34.809753,
-    "type": "G"
-  },
-  {
-    "idn": 2005474,
-    "title": "URBAN",
-    "category": "לבית ולחצר",
-    "city": "תל אביב ",
-    "address": "הרצל 61",
-    "website": "",
-    "discount": "5%",
-    "latitude": 32.057648,
-    "longitude": 34.770945,
     "type": "G"
   },
   {
@@ -46188,18 +45984,6 @@
     "type": "G"
   },
   {
-    "idn": 3006871,
-    "title": "ידיעות אחרונות בע\"מ- מחלקת מודעות אבל",
-    "category": "פרסום מודעות",
-    "city": "באר שבע",
-    "address": "כל יום עד השעה 7 בערב",
-    "website": "",
-    "discount": "7.5%",
-    "latitude": 31.24327,
-    "longitude": 34.809334,
-    "type": "C0"
-  },
-  {
     "idn": 2006872,
     "title": "ספידו",
     "category": "ספורט",
@@ -54939,12 +54723,12 @@
     "idn": 2007644,
     "title": "STORY",
     "category": "ביגוד והנעלה",
-    "city": "",
-    "address": "",
+    "city": "אילת",
+    "address": "קניון אייסמול ",
     "website": "storyonline.co.il",
     "discount": "",
-    "latitude": 29.554838,
-    "longitude": 34.965716,
+    "latitude": 29.554163,
+    "longitude": 34.96562,
     "type": "G"
   },
   {
@@ -55140,6 +54924,54 @@
     "type": "G"
   },
   {
+    "idn": 2007661,
+    "title": "רוזן ומינץ",
+    "category": "ספורט",
+    "city": "גלילות ",
+    "address": "מתחם ביג גלילות",
+    "website": "www.rosen-meents.co.il",
+    "discount": "",
+    "latitude": 32.148058,
+    "longitude": 34.804614,
+    "type": "G"
+  },
+  {
+    "idn": 2007662,
+    "title": "רוזן ומינץ",
+    "category": "ספורט",
+    "city": "חיפה",
+    "address": "נחום חת 5",
+    "website": "www.rosen-meents.co.il",
+    "discount": "",
+    "latitude": 32.783072,
+    "longitude": 34.959455,
+    "type": "G"
+  },
+  {
+    "idn": 2007663,
+    "title": "URBAN",
+    "category": "לבית ולחצר",
+    "city": "תל אביב",
+    "address": "הרצל 70",
+    "website": "",
+    "discount": "",
+    "latitude": 32.057876,
+    "longitude": 34.770726,
+    "type": "G"
+  },
+  {
+    "idn": 2007664,
+    "title": "URBAN",
+    "category": "לבית ולחצר",
+    "city": "כפר סבא",
+    "address": "התע\"ש 7",
+    "website": "",
+    "discount": "",
+    "latitude": 32.172975,
+    "longitude": 34.925223,
+    "type": "G"
+  },
+  {
     "idn": 3007696,
     "title": "רומן - רמת גן - בגדי גברים",
     "category": "אופנה",
@@ -55212,90 +55044,6 @@
     "type": "C0"
   },
   {
-    "idn": 3007945,
-    "title": "כל נעל סנטר",
-    "category": "אופנה",
-    "city": "פתח תקוה",
-    "address": "אזור התעשיה סגולה,רח' אלכסנדר ינאי 8",
-    "website": "",
-    "discount": "5%",
-    "latitude": 32.104475,
-    "longitude": 34.896967,
-    "type": "C0"
-  },
-  {
-    "idn": 3007947,
-    "title": "כל נעל סנטר",
-    "category": "אופנה",
-    "city": "ראשון לציון",
-    "address": "אזור התעשיה החדש,רח' ההגנה 4",
-    "website": "",
-    "discount": "5%",
-    "latitude": 31.987454,
-    "longitude": 34.767802,
-    "type": "C0"
-  },
-  {
-    "idn": 3007948,
-    "title": "כל נעל סנטר",
-    "category": "אופנה",
-    "city": "ירושלים",
-    "address": "קניון הדר,פייר קניג 26,תלפיות",
-    "website": "",
-    "discount": "5%",
-    "latitude": 31.753434,
-    "longitude": 35.213897,
-    "type": "C0"
-  },
-  {
-    "idn": 3007949,
-    "title": "כל נעל סנטר",
-    "category": "אופנה",
-    "city": "מודיעין",
-    "address": "בית לטין",
-    "website": "",
-    "discount": "5%",
-    "latitude": 31.890267,
-    "longitude": 35.010397,
-    "type": "C0"
-  },
-  {
-    "idn": 3007950,
-    "title": "כל נעל סנטר",
-    "category": "אופנה",
-    "city": "אשדוד",
-    "address": "האורגים 9",
-    "website": "",
-    "discount": "5%",
-    "latitude": 31.810434,
-    "longitude": 34.661923,
-    "type": "C0"
-  },
-  {
-    "idn": 3007975,
-    "title": "ברון טורס בע\"מ",
-    "category": "תיירות חוץ",
-    "city": "תל אביב יפו",
-    "address": "משרד ראשי - שד' ירושלים 42",
-    "website": "",
-    "discount": "3%",
-    "latitude": 32.050478,
-    "longitude": 34.758791,
-    "type": "C0"
-  },
-  {
-    "idn": 3007977,
-    "title": "ברון טורס בע\"מ",
-    "category": "תיירות חוץ",
-    "city": "אשדוד",
-    "address": "נורדאו 78",
-    "website": "",
-    "discount": "3%",
-    "latitude": 31.811171,
-    "longitude": 34.640365,
-    "type": "C0"
-  },
-  {
     "idn": 3007980,
     "title": "אופטיקה אריאל",
     "category": "אופנה",
@@ -55341,18 +55089,6 @@
     "discount": "10% (במעמד הקניה)",
     "latitude": 0.0,
     "longitude": 0.0,
-    "type": "C0"
-  },
-  {
-    "idn": 3008441,
-    "title": "נופר נופש וטיולים – התמחויות בתיירות",
-    "category": "תיירות חוץ",
-    "city": "קרית אונו",
-    "address": "כלנית 5",
-    "website": "www.nufartours.co.il",
-    "discount": "4%",
-    "latitude": 32.055737,
-    "longitude": 34.861122,
     "type": "C0"
   },
   {
@@ -55953,66 +55689,6 @@
     "discount": "5%",
     "latitude": 32.965534,
     "longitude": 35.373854,
-    "type": "C0"
-  },
-  {
-    "idn": 3009827,
-    "title": "העין השלישית",
-    "category": "אופנה",
-    "city": "ת\"א",
-    "address": "שנקין 7",
-    "website": "",
-    "discount": "10%",
-    "latitude": 32.069825,
-    "longitude": 34.771274,
-    "type": "C0"
-  },
-  {
-    "idn": 3009828,
-    "title": "העין השלישית",
-    "category": "אופנה",
-    "city": "ת\"א",
-    "address": "תחנה מרכזית חדשה (דוכן)",
-    "website": "",
-    "discount": "10%",
-    "latitude": 32.056141,
-    "longitude": 34.779263,
-    "type": "C0"
-  },
-  {
-    "idn": 3009829,
-    "title": "העין השלישית",
-    "category": "אופנה",
-    "city": "פתח תקווה",
-    "address": "מונטפיורי 13",
-    "website": "",
-    "discount": "10%",
-    "latitude": 32.088328,
-    "longitude": 34.882655,
-    "type": "C0"
-  },
-  {
-    "idn": 3009830,
-    "title": "העין השלישית",
-    "category": "אופנה",
-    "city": "רעננה",
-    "address": "אחוזה 131",
-    "website": "",
-    "discount": "10%",
-    "latitude": 32.180531,
-    "longitude": 34.87343,
-    "type": "C0"
-  },
-  {
-    "idn": 3009831,
-    "title": "העין השלישית",
-    "category": "אופנה",
-    "city": "נתניה",
-    "address": "קניון השרון",
-    "website": "",
-    "discount": "10%",
-    "latitude": 32.276634,
-    "longitude": 34.859306,
     "type": "C0"
   },
   {
@@ -57564,66 +57240,6 @@
     "type": "C0"
   },
   {
-    "idn": 3010432,
-    "title": "רשת צעצועים  \"חצי חינם\"",
-    "category": "תינוקות וילדים",
-    "city": "קצרין",
-    "address": "מרכז חוצות הגולן,אזה\"ת (חנות מפעל)",
-    "website": "",
-    "discount": "5%",
-    "latitude": 32.990998,
-    "longitude": 35.689865,
-    "type": "C0"
-  },
-  {
-    "idn": 3010433,
-    "title": "רשת צעצועים  \"חצי חינם\"",
-    "category": "תינוקות וילדים",
-    "city": "דלית אל כרמל",
-    "address": "מרכז מסחרי",
-    "website": "",
-    "discount": "5%",
-    "latitude": 32.693481,
-    "longitude": 35.047018,
-    "type": "C0"
-  },
-  {
-    "idn": 3010436,
-    "title": "רשת צעצועים  \"חצי חינם\"",
-    "category": "תינוקות וילדים",
-    "city": "רמלה",
-    "address": "הרצל 91,קניון רמלה,קרית הממשלה",
-    "website": "",
-    "discount": "5%",
-    "latitude": 31.926267,
-    "longitude": 34.877073,
-    "type": "C0"
-  },
-  {
-    "idn": 3010437,
-    "title": "רשת צעצועים  \"חצי חינם\"",
-    "category": "תינוקות וילדים",
-    "city": "הוד השרון",
-    "address": "הבנים 6",
-    "website": "",
-    "discount": "5%",
-    "latitude": 32.15598,
-    "longitude": 34.893807,
-    "type": "C0"
-  },
-  {
-    "idn": 3010438,
-    "title": "רשת צעצועים  \"חצי חינם\"",
-    "category": "תינוקות וילדים",
-    "city": "רמלוד",
-    "address": "הצופית 41 מתחם קוסמוס",
-    "website": "",
-    "discount": "5%",
-    "latitude": 31.932453,
-    "longitude": 34.888508,
-    "type": "C0"
-  },
-  {
     "idn": 3010466,
     "title": "AFI HOTELS",
     "category": "תיירות פנים",
@@ -57669,150 +57285,6 @@
     "discount": "3%",
     "latitude": 29.554498,
     "longitude": 34.960977,
-    "type": "C0"
-  },
-  {
-    "idn": 3010475,
-    "title": "רב בריח רדיו מרס בע\"מ",
-    "category": "תחבורה ורכב",
-    "city": "חיפה",
-    "address": "ארט אוף סאונד, דרך בר יהודה 33 (תחנת דלק מול משטרת התנועה), ",
-    "website": "",
-    "discount": "5%",
-    "latitude": 32.800589,
-    "longitude": 35.01434,
-    "type": "C0"
-  },
-  {
-    "idn": 3010476,
-    "title": "רב בריח רדיו מרס בע\"מ",
-    "category": "תחבורה ורכב",
-    "city": "חיפה",
-    "address": "טופ סאונד, דרך יפו 196",
-    "website": "",
-    "discount": "5%",
-    "latitude": 32.824398,
-    "longitude": 34.990771,
-    "type": "C0"
-  },
-  {
-    "idn": 3010477,
-    "title": "רב בריח רדיו מרס בע\"מ",
-    "category": "תחבורה ורכב",
-    "city": "נצרת עלית",
-    "address": "י.נ. אביזרי רכב בעמ",
-    "website": "",
-    "discount": "5%",
-    "latitude": 32.711539,
-    "longitude": 35.324812,
-    "type": "C0"
-  },
-  {
-    "idn": 3010480,
-    "title": "רב בריח רדיו מרס בע\"מ",
-    "category": "תחבורה ורכב",
-    "city": "קרית אתא",
-    "address": "רדיו דר, דרך חיפה 18 (תחנת פז), ",
-    "website": "",
-    "discount": "5%",
-    "latitude": 32.811895,
-    "longitude": 35.071818,
-    "type": "C0"
-  },
-  {
-    "idn": 3010481,
-    "title": "רב בריח רדיו מרס בע\"מ",
-    "category": "תחבורה ורכב",
-    "city": "הוד השרון",
-    "address": "א.א. אביזרי רכב, רח' ששת הימים 52, ",
-    "website": "",
-    "discount": "5%",
-    "latitude": 32.157351,
-    "longitude": 34.91961,
-    "type": "C0"
-  },
-  {
-    "idn": 3010482,
-    "title": "רב בריח רדיו מרס בע\"מ",
-    "category": "תחבורה ורכב",
-    "city": "פתח תקווה",
-    "address": "רדיו בית הצליל, רח' המכבים 25",
-    "website": "",
-    "discount": "5%",
-    "latitude": 32.096691,
-    "longitude": 34.887137,
-    "type": "C0"
-  },
-  {
-    "idn": 3010483,
-    "title": "רב בריח רדיו מרס בע\"מ",
-    "category": "תחבורה ורכב",
-    "city": "חולון",
-    "address": " רדיו א. זיקו שוורץ, רח' הבנאי 29, א.ת חולון",
-    "website": "",
-    "discount": "5%",
-    "latitude": 32.011247,
-    "longitude": 34.80169,
-    "type": "C0"
-  },
-  {
-    "idn": 3010484,
-    "title": "רב בריח רדיו מרס בע\"מ",
-    "category": "תחבורה ורכב",
-    "city": "ראשל\"צ",
-    "address": "ח. מערכות סאונדרייס",
-    "website": "",
-    "discount": "5%",
-    "latitude": 32.015833,
-    "longitude": 34.787384,
-    "type": "C0"
-  },
-  {
-    "idn": 3010485,
-    "title": "רב בריח רדיו מרס בע\"מ",
-    "category": "תחבורה ורכב",
-    "city": "כפר סבא",
-    "address": " רדיו השרון, יוחנן הסנדלר 9, א.ת כ''ס",
-    "website": "",
-    "discount": "5%",
-    "latitude": 32.175447,
-    "longitude": 34.928175,
-    "type": "C0"
-  },
-  {
-    "idn": 3010487,
-    "title": "רב בריח רדיו מרס בע\"מ",
-    "category": "תחבורה ורכב",
-    "city": "אשקלון",
-    "address": " מיגון 2000, רח' הנשיא 97,",
-    "website": "",
-    "discount": "5%",
-    "latitude": 31.665748,
-    "longitude": 34.562746,
-    "type": "C0"
-  },
-  {
-    "idn": 3010488,
-    "title": "רב בריח רדיו מרס בע\"מ",
-    "category": "תחבורה ורכב",
-    "city": "אשדוד",
-    "address": " דר מערכות אביזרי רכב,  העבודה 27, א.ת קלה,",
-    "website": "",
-    "discount": "5%",
-    "latitude": 31.814523,
-    "longitude": 34.66824,
-    "type": "C0"
-  },
-  {
-    "idn": 3010489,
-    "title": "רב בריח רדיו מרס בע\"מ",
-    "category": "תחבורה ורכב",
-    "city": "אשדוד",
-    "address": "אוטומרקט אביזרים לרכב, רח' העבודה 52, א.ת קלה,",
-    "website": "",
-    "discount": "5%",
-    "latitude": 31.809755,
-    "longitude": 34.66567,
     "type": "C0"
   },
   {
@@ -58833,18 +58305,6 @@
     "discount": "6%",
     "latitude": 31.260162,
     "longitude": 35.208758,
-    "type": "C0"
-  },
-  {
-    "idn": 3011716,
-    "title": "אל גאוצ'ו",
-    "category": "בילוי ונופש",
-    "city": "קיבוץ אלונים",
-    "address": "",
-    "website": "",
-    "discount": "10%",
-    "latitude": 32.721459,
-    "longitude": 35.143399,
     "type": "C0"
   },
   {
@@ -60300,54 +59760,6 @@
     "type": "C0"
   },
   {
-    "idn": 3013086,
-    "title": "קפה הלל",
-    "category": "בילוי ונופש",
-    "city": "באר שבע",
-    "address": "מרכז One Plaza ",
-    "website": "",
-    "discount": "5%",
-    "latitude": 31.24327,
-    "longitude": 34.809334,
-    "type": "C0"
-  },
-  {
-    "idn": 3013087,
-    "title": "קפה הלל",
-    "category": "בילוי ונופש",
-    "city": "אילת ",
-    "address": "קניון הילטון מלכת שבא",
-    "website": "",
-    "discount": "5%",
-    "latitude": 29.550395,
-    "longitude": 34.961791,
-    "type": "C0"
-  },
-  {
-    "idn": 3013089,
-    "title": "קפה הלל",
-    "category": "בילוי ונופש",
-    "city": "תל- אביב",
-    "address": "יהודה הלוי 147",
-    "website": "",
-    "discount": "5%",
-    "latitude": 32.071061,
-    "longitude": 34.781687,
-    "type": "C0"
-  },
-  {
-    "idn": 3013090,
-    "title": "קפה הלל",
-    "category": "בילוי ונופש",
-    "city": "תל- אביב",
-    "address": "שדרות רוטשילד 65",
-    "website": "",
-    "discount": "5%",
-    "latitude": 32.065176,
-    "longitude": 34.776242,
-    "type": "C0"
-  },
-  {
     "idn": 3013092,
     "title": "cafe-cafe קפה קפה",
     "category": "בילוי ונופש",
@@ -60430,30 +59842,6 @@
     "latitude": 31.674527,
     "longitude": 34.608998,
     "type": "C1"
-  },
-  {
-    "idn": 3013159,
-    "title": "קפה הלל",
-    "category": "בילוי ונופש",
-    "city": "תל אביב",
-    "address": "אבן גבירול 114 , פינת ארלוזורוב",
-    "website": "",
-    "discount": "5%",
-    "latitude": 32.084938,
-    "longitude": 34.781861,
-    "type": "C0"
-  },
-  {
-    "idn": 3013161,
-    "title": "קפה הלל",
-    "category": "בילוי ונופש",
-    "city": "גבעת שמואל",
-    "address": "יוני נתניהו 29 , קניון הגבעה",
-    "website": "",
-    "discount": "5%",
-    "latitude": 32.077197,
-    "longitude": 34.85466,
-    "type": "C0"
   },
   {
     "idn": 3013164,
@@ -62436,30 +61824,6 @@
     "type": "C0"
   },
   {
-    "idn": 3014870,
-    "title": "ילדותי",
-    "category": "אופנה",
-    "city": "רמת השרון",
-    "address": "אוסישקין 47",
-    "website": "www.yaldooti.com",
-    "discount": "10%",
-    "latitude": 32.142176,
-    "longitude": 34.843113,
-    "type": "C0"
-  },
-  {
-    "idn": 3014871,
-    "title": "ילדותי",
-    "category": "אופנה",
-    "city": "עפולה",
-    "address": "הנשיא 12",
-    "website": "www.yaldooti.com",
-    "discount": "10%",
-    "latitude": 32.609733,
-    "longitude": 35.288704,
-    "type": "C0"
-  },
-  {
     "idn": 3014874,
     "title": "חגור",
     "category": "פנאי וספורט",
@@ -62493,42 +61857,6 @@
     "discount": "6%",
     "latitude": 31.77642,
     "longitude": 34.664153,
-    "type": "C0"
-  },
-  {
-    "idn": 3014885,
-    "title": "ילדותי",
-    "category": "אופנה",
-    "city": "כפר-סבא",
-    "address": "קניון G , ויצמן 207",
-    "website": "www.yaldooti.com",
-    "discount": "10%",
-    "latitude": 32.175916,
-    "longitude": 34.899799,
-    "type": "C0"
-  },
-  {
-    "idn": 3014886,
-    "title": "ילדותי",
-    "category": "אופנה",
-    "city": "ראשון לציון",
-    "address": "קניון G , רוטשילד 45",
-    "website": "www.yaldooti.com",
-    "discount": "10%",
-    "latitude": 31.963511,
-    "longitude": 34.80147,
-    "type": "C0"
-  },
-  {
-    "idn": 3014887,
-    "title": "ילדותי",
-    "category": "אופנה",
-    "city": "נתניה",
-    "address": "פנקס 45 , א.ת ישן",
-    "website": "www.yaldooti.com",
-    "discount": "10%",
-    "latitude": 32.276634,
-    "longitude": 34.859306,
     "type": "C0"
   },
   {
@@ -63768,18 +63096,6 @@
     "type": "C1"
   },
   {
-    "idn": 3015973,
-    "title": "חוויה חקלאית - פעילות לילדים",
-    "category": "פנאי וספורט",
-    "city": "מזכרת בתיה",
-    "address": "ת.ד 494",
-    "website": "",
-    "discount": "35%",
-    "latitude": 31.850638,
-    "longitude": 34.840016,
-    "type": "C0"
-  },
-  {
     "idn": 3015974,
     "title": "אליפז חופש וחוויה בערבה",
     "category": "תיירות פנים",
@@ -63789,18 +63105,6 @@
     "discount": "10%",
     "latitude": 29.796248,
     "longitude": 35.012094,
-    "type": "C0"
-  },
-  {
-    "idn": 3015976,
-    "title": "הנגאובר",
-    "category": "לבית",
-    "city": "הוד-השרון",
-    "address": "סוקולוב 13",
-    "website": "www.hang-over.co.il",
-    "discount": "10%",
-    "latitude": 32.162793,
-    "longitude": 34.902362,
     "type": "C0"
   },
   {
@@ -64521,18 +63825,6 @@
     "discount": "10%",
     "latitude": 32.050578,
     "longitude": 34.759308,
-    "type": "C0"
-  },
-  {
-    "idn": 3016492,
-    "title": "זהב ותכלת - ארגמן - צימרים, בית קפה, יודייקה, ספא דגים",
-    "category": "תיירות פנים",
-    "city": "מושב אניעם",
-    "address": "רמת הגולן",
-    "website": "www.argaman10.co.il",
-    "discount": "10%",
-    "latitude": 32.956638,
-    "longitude": 35.739718,
     "type": "C0"
   },
   {
@@ -65386,18 +64678,6 @@
     "latitude": 32.058967,
     "longitude": 34.772574,
     "type": "C1"
-  },
-  {
-    "idn": 3016938,
-    "title": "הקורס השלם לקריאה מהירה",
-    "category": "לימודים",
-    "city": "כרמי יוסף",
-    "address": "כרמי יוסף",
-    "website": "in-forma.ravpage.co.il/kurs",
-    "discount": "20%",
-    "latitude": 31.848024,
-    "longitude": 34.921347,
-    "type": "C0"
   },
   {
     "idn": 3016968,
@@ -67644,30 +66924,6 @@
     "type": "C0"
   },
   {
-    "idn": 3018175,
-    "title": "קלמנטינה",
-    "category": "אופנה",
-    "city": "גבעת שמואל",
-    "address": "השקד 4 ",
-    "website": "",
-    "discount": "10%",
-    "latitude": 32.069069,
-    "longitude": 34.848732,
-    "type": "C0"
-  },
-  {
-    "idn": 3018177,
-    "title": "בייבי סמארט",
-    "category": "תינוקות וילדים",
-    "city": "ניר צבי",
-    "address": "איתן 32",
-    "website": "www.babysmart.co.il",
-    "discount": "10%",
-    "latitude": 31.953129,
-    "longitude": 34.859461,
-    "type": "C0"
-  },
-  {
     "idn": 3018240,
     "title": "קליניקה - רפואה משלימה",
     "category": "רפואה",
@@ -68458,18 +67714,6 @@
     "latitude": 32.795905,
     "longitude": 35.021875,
     "type": "C1"
-  },
-  {
-    "idn": 3018481,
-    "title": "אאורה דזיינס -  aura-designs",
-    "category": "אופנה",
-    "city": "אור יהודה",
-    "address": "המסגר 7 , קומה א' (חנות המפעל)",
-    "website": "www.aura-designs.co.il",
-    "discount": "10%",
-    "latitude": 32.034225,
-    "longitude": 34.848816,
-    "type": "C0"
   },
   {
     "idn": 3018484,
@@ -69621,30 +68865,6 @@
     "discount": "10%",
     "latitude": 32.073036,
     "longitude": 34.787931,
-    "type": "C0"
-  },
-  {
-    "idn": 3018834,
-    "title": "קבוצות בוטיק להרזיה בריאה בשיטת דר' אולגה רז",
-    "category": "בריאות ויופי",
-    "city": "רמת גן",
-    "address": "רוקח 121, בית הצנחן",
-    "website": "www.olgaraz.co.il",
-    "discount": "10%",
-    "latitude": 32.096936,
-    "longitude": 34.816583,
-    "type": "C0"
-  },
-  {
-    "idn": 3018835,
-    "title": "קבוצות בוטיק להרזיה בריאה בשיטת דר' אולגה רז",
-    "category": "בריאות ויופי",
-    "city": "תל אביב",
-    "address": "ויצמן 14 , מרכז ויצמן, קבוצות פרימיום",
-    "website": "www.olgaraz.co.il",
-    "discount": "10%",
-    "latitude": 32.130675,
-    "longitude": 34.792893,
     "type": "C0"
   },
   {
@@ -72504,18 +71724,6 @@
     "type": "C1"
   },
   {
-    "idn": 3019823,
-    "title": "מרוקו והמזרח גלרי",
-    "category": "לבית ולמשרד",
-    "city": "כפר-סבא",
-    "address": "קניון ערים",
-    "website": "",
-    "discount": "6%",
-    "latitude": 32.175916,
-    "longitude": 34.899799,
-    "type": "C0"
-  },
-  {
     "idn": 3019840,
     "title": "אופטיקה הלפרין",
     "category": "אופטיקה",
@@ -73029,18 +72237,6 @@
     "discount": "7%",
     "latitude": 32.083387,
     "longitude": 34.803373,
-    "type": "C0"
-  },
-  {
-    "idn": 3019926,
-    "title": "א.מ. קונקשיין vip",
-    "category": "תיירות חוץ",
-    "city": "הרצליה",
-    "address": "משכית 35",
-    "website": "",
-    "discount": "10%",
-    "latitude": 32.161981,
-    "longitude": 34.811167,
     "type": "C0"
   },
   {
@@ -81996,18 +81192,6 @@
     "type": "C1"
   },
   {
-    "idn": 3021922,
-    "title": "URBAN",
-    "category": "לבית ולחצר",
-    "city": "תל אביב",
-    "address": "הרצל 61",
-    "website": "urban-shop.co.il",
-    "discount": "5%",
-    "latitude": 32.057648,
-    "longitude": 34.770945,
-    "type": "C1"
-  },
-  {
     "idn": 3021923,
     "title": "URBAN",
     "category": "לבית ולחצר",
@@ -83388,18 +82572,6 @@
     "type": "C0"
   },
   {
-    "idn": 1022064,
-    "title": "פיצה עגבניה רמלה",
-    "category": "מסעדה",
-    "city": "רמלה",
-    "address": "שדרות דויד רזיאל 1",
-    "website": "agvania.co.il",
-    "discount": "",
-    "latitude": 31.925427,
-    "longitude": 34.863509,
-    "type": "F1"
-  },
-  {
     "idn": 1022066,
     "title": "פיצה עגבניה גן העיר",
     "category": "מסעדה",
@@ -83760,30 +82932,6 @@
     "type": "C1"
   },
   {
-    "idn": 1022106,
-    "title": "ניהון נו בה",
-    "category": "מסעדת שף",
-    "city": "הוד השרון",
-    "address": "הרקון 2",
-    "website": "www.segevchef.com",
-    "discount": "",
-    "latitude": 32.132886,
-    "longitude": 34.901466,
-    "type": "F0"
-  },
-  {
-    "idn": 1022107,
-    "title": "שגב אקספרס",
-    "category": "מסעדת שף",
-    "city": "הוד השרון",
-    "address": "הרקון 2",
-    "website": "www.segevchef.com",
-    "discount": "",
-    "latitude": 32.132949,
-    "longitude": 34.901402,
-    "type": "F0"
-  },
-  {
     "idn": 3022107,
     "title": "אופטיקל סנטר",
     "category": "אופטיקה",
@@ -83794,18 +82942,6 @@
     "latitude": 32.104771,
     "longitude": 35.198151,
     "type": "C1"
-  },
-  {
-    "idn": 1022108,
-    "title": "שגב אקספרס",
-    "category": "מסעדת שף",
-    "city": "ראשון לציון",
-    "address": "דוד סחרוב 21",
-    "website": "www.segevchef.com",
-    "discount": "",
-    "latitude": 31.990251,
-    "longitude": 34.774753,
-    "type": "F0"
   },
   {
     "idn": 3022108,
@@ -83854,18 +82990,6 @@
     "latitude": 31.990322,
     "longitude": 34.764809,
     "type": "C0"
-  },
-  {
-    "idn": 1022111,
-    "title": "שגב אקספרס",
-    "category": "מסעדת שף",
-    "city": "קריית ביאליק",
-    "address": "דך עכו 192",
-    "website": "www.segevchef.com",
-    "discount": "",
-    "latitude": 32.845587,
-    "longitude": 35.091126,
-    "type": "F0"
   },
   {
     "idn": 3022112,
@@ -86729,7 +85853,7 @@
     "category": "אופנה",
     "city": "קיבוץ משמרות",
     "address": "קיבוץ משמרות ,חנות הבית ",
-    "website": " simplylove.com",
+    "website": "",
     "discount": "10%",
     "latitude": 32.486174,
     "longitude": 34.987596,
@@ -86753,7 +85877,7 @@
     "category": "אופנה",
     "city": "הרצליה",
     "address": "הרצליה שבעת הכוכבים,קומת הכניסה  ",
-    "website": " simplylove.com",
+    "website": "",
     "discount": "10%",
     "latitude": 32.165078,
     "longitude": 34.823902,
@@ -86777,7 +85901,7 @@
     "category": "אופנה",
     "city": "ירושלים",
     "address": "ירושלים  לונץ 4, מדרחוב בן יהודה ",
-    "website": " simplylove.com",
+    "website": "",
     "discount": "10%",
     "latitude": 31.782038,
     "longitude": 35.218661,
@@ -86801,7 +85925,7 @@
     "category": "אופנה",
     "city": "ירושלים",
     "address": "קניון מלחה",
-    "website": " simplylove.com",
+    "website": "",
     "discount": "10%",
     "latitude": 31.751504,
     "longitude": 35.187171,
@@ -86825,7 +85949,7 @@
     "category": "אופנה",
     "city": "פתח תקוה",
     "address": "הקניון הגדול",
-    "website": " simplylove.com",
+    "website": "",
     "discount": "10%",
     "latitude": 32.093224,
     "longitude": 34.865893,
@@ -86837,7 +85961,7 @@
     "category": "אופנה",
     "city": "תל אביב",
     "address": " דיזינגוף 79",
-    "website": " simplylove.com",
+    "website": "",
     "discount": "10%",
     "latitude": 32.130675,
     "longitude": 34.792893,
@@ -99660,18 +98784,6 @@
     "type": "C0"
   },
   {
-    "idn": 1023258,
-    "title": "sweetime",
-    "category": "גלידריה מתוקים וקינוחים",
-    "city": "תל אביב - יפו",
-    "address": "אלוף קלמן מגן 3 שרונה מרקט",
-    "website": "",
-    "discount": "",
-    "latitude": 32.070988,
-    "longitude": 34.78732,
-    "type": "F0"
-  },
-  {
     "idn": 3023258,
     "title": "\"מייזון קייזר\"  - רשת מאפיות וקונדיטוריה",
     "category": "מזון ומשקאות",
@@ -101458,18 +100570,6 @@
     "latitude": 31.912512,
     "longitude": 35.017096,
     "type": "C0"
-  },
-  {
-    "idn": 1023352,
-    "title": "בית הפול",
-    "category": "מסעדה",
-    "city": "אופקים",
-    "address": "ז'בוטינסקי 5",
-    "website": "",
-    "discount": "",
-    "latitude": 31.318326,
-    "longitude": 34.621401,
-    "type": "F1"
   },
   {
     "idn": 3023352,
@@ -111566,7 +110666,7 @@
   {
     "idn": 3023835,
     "title": "מנטה הרב   Menta Herb – עולם של בריאות טבעית",
-    "category": "לא ידוע",
+    "category": "מזון ומשקאות",
     "city": "צפת",
     "address": "ירושלים 39",
     "website": "www.mentaherb.online/category/all-products",
@@ -111650,7 +110750,7 @@
   {
     "idn": 3023840,
     "title": "SHIMON PINHASOV  שמעון פנחסוב",
-    "category": "לא ידוע",
+    "category": "רפואה",
     "city": "רמת-גן",
     "address": "רח' שמעון פרוג 2 ",
     "website": "refuativet.co.il",
@@ -111674,7 +110774,7 @@
   {
     "idn": 3023841,
     "title": "SHIMON PINHASOV  שמעון פנחסוב",
-    "category": "לא ידוע",
+    "category": "רפואה",
     "city": "נתיבות",
     "address": "מרכז פריז סנטר ",
     "website": "refuativet.co.il",
@@ -113448,18 +112548,6 @@
     "type": "F1"
   },
   {
-    "idn": 1023991,
-    "title": "בורגרים",
-    "category": "מסעדה",
-    "city": "אילת",
-    "address": "שדה תעופה רמון",
-    "website": "www.iburgerim.co.il",
-    "discount": "",
-    "latitude": 29.725119,
-    "longitude": 35.00585,
-    "type": "F1"
-  },
-  {
     "idn": 1023992,
     "title": "בורגרים",
     "category": "מסעדה",
@@ -113685,6 +112773,42 @@
     "discount": "",
     "latitude": 32.073079,
     "longitude": 34.78822,
+    "type": "F0"
+  },
+  {
+    "idn": 1024014,
+    "title": "קפה תילוש",
+    "category": "מסעדה,בית קפה",
+    "city": "צפת",
+    "address": "מרום כנען 3",
+    "website": "",
+    "discount": "",
+    "latitude": 32.983136,
+    "longitude": 35.507354,
+    "type": "F1"
+  },
+  {
+    "idn": 1024015,
+    "title": "מסעדת NOKI",
+    "category": "מסעדה",
+    "city": "לוחמי הגיטאות",
+    "address": "קיבוץ לוחמי הגטאות",
+    "website": "",
+    "discount": "",
+    "latitude": 32.962405,
+    "longitude": 35.096757,
+    "type": "F0"
+  },
+  {
+    "idn": 1024016,
+    "title": "NIGHT COOKIE",
+    "category": "גלידריה מתוקים וקינוחים",
+    "city": "גני תקווה",
+    "address": "דרך הים 14",
+    "website": "",
+    "discount": "",
+    "latitude": 32.065287,
+    "longitude": 34.875327,
     "type": "F0"
   }
 ]
